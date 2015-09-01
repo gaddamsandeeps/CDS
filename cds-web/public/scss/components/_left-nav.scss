@@ -1,0 +1,91 @@
+.side-nav li a
+{
+	border-radius: 3px 0 0 3px;
+	width:200px;
+	padding-bottom:0 !important;
+	padding-top:0 !important;
+	line-height:40px;
+	background:#A2C2D5;
+	border:1px solid #000;
+	outline:none;
+}
+
+.side-nav li a.disable,
+.side-nav li a.disable:hover
+{
+	background:#E6EAEB !important;
+	border:1px solid #ccc !important;
+	color:black;
+	/*pointer-events:none;*/
+}
+.side-nav li a.active,
+.side-nav li a.active:hover,
+.side-nav li a.active:visited
+{
+	width:auto;
+	cursor:default;
+	line-height:42px;
+	border:0 !important;
+	background:transparent url('../images/left-nav-active-tab.png') no-repeat left top !important;
+	color:white;
+}
+.side-nav li a.success,
+.side-nav li a.success:hover,
+.side-nav li a.success	{
+	width:auto;
+	cursor:default;
+	line-height:42px;
+	border:0 !important;
+	background:url('../images/tick-mark.png') no-repeat right center rgb(142,189,206) !important;	
+}
+
+
+#left-nav-mobile {
+  display: none;
+  }
+.rightContent{
+	border:1px solid #ccc;
+	margin-left:-77px !important;
+	padding-bottom: 15px;
+	margin-bottom:55px;
+}
+.leftContent{
+	z-index:1;
+}
+
+.registrationHeading{
+	padding-left:15px;
+	margin:20px 0 20px 0;
+}
+
+.required{
+	border-left:4px solid #FF3A3A !important;
+}
+/* file input styles*/
+.input-group-addon, .input-group-btn, .input-group .form-control {
+  display: table-cell;
+}
+
+.mock-input{
+  float : left;
+}
+.mock-browse{
+  height:35px;
+  background-color:#0174B7;
+  box-shadow: 0 2px 0 rgba(176, 176, 176, 0.7);
+  color: #fff !important;
+  font-weight: bold;
+  height: 37px;
+  width: 100px;
+	border-radius: 3px;
+	vertical-align:middle;
+	border-radius:0 3px 3px 0;
+	padding-left:25px;
+}
+.mock-browse label{
+	color:#fff !important;
+}
+#profilePhoto{
+	 position: absolute;
+    visibility: hidden;
+}

@@ -1,0 +1,115 @@
+<form name="cadreVerifyForm" id="cadreVerifyForm" ng-submit="approve()">
+    <div class="container-fluid cadre-list">
+        <div class="close-overlay" ng-click="cancel()">X</div>
+        <div class="row  list-header">
+            <div class="col-md-12">
+                <h3 class="page-header">Cadre Verification Details</h3>
+            </div>
+        </div>
+        <div class="row form-container">
+            <div class="col-lg-10 col-lg-offset-1">
+                <div class="row">
+                    <div class="col-lg-12 cadre-status-message" ng-bind="modalMessage"> </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12" id="cadreErrContainer"></div>
+                </div>
+                <div class="row form-group">
+                    <div class="col-lg-5">
+                        <label class="inline">Party Membership#:</label>
+                    </div>
+                    <div class="col-lg-7">
+                        <input type="text" id="membershipId" class="input form-control required" name="membershipId" ng-model="user.partyMembershipId" data-val="partyMembershipId">
+                        <div class="error-class">
+                            <div class="error-content"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row form-group">
+                    <div class="col-lg-5 ">
+                        <label for="right-label" class="">Position in the Party:</label>
+                    </div>
+                    <div class="col-lg-7">
+                        <select id="grade" class="input form-control" name="grade" ng-model="user.positionId" ng-options="position.positionId as position.positionDescription for position in partyPositionsOptions">
+                            <option value="">Select Position</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row form-group">
+                    <div class="col-lg-5 ">
+                        <label for="right-label" class="">Responsibility in the Party:</label>
+                    </div>
+                    <div class="col-lg-7">
+                        <input type="text" id="partyResponsibility" class="input form-control" name="partyResponsibility" ng-model="user.partyResponsibility">
+                        <div class="error-class">
+                            <div class="error-content"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row form-group">
+                    <div class="col-lg-5 ">
+                        <label class="">Performance Grade:</label>
+                    </div>
+                    <div class="col-lg-7">
+                        <select id="grade" class="input form-control" name="grade" ng-model="user.performanceGradeId" ng-options="grade.gradeId as grade.gradeDescription for grade in performanceGradeOptions">
+                            <option value="">Select Performance Grade</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row form-group">
+                    <div class="col-lg-5 ">
+                        <label class="">Reports to:</label>
+                    </div>
+                    <div class="col-lg-7">
+                        <select id="reportsTo" class="input form-control required" name="reportsTo" ng-model="user.reportsTo" ng-options="lead.nameid for lead in leadCadres" ng-change="showLeadInfo(user.reportsTo)" data-val="reportsTo">
+                            <option value="">Select Reporting Lead</option>
+                        </select>
+                        <div class="error-class">
+                            <div class="error-content"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row form-group" ng-hide="hideLeadInfo">
+                    <div class="col-lg-5 ">
+                        <label class="">&nbsp</label>
+                    </div>
+                    <div class="col-lg-7">
+                        <!-- <div class="row">
+						<div class="col-lg-3"><label class="">Name:</label></div>
+						<div class="col-lg-9"><span ng-bind="leadInfoName"></span></div>
+					</div> -->
+                        <div class="row">
+                            <div class="col-lg-3">
+                                <label class="">Mobile:</label>
+                            </div>
+                            <div class="col-lg-9"><span ng-bind="leadMobileNum"></span></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-3">
+                                <label class="">AadharId:</label>
+                            </div>
+                            <div class="col-lg-9"><span ng-bind="leadAadhar"></span></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row form-group">
+                    <div class="col-lg-5 ">
+                        <label class="">Comments:</label>
+                    </div>
+                    <div class="col-lg-7">
+                        <textarea class="input form-control" name="comments" ng-model="user.rejectComment"></textarea>
+                    </div>
+                </div>
+                <div class="row form-group">
+                    <div class="col-lg-5 ">
+                    </div>
+                    <div class="col-lg-7">
+                        <button class="btn btn-success" type="submit">Approve</button>
+                        <button class="btn btn-warning" ng-click="reject()">Reject</button>
+                        <button class="btn btn-primary" ng-click="cancel()">Cancel</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>

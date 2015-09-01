@@ -1,0 +1,28 @@
+
+.mobile-node{
+  height: 30px;
+  overflow: hidden;
+}
+
+.view-memeber-work-sheet {
+  border: none;
+}
+
+.view-memeber-work-sheet thead{
+   background-color: #bbb;
+}
+.view-memeber-work-sheet thead tr th{
+  color:#FFF;
+  text-align: center;
+  font-size: 12px;  
+}
+.view-memeber-work-sheet thead th {
+   border: 1px solid #000;
+    border-left: 0;
+    border-bottom: 0;
+}
+.view-memeber-work-sheet tbody tr td {
+  text-align: center;
+  border: 1px solid #000;
+  border-left: 0;
+}

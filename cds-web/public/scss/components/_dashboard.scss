@@ -1,0 +1,301 @@
+.dashboard-container {
+  margin-top: 20px;
+  }
+.dashboard-container  .tasks-section {
+  margin: 10px 0 10px 0;
+}
+.dashboard-container  .tasks-section .task-desc {
+  border: 1px solid #e6e9ed;
+  text-align: center;
+  margin-left: 0;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+}
+.dashboard-container .calender-section h3 {
+  font-size: 14px;
+}
+.dashboard-container  .tasks-section .task-desc li h2 {
+  font-size: 12px;
+}
+.dashboard-container  .tasks-section .task-desc li{
+  list-style: none;
+  padding: 5px 0;
+  border-bottom: 1px solid #e6e9ed;
+  overflow: hidden;
+}
+.dashboard-container  .tasks-section .task-desc li:nth-child(even){
+    background-color: #f0f0f0;
+}
+.dashboard-container  .tasks-section .task-desc li .page-nation {
+  color: #ccc;
+}
+
+.dashboard-container  .tasks-section .task-desc li div {
+  font-size: 12px;
+}
+.dashboard-container .calender-section div a {
+    font-size: 10px;
+    text-decoration: underline;
+}
+/*End of tables Styles*/
+
+.tiles .photo2 {
+  height: 113px;
+  margin: 0 0 20px 0;
+  /* padding: 10px; */
+  text-align: center; 
+}
+.tiles .photo2 img{
+  border: solid 5px #fff;
+  height:113px;
+  width:140px;
+  vertical-align:inherit;
+}
+.tile-section {
+  border: 1px #d0d0d0 solid;
+  background: #f6f6f6;
+  margin: 75px 0px 0px 30px;
+  padding-bottom: 10px;
+  display: none;
+}
+.tiles .name{
+  padding: 10px 0px 10px 0px;
+}
+.tiles .details label{
+  padding: 10px 0 0 0;
+}
+.tiles label{
+   
+}
+.dashboard-container .calender-section h3 {
+  font-size: 14px;
+}
+.dashboard-container  .tasks-section .task-desc li h2 {
+  font-size: 12px;
+}
+.dashboard-container  .tasks-section .task-desc li{
+  list-style: none;
+  border-bottom: 1px solid #e6e9ed;
+}
+.dashboard-container  .tasks-section .task-desc li:nth-child(even){
+    background-color: #f0f0f0;
+}
+.dashboard-container  .tasks-section .task-desc li .page-nation {
+  color: #ccc;
+}
+
+.dashboard-container  .tasks-section .task-desc li div {
+  font-size: 12px;
+}
+.dashboard-container .calender-section {
+  margin: 0 0 15px 0;
+}
+.dashboard-container .calender-section div a.calender-link {
+    font-size: 13px;
+    text-decoration: underline;
+    margin-top: 15px;
+}
+
+.dashboard-container .calender-section .calender-items-sec .events-sec {
+    border: 1px solid #d6d6d6;
+    margin: 10px 16px;
+    background: #f2f0f0;
+} 
+.dashboard-container .calender-section .calender-items-sec .events-sec  li div.left-link {
+  margin-right: 4px;
+}
+.dashboard-container .calender-section .calender-items-sec .events-sec  li div p {
+  font-size: 11px;
+  margin-bottom: 0;
+  padding-top: 10px;
+}
+.dashboard-container .calender-section .calender-items-sec .events-sec  li {
+  border-right: 1px solid #ccc;
+   margin: 10px 0px;
+   padding-bottom: 0;
+}
+.dashboard-container .calender-section .calender-items-sec h4 {
+    font-size: 14px;
+    margin-bottom: 0;
+} 
+.dashboard-container .calender-section .calender-items-sec span {
+  display: inline-block;
+  font-size: 12px;
+  line-height: normal;
+}
+.active-event {
+  text-align: center;
+  padding: 5px;
+  height: 60px;
+  background-color:#8c3131;
+}
+.active-content {
+  color: #FFF !important;
+}
+.active-event-meeting {
+  color: #8c3131;
+}
+.margin-padding-none {
+  margin: 0 !important;
+  padding: 0;
+}
+.non-active-event {
+  background-color: #bcb9b9;
+  height: 60px;
+  line-height: 60px;
+  text-align: center; 
+  padding: 5px;
+}
+.border-none {
+  border-right: none !important; 
+}
+.requestor {
+  background: url(../images/searchicon.png) no-repeat right center;
+}
+
+.non-active-event1 {
+	background: #088A68;
+}
+
+.non-active-event2 {
+	background: #0B3861;
+}
+
+.non-active-event3 {
+	background: #5F04B4;
+}
+
+
+
+/* Bootstap overrides */
+.widget-container {
+	max-height: 500px;
+  overflow: hidden;
+  font-size: 11px;
+}
+.widget {
+	border-radius: 0px;
+	border: solid 1px #4c8ac7;
+}
+.panel-default > .panel-heading {
+	background: #4c8ac7;
+	color: #ffffff;
+}
+.panel-title {
+	font-size: 14px;
+}
+.panel-heading {
+	border-radius: 0px;
+	border-radius: 0px;
+}
+.subscribe {
+	padding: 8px !important;
+}
+.ui-grid-pager-row-count-picker {
+	font-size: 12px;
+	
+}
+
+.ui-grid-pager-panel{
+  
+}
+
+
+.ui-grid-canvas div{
+  font-size: 11px;
+  
+}
+
+.ui-grid-cell-contents{
+  padding-left:5px;
+}
+.row-link{
+ padding-left:5px;
+  cursor: pointer;
+  display: block;
+  margin-top : 5px;
+}
+
+.events-banner .panel-body{
+  padding:0;
+}
+
+.events-banner .events-banner-img{
+  width:100%;
+}
+
+
+
+.panel-default > .panel-heading {
+  cursor: move; 
+}
+.events-banner .events-banner-img { 
+  height: 76px;
+}
+.widget {  
+  border: solid 1px #999;
+}
+ul.doughnut-legend {
+  padding: 0;
+}
+.widget-container.cadre-verifications-all .widget-header{
+  background: #475d74;
+}
+.widget-container.events-banner .widget-header{
+  background: #86ad39;
+}
+.widget-container.self-tasks .widget-header{
+  background: #756158;
+}
+.widget-container.team-tasks .widget-header{
+  background: #475d74;
+}
+.widget-container.tasks-trend .widget-header{
+  background: #c6781c;
+}
+.widget-container.notifications .widget-header{
+  background: #f0ad4e;
+}
+
+.close-overlay {
+  z-index: 100;
+}
+
+.d-widget.notifications .widget-content {
+  height: 380px;
+  overflow: auto;
+}
+
+
+.cadre-verification-msg{
+  margin: 5px 0;
+}
+
+
+
+
+@media only screen and (min-width: 1200px) { } /* Only for 1921px and above */
+
+@media only screen and (min-width: 992px) and (max-width: 1200px) { } /* From 1441px to 1920 */
+
+@media only screen and (min-width: 992px) {}
+
+@media only screen and (min-width: 768px) and (max-width: 992px) { } /* min-width 641px and max-width 1024px, use when QAing tablet-only issues */
+
+@media only screen and (min-width: 768px) {}
+
+@media only screen and (min-width: 641px) and (max-width: 768px) { } /* min-width 641px and max-width 1024px, use when QAing tablet-only issues */
+
+@media only screen and (min-width: 641px) {}
+
+@media only screen and (min-width: 480px) and (max-width: 640px) { } /* min-width 641px and max-width 1024px, use when QAing tablet-only issues */
+
+@media only screen and (min-width: 641px) {}
+
+@media only screen and (min-width: 360px) and (max-width: 640px) { }
+
+
+
+
+@media only screen and (min-width: 320px) and (max-width: 480px) { } /* min-width 641px and max-width 1024px, use when QAing tablet-only issues */

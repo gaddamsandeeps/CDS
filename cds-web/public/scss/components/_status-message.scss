@@ -1,0 +1,17 @@
+.status-wrapper{
+
+	display: none;
+	border-radius: 5px;
+	color: #fff;
+	font-weight: bold;
+	font-size: 12px;
+	padding:10px 10px;
+	text-shadow:0 0 35px #000;
+
+	&.error-status-node{
+		background-color: #DE3B12;	
+	}
+	&.info-status-node{
+		background-color: #8EB14D;
+	}
+}

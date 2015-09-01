@@ -1,0 +1,100 @@
+<div class="container">
+    <div class="row" id="app-wrapper">
+        <h1>Cadre Statistics</h1>
+        <div class="content-wrapper">
+            <div class="row" style="font-size:13px;">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div class="col-lg-3  col-md-3 col-sm-12 col-xs-12 members text-center" slide-btn-directive>
+                        <img class="photo1" src="images/profile/{{memberdashboardCtrl.user.photograph}}" style="width:200px; height:200px;" id="profileImg" />
+                    </div>
+                    <div class="col-lg-9 col-md-9 col-sm-12 col-xs-12">
+                        <!-- User profile section -->
+                        <div class="member-info row">
+                            <div class="col-lg-10">
+                                <div class="col-lg-12">
+                                    <h1><span class="title-tag" ng-bind="memberdashboardCtrl.user.firstName+'  '+memberdashboardCtrl.user.lastName"></span></h1>
+                                </div>
+                                <div class="col-lg-12">
+                                    <div class="col-lg-3 "> User/Login Name</div>
+                                    <div class=" col-lg-1">:</div>
+                                    <div class="col-lg-3  left">
+                                        <span ng-bind="memberdashboardCtrl.user.loginId"></span></div>
+                                </div>
+                                <div class="col-lg-12">
+                                    <div class="col-lg-3 "> Age/Gender</div>
+                                    <div class=" col-lg-1">:</div>
+                                    <div class="col-lg-3  left">
+                                        <span ng-bind="memberdashboardCtrl.user.age"></span> / <span ng-bind="memberdashboardCtrl.user.gender"></span></div>
+                                </div>
+                                <div class="col-lg-12">
+                                    <div class="col-lg-3 "> Date of Birth</div>
+                                    <div class=" col-lg-1">:</div>
+                                    <div class="col-lg-3  left" ng-bind="memberdashboardCtrl.user.dateOfBirth">Date of Birth</div>
+                                </div>
+                                <div class="col-lg-12">
+                                    <div class="col-lg-3 "> Aadhar ID</div>
+                                    <div class=" col-lg-1">:</div>
+                                    <div class="col-lg-3  left" ng-bind="memberdashboardCtrl.user.aadharId">aadharId</div>
+                                </div>
+                                <div class="col-lg-12">
+                                    <div class="col-lg-3 "> Mobile</div>
+                                    <div class=" col-lg-1">:</div>
+                                    <div class="col-lg-3  left" ng-bind="memberdashboardCtrl.user.mobileNumber">+91 8886867695</div>
+                                </div>
+                                <div class="col-lg-12">
+                                    <div class="col-lg-3 "> Email</div>
+                                    <div class=" col-lg-1">:</div>
+                                    <div class="col-lg-3  left"><a href="mailto:{{viewCtrl.user.emailId}}" ng-bind="memberdashboardCtrl.user.emailId">snarala@outlook.com</a></div>
+                                </div>
+                                <div class="col-lg-12">
+                                    <div class="col-lg-3 "> Skype Id</div>
+                                    <div class=" col-lg-1">:</div>
+                                    <div class="col-lg-3  left" ng-bind="memberdashboardCtrl.user.skypeId">saudam</div>
+                                </div>
+                                <div class="col-lg-12">
+                                    <div class="col-lg-3 "> Marital status</div>
+                                    <div class=" col-lg-1">:</div>
+                                    <div class="col-lg-3  left" ng-bind="memberdashboardCtrl.user.maritalStatus">martialStatus</div>
+                                </div>
+                                <div class="col-lg-12">
+                                    <div class="col-lg-3 "> Education</div>
+                                    <div class=" col-lg-1">:</div>
+                                    <div class="col-lg-3  left" ng-bind="memberdashboardCtrl.user.education.qualification">martialStatus</div>
+                                </div>
+                            </div>
+                            <!-- <div class="col-lg-2">
+                                <span><a href="#" id="personal" class="btn btn-default" ng-click="memberdashboardCtrl.navEditProfile($event)"><span class="glyphicon glyphicon-pencil" ></span>&nbsp;&nbsp;Edit</a>
+                                </span>
+                            </div> -->
+                        </div>
+                        <!-- /User profile section -->
+                    </div>
+                </div>
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 members-graph-info">
+                    <div class="row">
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                        <h4>Age wise Tasks( In Progress Tasks )</h4>
+                        <div class="bargraph" tasksage-graph-directive>
+                            <canvas id="bar" class="chart chart-bar" series="barSeries" legend="barLegend" data="barData" labels="barLabels" options="options" colours="barColours"></canvas>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                        <h4>Tasks Assigned for this Cadre</h4>
+                        <div class="donut" mytasks-graph-directive>
+                            <canvas id="doughnut" class="chart chart-doughnut" data="donutData" labels="donutLabels" legend="donutLegend" colours="donutColours"></canvas>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                        <h4>Completed Tasks Trend</h4>
+                        <div class="linegraph" taskstrend-graph-directive>
+                            <canvas id="line" class="chart chart-line" data="lineData" labels="lineLabels" series="lineSeries" options="lineOptions" click="onClick" colours="lineColours">
+                            </canvas>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>

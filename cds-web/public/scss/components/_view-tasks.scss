@@ -1,0 +1,162 @@
+.task-details {
+
+}
+.task-details ul li {
+	font-size: 13px;	
+}
+.task-details select{
+	padding: 4px 3px !important;
+	height: auto;
+}
+.task-details .calender {
+	background-image: url(../images/calender-icon.png) no-repeat right center;
+}
+.task-description h6, .attachements h6{
+	margin: 15px 0 10px 0;
+	font-size: 14px;
+	color: #0888b5;
+}
+.attachements {
+	display: none
+}
+.attachements ul li {
+	font-size: 13px;
+}
+.comments {
+
+}
+.comments .head {
+	background: #f5f5f5;
+	border: solid 1px #ccc;
+	padding: 5px 10px;
+	margin: 0 0 15px 0;
+}
+.comments .head a.add-comments{
+	background: url(../images/commentsIcon.png) no-repeat 0 3px;
+	color: #333;
+	padding: 0 0 0 20px;
+	margin: 0 15px 0 0;
+	font-size: 12px;
+}
+.comments .head a.attachments {
+	background: url(../images/attachmentsIcon.png) no-repeat 0 4px;
+	color: #333;
+	padding: 0 0 0 20px;
+	margin: 0 15px 0 0;
+	font-size: 12px;
+}
+.comments-list ul {
+	margin: 0;
+	font-size: 13px;
+	padding:0;
+}
+.comments-list ul li{
+	list-style: none;
+}
+.comments-list ul li .info{
+	border-bottom: solid 1px #ccc;
+	padding: 0 0 10px 0;
+	margin: 0 0 10px 0;
+}
+
+.user-information {
+	border: solid 1px #ccc;
+	background: #f1f1f1;
+	padding: 20px;
+	position: relative;
+	height: 90%;
+}
+.user-information .arrow {
+	background: url(../images/user-info-arrow.png) no-repeat 0 0;
+	position: absolute;
+	left: -13px;
+	top: 30px;
+	width: 13px;
+	height: 27px;
+}
+.user-information h5 {
+	margin: 0 0 15px 0;
+}
+.user-information img {
+	border: solid 5px #ffffff;
+	margin: 0 0 15px 10px;
+}
+.user-information .details ul {
+	font-size: 13px;
+	margin: 0;
+	color: #333;
+}
+.user-information .details ul li {
+	list-style: none;
+}
+.user-information .details ul li span{
+	padding: 0 0 0 10px;
+	font-weight: bold;
+}
+
+.selectedTaskTab{
+	font-weight:bold;
+}
+
+
+
+/* Bootstrap overrides */
+
+.task-view-header{
+	width:100%;
+	margin-left:0;
+	margin-bottom:0 !important;
+}
+
+
+.comments-list{
+	margin-top:25px;
+}
+
+.comments .head{
+	margin-bottom : 30px;
+}
+
+
+.cadre-search-icon-view{
+  right: 25px;
+  position: absolute;
+  top: 35px;
+  cursor: pointer;
+}
+
+
+.select-all-btn{
+	margin:0;
+}
+
+.comments .attachment-menu-header{
+	margin-bottom:0;
+}
+.attachment-status{
+	display:none;
+	color : red;	
+	margin-left: 10px;
+	font-size: 11px;
+}
+
+.attachment-progress{
+	display:none;
+	margin-bottom:0;
+}
+.comments .non-linked{
+	color: #aaa;
+	cursor : default;	
+}
+
+
+
+.cds-error,.att-status.cds-error{
+	color : red;
+	font-size: 12px;
+}
+
+.cds-info,.att-status.cds-info{
+	color: #47A447;
+	font-size: 12px;
+}

@@ -1,0 +1,243 @@
+#accordion a span.title {
+    float: left;
+    display: block;
+    margin-right: 10px;
+    margin-top: 5px;
+}
+
+#accordion a span.ui-icon {
+    position: static;   
+    height: 20px;
+    margin-top: 0px; 
+    margin-top: 3px;
+}
+#accordion h3 a .ui-icon {float:right}
+
+#accordion a span.title {
+    float: left;
+    display: block;
+    margin-right: 10px;
+    margin-top: 5px;
+}
+
+#accordion a span.ui-icon {
+    position: static;   
+    height: 20px;
+    margin-top: 0px; 
+    margin-top: 3px;
+}
+#accordion h3 a .ui-icon {float:right}
+
+
+.navigation {
+	text-align: right;
+}
+.top-bar-section ul li{
+	background: none;
+    display: inline-block;
+    float: none;
+}
+.view-tasks img {
+	border: none;
+	margin: 0;
+}
+.view-tasks {
+	padding: 25px 0 0 0;
+}
+.view-tasks h6 {
+	margin: 0 0 5px 0;
+}
+.new-task {
+	background: url(../images/newtaskBtn.jpg) no-repeat;
+	width: 100px;
+	height: 26px;
+	border: none;
+	margin-top: 10px;
+}
+.actions {
+	background: url(../images/actionsBtn.jpg) no-repeat;
+	width: 72px;
+	height: 26px;
+	border: none;
+	display:none;
+}
+.task-links {
+	background: #e6eaeb;
+	padding: 8px 15px !important;
+	margin: 10px 0 10px 0;
+}
+.task-links a {
+	font-size: 13px;
+	margin: 0 10px 0 0; 
+	padding: 0 10px 0 0; 
+	color: #16578f;
+	border-right: solid 1px #16578f;
+	text-decoration: underline;
+	cursor:pointer;
+}
+.task-links a:last-child{
+	border: none;
+}
+.tasks-list {
+	margin-bottom : 15px !important;
+}
+.tasks-list input {
+	margin: 0 10px 0 0;
+}
+.tasks-list .task-title {
+	font-size: 15px;
+	font-weight: bold;
+	background: #cddae6;
+	padding: 10px !important; 
+	border-radius: 3px 3px 0 0;
+}
+.task-details {
+	background: #eef2f6;
+	border: solid 1px #cfddeb;
+	padding: 10px !important;
+}
+.task-status-info {
+	background: #ffffff;
+	border: solid 1px #cddae6;
+	padding: 8px;
+	font-size: 12px;
+	margin: 0 0 10px 0;
+}
+.task-status-info ul li {
+	font-size: 12px;
+	margin-bottom: 10px;
+    padding-bottom: 3px;
+    border-right: solid 1px #cccccc;
+}
+.task-status-info ul li:last-child {
+	border: none;
+}
+.task-status-info ul li span{
+	font-weight: bold;
+	padding: 0 0 0 5px;
+
+}
+.noTasks{
+	text-align:center;
+	font-size:40px;
+}
+
+.task-comments{
+	min-height: 60px; 	
+}
+
+
+.comments-list{
+	max-height: 500px;
+	overflow : scroll;
+
+}
+
+.adv_search_arrow_task{
+	background-image: url("../images/filter-arrow-blue.png");
+    background-repeat: no-repeat;
+    display: block;
+    float: left;
+    height: 20px;
+    left: 868px;
+    position: relative;
+    top: -65px;
+    width: 20px;
+}
+.advance-search-task{
+	background: #DBE8EE;
+    border: medium none;
+    color: #000;
+    font-size: 10px;
+    cursor: pointer;
+    float: left;
+    margin: 10px 8px 14px 10px;
+    padding: 5px;
+    border: 1px solid #8FABB9;
+    border-radius: 3px;
+}
+.task-radio{
+	padding-top:7px;
+}
+
+
+/* Bootstrap overrides */
+
+
+
+.cadre-list {
+	padding: 15px;
+	.cadre-list-item{
+		background-color:#eaeaea;
+		height: 30px;
+		margin-bottom: 5px;
+		 height: 40px;
+	    padding-top: 11px;
+	    width: 90%;
+	    &:hover{
+	    	background-color:#dddddd;
+	    }
+	}
+}
+
+.cadre-list .cadre-list-row{
+	   margin-bottom: 25px;
+    margin-left: 30px;
+       max-height: 375px;
+    overflow: auto;
+    padding-bottom: 30px;
+    width: 90%;
+}
+
+.cadre-list .page-header{
+	margin-top : 0;
+}
+
+.close-overlay{
+font-size: 20px;
+font-weight: bold;
+position: absolute;
+right: 25px;
+width : 20px;
+cursor : pointer;
+}
+
+.modal-dialog{
+
+}
+
+
+.col-centered{
+	float: none;
+margin: 0 auto;
+}
+
+
+.ui-datepicker-calendar{
+	width:100%;
+	background-color:#fff;
+}
+
+.user-actions-div{
+	margin-top:5px;
+	.edit,.delete{
+		color:#2368A0;
+		&:hover{
+			text-decoration: underline;
+			cursor:pointer;
+		}
+	}
+	.edit.grey{
+		color:#999999;
+		cursor: default;
+		&:hover{
+		text-decoration: none;	
+		}		
+	}
+
+}
+
+/* To disable textarea resize*/
+textarea {
+    resize: vertical;
+}

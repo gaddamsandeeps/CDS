@@ -1,0 +1,23 @@
+.loader-input{
+  float: left;
+}
+.loader-container{
+
+}
+.loader-container img{
+  margin-left: 20px;
+  margin-top: 6px;
+}
+
+.status-message{
+  display: inline-block;
+  padding-left: 20px;
+  padding-top: 6px;
+  font-size: 12px;
+  color: #35B443;
+}
+
+.status-message.error-state{
+  color: red;
+  background-color: #fff;
+}

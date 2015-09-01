@@ -1,0 +1,46 @@
+ .mission-vissionSubHeadings{
+	color: #333;
+}
+.vision-mission {
+	margin: 0 0 20px 0;
+}
+.vision-mission img, .vision img{
+	border: none;
+	margin: 8px 0;
+}
+.vision-mission h6 {
+	margin: 23px 0 0 0;
+	font-size: 14px;
+}
+.vision-mission .mission {
+	background: #e5ecf2;
+	box-shadow: 1px 1px 1px #999;
+	border-radius: 6px;
+	-moz-border-radius: 6px;
+	-webkit-border-radius: 6px;
+}
+
+.vision span {
+	color: #1bb2ea;
+}
+.vision span.justice {
+	color: #f15a3f;
+}
+.vision span.economic {
+	color: #048894;
+}
+.vision span.green {
+	color: #75b224;
+}
+.vision span.improve {
+	color: #0032a5;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) { 
+	.vision-mission h6 {
+		font-size: 14px;
+	}
+	.vision-mission h6 {
+		margin: 18px 0 0 0;
+	}
+}

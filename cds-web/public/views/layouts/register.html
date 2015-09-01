@@ -1,0 +1,30 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kesineni Srinivas</title>
+    <link rel="stylesheet" href="css/main-b.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/jquery-ui.css">
+  </head>
+  <body>  
+      <header ui-view="header" class="home" id="appHeader"></header>
+      <section ui-view="content" id="appSection"></section>
+      <footer ui-view="footer" id="appFooter" fixed-footer-directive></footer>      
+      
+
+<% if( process.env.useMinifiedAssets == "true" ) { %>
+  <script type="text/javascript">var require = {baseUrl :"dist"};</script>
+  <script  src="dist/lib/min/require.min.js"></script>
+  <script src="dist/requireConfig.js"></script>
+  <script  src="dist/main.js"></script>
+<% } else{ %>
+  <script type="text/javascript">var require = {baseUrl :"js"}</script>
+  <script  src="js/lib/min/require.min.js"></script>
+  <script src="js/requireConfig.js"></script>
+  <script  src="js/main.js"></script>  
+<% } %>
+ 
+</body>
+</html>

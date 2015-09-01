@@ -1,0 +1,23 @@
+{
+    "name": "cds-config",
+    "version": "1.0.0",
+    "description": "cds config n errors properties/env management",
+    "main": "./lib/config",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git://github.com/yc05s3g/cds-config.git"
+    },
+    "author": {
+        "name": "Sandeep Gaddam",
+        "email": "sgaddam@nisum.com"
+    },
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/yc05s3g/cds-config/issues"
+    },
+    "homepage": "https://github.com/yc05s3g/cds-config",
+    "dependencies": {}
+}

@@ -1,0 +1,21 @@
+<div>
+	<div style="background-color:#eaeaea; padding: 10px 10px 28px 10px; margin-bottom:10px;font-weight:bold; ">
+		<div class="col-lg-8">
+			Subject
+		</div>
+		<div class="col-lg-4">
+			 Date
+		</div>
+	</div>
+      <div ng-repeat="notification in notifications" style="background-color:#eaeaea; padding:10px; margin-bottom:10px; cursor:pointer; overflow: hidden;" ng-click="getNotificationDetails(notification.inboxId)">
+
+      	<span ng-bind="notification.subject" style="width: 190px; float: left;"></span>
+      	<span ng-bind="notification.creationdate" style="float: left;"></span>
+
+      </div>	
+</div>
+
+
+<!-- <div>
+      <div ui-grid="gridOptions" ui-grid-pagination class="grid"></div>
+</div> -->

@@ -1,0 +1,25 @@
+{
+    "name": "cds-logger",
+    "version": "1.0.0",
+    "description": "cds logger management",
+    "main": "./lib/logger",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git://github.com/yc05s3g/cds-logger.git"
+    },
+    "author": {
+        "name": "Sandeep Gaddam",
+        "email": "sgaddam@nisum.com"
+    },
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/yc05s3g/cds-logger/issues"
+    },
+    "homepage": "https://github.com/yc05s3g/cds-logger",
+    "dependencies": {
+        "log4js": "^0.6.22"
+    }
+}

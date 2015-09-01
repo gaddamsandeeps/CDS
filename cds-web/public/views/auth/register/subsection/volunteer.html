@@ -1,0 +1,92 @@
+<form name="volunteer" id="volunteerRegistrationForm" ng-submit="volunteerCtrl.save()">
+    <div class="row rightContent">
+        <div class="col-lg-12  formContent">
+            <!-- Global error messages -->
+            <!-- <div class="row" ng-if="volunteerCtrl.isNotValidForm">
+                <div class="col-lg-9 right  error-class">Please ensure that all the required fields are valid.</div>
+            </div> -->
+            <div class="row">
+                <div class="col-lg-3">
+                    <label for="left-label" class="right text-right">Are you interested in Volunteer work:</label>
+                </div>
+                <div class="col-lg-9">
+                    <input type="radio" name="interested" value="1" ng-model="volunteerCtrl.user.citizen.interestedAsVolunteer" id="interestedYes" ng-change="volunteerCtrl.trackInterest(volunteerCtrl.user.citizen.interestedAsVolunteer)" ng-blur="volunteerCtrl.watchForm()">
+                    <label for="interestedYes">Yes</label>
+                    <input type="radio" name="interested" value="0" ng-model="volunteerCtrl.user.citizen.interestedAsVolunteer" id="interestedNo" ng-change="volunteerCtrl.trackInterest(volunteerCtrl.user.citizen.interestedAsVolunteer)" ng-blur="volunteerCtrl.watchForm()">
+                    <label for="interestedNo">No</label>
+                </div>
+            </div>
+            <div class="row" ng-hide="volunteerCtrl.hideInterestedAreas">
+                <div class="col-lg-3">
+                    <label class="right text-right">Which areas are you interested to Volunteer:</label>
+                </div>
+                <div class="col-lg-9 right">
+                    <select id="areaOfInterest" class="form-control input" name="areaOfInterest" ng-model="volunteerCtrl.user.interestedAreas" data-val="areaOfInterest" ng-options="areaOfInterest.interestId as areaOfInterest.volInterestAreaName for areaOfInterest in interestedAreasOptions" ng-blur="volunteerCtrl.watchForm()">
+                        <option value="">Select Area of Interest</option>
+                    </select>
+                    <div class="error-class">
+                        <div class="error-content"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="row" ng-hide="volunteerCtrl.hideVolunteerID">
+                <div class="col-lg-3">
+                    <label for="right-label" class="right inline text-right">Volunteer ID#:</label>
+                </div>
+                <div class="col-lg-9 left">
+                    <input type="text" id="volunteerCodeNumber" class="form-control input" name="volunteerCodeNumber" data-val="volunteerId" ng-model="volunteerCtrl.user.volunteerCodeNumber" ng-disabled="volunteerCtrl.disableFields" ng-blur="volunteerCtrl.watchForm()">
+                    <div class="error-class">
+                        <div class="error-content"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="row" ng-hide="volunteerCtrl.hideVolunteerCategory">
+                <div class="col-lg-3">
+                    <label class="right inline">Volunteer Category:</label>
+                </div>
+                <div class="col-lg-9 right">
+                    <select id="volunteerCategory" class="form-control input" name="volunteerCategory" ng-model="volunteerCtrl.user.volunteerCategoryId" ng-options="volunteerCategory.voluteerCatergoryId as volunteerCategory.volunteerCategoryName for volunteerCategory in volunteerCategoryOptions" data-val="volunteerCategory" ng-disabled="volunteerCtrl.disableFields" ng-blur="volunteerCtrl.watchForm()">
+                        <option value="">Select Volunteer Category</option>
+                    </select>
+                    <div class="error-class">
+                        <div class="error-content"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="row" ng-hide="volunteerCtrl.hideVolunteerLead">
+                <div class="col-lg-3">
+                    <label class="right inline">Lead Id:</label>
+                </div>
+                <div class="col-lg-9 right">
+                    <select id="leadId" class="form-control input" name="leadId" ng-model="volunteerCtrl.user.volunteerLeadId" ng-options="lead.citizenId as lead.firstName for lead in leadOptions" data-val="leadId" ng-disabled="volunteerCtrl.disableFields" ng-blur="volunteerCtrl.watchForm()">
+                        <option value="">Select Lead</option>
+                    </select>
+                    <div class="error-class">
+                        <div class="error-content"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="row" ng-show="volunteerCtrl.showGrade">
+                <div class="col-lg-3">
+                    <label class="right inline">Performance Grade:</label>
+                </div>
+                <div class="col-lg-9 right">
+                    <select id="grade" class="form-control input" name="grade" ng-model="volunteerCtrl.user.performanceGradeId" ng-options="grade.gradeId as grade.gradeDescription for grade in performanceGradeOptions" data-val="performanceGrade" ng-blur="volunteerCtrl.watchForm()">
+                        <option value="">Select Performance Grade</option>
+                    </select>
+                    <div class="error-class">
+                        <div class="error-content"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-3">
+                </div>
+                <div class="col-lg-9">
+                    <button class="btn submit left">Save & Continue</button>
+                    <button class="btn cancel" href="" ng-click="volunteerCtrl.backview($event)">Back</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>

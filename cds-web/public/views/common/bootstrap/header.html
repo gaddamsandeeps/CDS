@@ -1,0 +1,100 @@
+<div class="container">
+  <div class="row auth-header">
+    
+    <div class="col-sm-4 phone">
+      Office:  +91 9949 666 666
+    </div>
+    
+    <div class="col-sm-8 col-xs-12 top-nav">
+      
+      <nav  ng-if="!headerCtrl.isUserAuthenticated" ng-show="headerCtrl.showHeader">
+        <ul class="top-sub-links">
+          <li><a href="/register" class="register">Register</a></li>
+          <li><a href="/signin" class="signin">Sign In</a></li>
+          <li><a href="/#contactus" class="contactus">Contact Us</a>
+        </ul>
+      </nav>
+      
+      <nav ng-if="headerCtrl.isUserAuthenticated">
+        <ul class="right top-sub-links">
+          <li class="user-log">Welcome <span ng-bind="userName"></span> (<span ng-bind="defRole"></span> )</li>
+          <!-- <li><a href="home.html" class="home">Home</a></li> -->
+          <li><a href="" class="help">Help</a></li>
+          <li nav-dropdown-directive>
+            <a href="" class="my-account">My Account
+            <span class="nav-down-arrow">&nabla;</span></a>
+            
+            <div class="login-user-info">
+              <div><a href="" ng-click="headerCtrl.navEditProfile()">Edit Profile</a></div>
+              <div><a href="" ng-click="headerCtrl.viewSelfProfile()">View Profile</a></div>
+              <div><a href="" ng-click="headerCtrl.navChangePwd()">Change Password</a></div>
+              <div><a href="signout">Signout</a></div>
+            </div>
+          </li>
+        </ul>
+      </nav>
+      
+    </div>
+  </div>
+</div>
+
+<div class="headerLogo">
+  
+  <div class="container">
+    <div class="row">
+
+      <div class="col-xs-3 col-sm-3 columns navbar-header" ng-if="headerCtrl.isUserAuthenticated">
+        <h1 ng-if="!headerCtrl.ifAdmin"  class="area-logo">Vijayawada
+            <span class="area-logo span">Constituency</span>
+          </h1>
+        <a href="/#/" class="logo" ng-if="headerCtrl.ifAdmin">
+          <h1 class="area-logo">Vijayawada
+            <span class="area-logo span">Constituency</span>
+          </h1>
+        </a>
+      </div>
+
+      <div class="col-xs-4 col-sm-3 columns navbar-header" ng-if="!headerCtrl.isUserAuthenticated">
+        <a href="/" class="logo left"><img class="img-responsive" src="images/logo.png" alt="logo" /></a>
+      </div>
+
+       <button data-target=".bs-navbar-collapse" data-toggle="collapse" type="button" class="navbar-toggle collapsed">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        </button>
+
+
+      <div class="col-xs-12 col-md-9 navigation">
+        <nav class="navbar-collapse bs-navbar-collapse collapse" data-topbar="">
+          
+          <!-- <ul class="title-area">
+            
+            <li class="name">
+              
+            </li>
+            
+            <li class="toggle-topbar menu-icon"><a href=""></a></li>
+          </ul> -->
+          
+          <section class="top-bar-section clear" style="left: 0%;" ng-if="!headerCtrl.isUserAuthenticated" ng-show="headerCtrl.showHeader">
+            <ul>
+              <li><a href="/#knowyourmp">Know your MP</a></li>
+              <li><a href="/#parliament">In Parliament</a></li>
+              <li><a href="/#aboutconstituency">About Constituency</a></li>
+              <li class="not-click"><a href="/#mission-vision">Vision & Mission</a></li>
+              <li class="not-click"><a href="/#initiatives">My Initiatives</a></li>
+              <li class="not-click"><a href="/#gallery">Gallery</a></li>
+            </ul>
+          </section>
+          <section class="top-bar-section clear" style="left: 0%;" ng-if="headerCtrl.isUserAuthenticated">
+            <ul>
+              <li ng-repeat="navItem in headerCtrl.navItems" ng-class="{'active': navItem.activeHeader}" ><a href="{{navItem.url}}">{{navItem.name}}</a></li>
+            </ul>
+          </section>
+        </nav>
+      </div>
+    </div>
+  </div>
+</div>

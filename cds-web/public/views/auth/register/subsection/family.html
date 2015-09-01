@@ -1,0 +1,163 @@
+<form name="family" id="familyRegistrationForm" ng-submit="familyCtrl.save()">
+    <div class="row rightContent">
+        <div class="col-md-12  formContent">
+            <!-- Global error container -->
+            <!-- <div class="row" ng-if="registerCtrl.isNotValidForm">
+                <div class="col-md-8 right  error-class">Please ensure that all the required fields are valid.</div>
+            </div> -->
+            <!-- Spouse Name -->
+            <div class="row">
+                <div class="col-md-3">
+                    <label for="right-label" class="right inline">Spouse Name:</label>
+                </div>
+                <div class="col-md-3  left">
+
+                    <div class="row">
+                        <div class="col-sm-12">
+
+                             <input type="text" id="spouseFirstName" name="spouseFirstName" data-val="spouseFirstName" class="form-control name required" ng-model="familyCtrl.user.spouseData.firstName" placeholder="First Name" ng-blur="familyCtrl.watchForm()"/>
+                            
+                            <div class="error-class">
+                                <div class="error-content"></div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                   
+                </div>
+                <div class="col-md-3  left">
+
+
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <input type="text" id="spouseMiddleName" class="form-control name no-error-class" ng-model="familyCtrl.user.spouseData.middleName" placeholder="Middle Name" data-val="spouseMiddleName" ng-blur="familyCtrl.watchForm()"/>
+                            <div class="error-class">
+                                <div class="error-content"></div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    
+                </div>
+                <div class="col-md-3 left">
+
+
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <input type="text" id="spouseLastName" class="form-control name required" data-val="spouseLastName" ng-model="familyCtrl.user.spouseData.lastName" placeholder="Last Name" ng-blur="familyCtrl.watchForm()"/>
+                            <div class="error-class">
+                                <div class="error-content"></div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    
+                </div>
+                <div class="col-md-9 col-md-offset-3 error-class">
+                    <div class="error-content"></div>
+                </div>
+            </div>
+            <!-- Spouse Marriage date -->
+            <div class="row">
+                <div class="col-md-3">
+                    <label for="right-label" class="right inline">Marriage Date:</label>
+                </div>
+                <div class="col-md-9  left">
+                    <input type="text" id="marriageDate" class="calender form-control input" name="marriageDate" data-val="marriageDate" ng-model="familyCtrl.user.spouseData.marriageDate" date-picker-directive="familyCtrl.user.spouseData.marriageDate" future-date-disabled="true" ng-blur="familyCtrl.watchForm()">
+                    <div class="error-class">
+                        <div class="error-content"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="row form-group">
+                <div class="col-md-3">
+                    <label for="right-label" class="right inline">Gender:</label>
+                </div>
+                <div class="col-md-9  left radioGroup">
+                    <input type="radio" name="gender" value="M" id="male" ng-model="familyCtrl.user.spouseData.gender" ng-blur="familyCtrl.watchForm()">
+                    <label for="male">Male</label>
+                    <input type="radio" name="gender" value="F" id="female" ng-model="familyCtrl.user.spouseData.gender" ng-blur="familyCtrl.watchForm()">
+                    <label for="female">Female</label>
+                    <input type="radio" name="gender" value="O" id="notToDisclose" ng-model="familyCtrl.user.spouseData.gender" ng-blur="familyCtrl.watchForm()">
+                    <label for="notToDisclose">Not to be disclosed</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-3">
+                    <label for="right-label" class="right inline">Date of Birth:</label>
+                </div>
+                <div class="col-md-9 left">
+                    <input type="text" id="dob" name="dob" ng-model="familyCtrl.user.spouseData.dateOfBirth" class="calender form-control input" date-picker-directive="familyCtrl.user.spouse.dateOfBirth" data-val="dob" future-date-disabled="true" ng-blur="familyCtrl.watchForm()">
+                    <div class="error-class">
+                        <div class="error-content"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-3">
+                    <label for="right-label" class="right inline">Education:</label>
+                </div>
+                <div class="col-md-9  left">
+                    <select id="education" class="form-control input" name="education" data-val="spouseEducation" ng-model="familyCtrl.user.spouseData.education.educationId" ng-options="education.educationId as education.qualification for education in educationOptions" ng-blur="familyCtrl.watchForm()">
+                        <option value="">Select Education</option>
+                    </select>
+                    <div class="error-class">
+                        <div class="error-content"></div>
+                    </div>
+                </div>
+            </div>
+            <h4>Children Details </h4>
+            <div class="row">
+                <div class="col-md-12">
+                    <table class="table table-bordered table-hover">
+                        <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>Name</th>
+                                <th>Gender</th>
+                                <th>Date of Birth</th>
+                                <th>Education</th>
+                                <th>Edit</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr ng-repeat="child in familyCtrl.user.childData track by $index">
+                                <td>{{$index+1}}</td>
+                                <td>{{child.firstName + ' ' + child.middleName + ' ' + child.lastName}}</td>
+                                <td>{{child.gender}}</td>
+                                <td>{{child.dateOfBirth}}</td>
+                                <td>{{child.education.qualification}}</td>
+                                <td>
+                                    <span class="glyphicon glyphicon-edit edit-child" ng-model="child.relationId" ng-click="familyCtrl.editChild($event, child)" title="Click here to Edit"></span>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="row form-group">
+                <div class="col-md-3">
+                    &nbsp;
+                </div>
+                <div class="col-md-9 text-right" >
+                    <button class="btn btn-success btn-sm " ng-click="familyCtrl.editChild($event, undefined)">Add Child
+                    </button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-3">
+                </div>
+                <div class="col-md-9">
+                    <!--  ng-submit="familyCtrl.save()" -->
+                    <input class="btn submit" type="submit" value="Save & Continue">
+                    <!-- <button class="btn submit">Save & Continue</button> -->
+                    <button class="btn cancel" href="" ng-click="familyCtrl.backview($event)">Back</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>

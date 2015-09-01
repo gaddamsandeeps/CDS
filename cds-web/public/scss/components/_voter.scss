@@ -1,0 +1,129 @@
+#pincode{
+
+float:left;
+}
+
+.search-icon{
+  left: 325px;
+    position: absolute;
+    top: 10px;
+	cursor:pointer;
+}
+.address-line{
+	display:inline-block;
+	padding-top:7px;	
+}
+
+.ui-tooltip {
+    background: #FAEEEE;
+    color: #C54A4C;
+    border: 1px solid #AC5253;
+    padding: 0;
+    opacity: 1;
+    font-size:1em;
+    max-height:50px;
+    max-width:350px;
+    
+}
+.ui-tooltip-content {
+    position: relative;
+    padding: 1em;
+}
+.ui-tooltip-content::after {
+    content: '';
+    position: absolute;
+    border-style: solid;
+    display: block;
+    width: 0;	
+}
+.errorToolTip .ui-tooltip-content::after {
+    top: 5px;
+    left: -10px;
+    border-color: transparent #AC5253;
+    border-width: 10px 10px 10px 0;
+}
+.bottom-space {
+	padding-bottom: 20px !important;   
+}
+.social-icons{
+	margin: 0 8px 0 0;
+}
+#autoCompleteContainer ul{
+  width: 350px !important;
+  background-image: none !important;
+  background-color: #eaeaea;
+
+}
+#autoCompleteContainer ul li{
+  background-color: #eaeaea !important;
+  font-weight: normal;
+  font-size: 13px;
+  margin-bottom: 5px;
+  padding:5px;
+}
+
+#autoCompleteContainer ul li.ui-state-focus{
+  border: 1px solid #ddd !important;
+  background-color: #eaeaea !important;
+  font-size: 13px;
+  font-weight: normal;
+}
+
+.orbit-caption {
+  display: none !important;
+}
+
+
+#autoCompleteContainer{
+ height: 37px;
+  width: 350px;
+}
+
+
+#autoCompleteContainer ul{
+  width: 350px !important;
+  background-image: none !important;
+  background-color: #eaeaea;
+  z-index: 200;
+
+}
+#autoCompleteContainer ul li{
+  background-color: #eaeaea !important;
+  font-weight: normal;
+  font-size: 13px;
+  margin-bottom: 5px;
+  padding:5px;
+  word-wrap:break-word;
+  list-style: none;
+
+}
+
+#autoCompleteContainer ul li.ui-state-focus{
+  border: 1px solid #ddd !important;
+  background-image: none !important;
+  background-color: #ddd !important;
+  font-size: 13px;
+  font-weight: normal;
+  word-wrap:break-word;
+}
+
+.tool-tip{
+  background: url(/images/cds-sprite.png) no-repeat 0 -49px;
+  height: 14px;
+  padding: 0 0 0px 14px;
+  width: 1px;
+  background-color: rgb(44, 110, 184);
+  border-radius: 16px;
+  position: absolute;
+  left: 378px;
+  top: 9px;
+}
+.voter-search-tile{
+  background-color: #eaeaea;
+  margin-bottom: 5px;
+  height: auto;
+  padding: 12px;
+  width: 90%;
+  word-wrap: break-word;
+  cursor:pointer;
+}

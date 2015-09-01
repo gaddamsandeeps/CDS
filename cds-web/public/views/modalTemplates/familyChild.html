@@ -1,0 +1,127 @@
+<form name="childs" id="childFormEdit" ng-submit="ok()">
+    <div class="container-fluid cadre-list">
+        <div class="close-overlay" ng-click="cancel()">X</div>
+        <div class="row  list-header">
+            <div class="col-md-10">
+                <h3 class="page-header">Edit Child Info:</h3>
+            </div>
+        </div>
+        <div>
+            <div class="col-md-12">
+                <div class="row">
+                    <div class="col-md-3">
+                        <label for="right-label" class="reg-label right inline label-weight">Child Name:</label>
+                    </div>
+                    <div class="col-md-3">
+
+
+                        <div class="row">
+                            <div class="col-sm-12">
+                                 <input type="text" id="childFirstName" class="form-control name required" data-val="childFname"  ng-model="child.firstName" placeholder="First Name">
+                                <div class="error-class">
+                                    <div class="error-content"></div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                       
+                    </div>
+                    <div class="col-md-3 ">
+
+
+                        <div class="row">
+                            <div class="col-sm-12">
+                                 <input type="text" id="childMiddleName" class="form-control name no-error-class" data-val="childMname" ng-model="child.middleName" placeholder="Middle Name">
+                                <div class="error-class">
+                                    <div class="error-content"></div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                       
+                    </div>
+                    <div class="col-md-3">
+                    
+                        
+                        <div class="row">
+                            <div class="col-sm-12">
+                                 <input type="text" id="childLastName" class="form-control name required" ng-model="child.lastName" placeholder="Last Name" data-val="childLname">
+                                <div class="error-class">
+                                    <div class="error-content"></div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        
+                        
+
+                    </div>
+                    <div class="col-md-9 col-md-offset-3 error-class" ng-style ="{'margin-left' : '25%', 'margin-top' : '10px'}" >
+                        <div class="error-content"></div>
+                    </div>
+                </div>
+
+
+
+                <div class="row form-group">
+                    <div class="col-md-3">
+                        <label for="right-label" class="right inline label-weight">Gender:</label>
+                    </div>
+                    <div class="col-md-9  left radioGroup">
+                        
+                        <div class="row">
+                            <div class="col-md-3">
+                                <input type="radio" value="M" id="male" ng-model="child.gender"  name="gender">
+                                <label for="male">Male</label>
+                            </div>
+                            <div class="col-md-3">
+                                <input type="radio" value="F" id="female" ng-model="child.gender"  name="gender">
+                                <label for="female">Female</label>
+                            </div>
+                            <div class="col-md-6">
+                                <input type="radio" value="O" id="notToDisclose" ng-model="child.gender" name="gender">
+                                <label for="notToDisclose">Not to be disclosed</label>
+                            </div>
+                        </div>
+                       
+                    </div>
+                </div>
+                <div class="row form-group">
+                    <div class="col-md-3">
+                        <label for="right-label" class="reg-label right inline label-weight">Date of Birth:</label>
+                    </div>
+                    <div class="col-md-9  left">
+                        <input type="text" id="childDob" name="childDob" ng-model="child.dateOfBirth" data-val="cdob" class="calender form-control input" date-picker-directive="child.dateOfBirth" future-date-disabled="true">
+                        <div class="error-class">
+                            <div class="error-content"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-3">
+                        <label for="right-label" class="reg-label right inline label-weight">Education:</label>
+                    </div>
+                    <!-- data-val="childEducation"  -->
+                    <div class="col-md-9 left">
+                        <select id="education" class="form-control input" name="education" ng-model="child.educationId" ng-options="education.educationId as education.qualification for education in educationOptions">
+                            <option value="">Select Education</option>
+                        </select>
+                        <div class="error-class">
+                            <div class="error-content"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 text-right">
+                <input type="submit" class="btn btn-primary btn-sm" value="Submit" />
+                <input type="button" class="btn btn-default btn-sm" ng-click="cancel()" value="Cancel" />
+            </div>
+        </div>
+        
+    </div>
+</form>

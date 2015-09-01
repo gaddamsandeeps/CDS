@@ -1,0 +1,223 @@
+<section id="appSection">
+    <div class="container">
+        <div class="row content view-tasks">
+            <div class="col-lg-9">
+                <div class="row">
+                    <div class="col-lg-12 ">
+                        <h4>View Task</h4>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <form name="viewTask" id="viewTaskForm" ng-submit="viewTaskCtrl.save()">
+                            <div class="row task-view-header tasks-list">
+                                <div class="col-lg-12  task-title">
+                                    {{viewTaskCtrl.taskDetails.taskName}}
+                                    <div class="right" ng-if="viewTaskCtrl.taskDetails.taskWorkAllocation.endDate == null">
+                                        <button class="submit">Update</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-12 ">
+                                    <div class="task-details">
+                                        <div class="row">
+<!--                                             <div class="col-lg-4">
+                                                <div class="form-group">
+                                                    <label>Status:</label>
+                                                    <select ng-disabled="viewTaskCtrl.taskDetails.taskWorkAllocation.endDate != null" ng-model="viewTaskCtrl.taskDetails.taskWorkAllocation.statusId" ng-options="taskStatus.statusId as  taskStatus.statusDesc for taskStatus in viewTaskCtrl.taskStatuses" class="form-control">
+                                                        <option>Select Status</option>
+                                                    </select>
+                                                </div>
+                                            </div> -->
+                                            <div class="col-lg-4">
+                                                <div class="form-group">
+                                                    <label>Status:</label>
+                                                    <select ng-disabled="viewTaskCtrl.taskDetails.taskWorkAllocation.endDate != null" ng-model="viewTaskCtrl.taskDetails.taskWorkAllocation.statusId" ng-options="taskStatus.statusId as  taskStatus.statusDesc for taskStatus in viewTaskCtrl.taskDetails.availableStatuses" class="form-control">
+                                                        <option>Select Status</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-4">
+                                                <div class="form-group">
+                                                    <label>Priority:</label>
+                                                    <select ng-disabled="viewTaskCtrl.assignedTask || viewTaskCtrl.taskDetails.taskWorkAllocation.endDate != null" ng-model="viewTaskCtrl.taskDetails.taskWorkAllocation.priorityId" ng-options="taskPriority.priorityId as  taskPriority.priorityName for taskPriority in viewTaskCtrl.taskPriorities" class="form-control">
+                                                        <option>Select Priority</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-4">
+                                                <div class="form-group">
+                                                    <label>Assigned Date:</label>
+<!--                                                     <input ng-disabled="viewTaskCtrl.assignedTask || viewTaskCtrl.taskDetails.taskWorkAllocation.endDate != null" type="text" class="form-control calender" ng-model="viewTaskCtrl.taskDetails.taskWorkAllocation.assignDate"> -->
+                                                    <input ng-disabled="true" type="text" class="form-control calender" ng-model="viewTaskCtrl.taskDetails.taskWorkAllocation.assignDate">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-lg-4">
+                                                <div class="form-group">
+                                                    <label>Target Date:</label>
+<!--                                                     <input ng-disabled="viewTaskCtrl.assignedTask || viewTaskCtrl.taskDetails.taskWorkAllocation.endDate != null" type="text" class="form-control calender" ng-model="viewTaskCtrl.taskDetails.taskWorkAllocation.toDate" date-picker-directive past-date-disabled="true"/> -->
+                                                    <input ng-disabled="true" type="text" class="form-control calender" ng-model="viewTaskCtrl.taskDetails.taskWorkAllocation.toDate" date-picker-directive past-date-disabled="true"/>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-4">
+                                                <div class="form-group">
+                                                    <label>Work Location:</label>
+<!--                                                     <input ng-disabled="viewTaskCtrl.assignedTask || viewTaskCtrl.taskDetails.taskWorkAllocation.endDate != null" type="text" ng-model="viewTaskCtrl.taskDetails.location" class="form-control" /> -->
+                                                    <input ng-disabled="true" type="text" ng-model="viewTaskCtrl.taskDetails.location" class="form-control" />
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-4">
+                                                <div class="form-group">
+                                                    <label>Assigned to:</label>
+                                                    
+                                                    <input ng-disabled="viewTaskCtrl.assignedTask || viewTaskCtrl.taskDetails.taskWorkAllocation.endDate != null" autocomplete="off" type="text" id="cadreId" class="form-control input" name="cadreName" ng-model="viewTaskCtrl.assignedToCitizenName" >
+                                                    <img src="images/searchicon.png" class="cadre-search-icon-view" id="searchIcon" ng-click="viewTaskCtrl.showCadresList(viewTaskCtrl.assignedToCitizenName)" ng-hide="viewTaskCtrl.assignedTask">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-lg-4">
+                                                <div class="form-group">
+                                                    <label>Created Date:</label>
+                                                    <input ng-disabled="true" type="text" class="form-control calender" ng-model="viewTaskCtrl.taskDetails.createdDate" date-picker-directive past-date-disabled="true"/>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-4" ng-if="viewTaskCtrl.taskDetails.taskWorkAllocation.endDate != null">
+                                                <div class="form-group">
+                                                    <label>Completed Date:</label>
+                                                    <input ng-disabled="true" type="text" ng-model="viewTaskCtrl.taskDetails.taskWorkAllocation.endDate" class="form-control calender" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-12  task-description">
+                                    <h6>Description</h6>
+                                    <p>{{viewTaskCtrl.taskDetails.taskDescription}}</p>
+                                </div>
+                                <div class="col-lg-12  attachements">
+                                    <h6>Attachements</h6>
+                                    <ul class="col-lg-block-grid-3">
+                                        <li>Status: </li>
+                                        <li>Priority: </li>
+                                        <li>Assigned to: </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="row" attachments-preview-directive>
+                    <div class="col-lg-12  comments">
+                        <h6>Attachments</h6>
+                        <div class="head attachment-menu-header">
+                            <form method="post" enctype="multipart/form-data" action="/user/updateProfileImage" id="submitProfileImageForm" ng-submit="submitTaskAttachments($event)">
+                                
+                                <input type="file" name="profileInput" id="fileAttachField" onchange="angular.element(this).scope().setAttachments(this)" ng-hide="true" multiple>
+                                
+                                <!-- <input type="submit" value="Submit"> -->
+                                
+                                <div id="uploadWrapper" class="" style="">
+                                    
+                                    <a href="" ng-click="browseAttachments()" class="attachments">Add New</a>
+                                    <a href="" ng-click="deleteAttachment()" class="attachments">Delete</a>
+                                    <input type="submit" class="btn btn-success" id="initiateUpload" value="Upload" style="">
+                                    <div id="attachmentStatus" style="display:inline-block"></div>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="progress attachment-progress" style="border-radius:0; width:100%;">
+                            <div class="progress-bar progress-bar-success progress-bar-striped" role="progressbar"
+                                aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:{{uploadPercentage}}">
+                                <span ng-bind="uploadStatusMsg"></span>
+                            </div>
+                        </div>
+                        
+                        <table class="table table-hover table-bordered">
+                            <thead>
+                                <tr>
+                                    <th style="width:12%"><div class="checkbox select-all-btn">
+                                        <label>
+                                            <input type="checkbox" ng-model="selectAllStatus" ng-change="selectAllAttachments(selectAllStatus)"> Select All
+                                        </label>
+                                    </div></th>
+                                    <th style="width:75%">Description</th>
+                                    
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr ng-repeat="attachment in existingAttachments">
+                                    <td>
+                                        <div class="checkbox select-all-btn">
+                                            <label>
+                                                <input type="checkbox" ng-model="attachment.attInput" ng-change="selectAttachment(attachment.taskAttachmentId,attachment.attInput)"><span ng-bind="$index+1"> </span>
+                                            </label>
+                                        </div>
+                                    </td>
+                                    <td><a href="{{attachment.filePath}}" class="image-link" ng-class="{'non-linked': attachment.nonLinked}" download="{{attachment.originalName}}" ng-bind="attachment.originalName"></a></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12  comments">
+                        <h6>Comments</h6>
+                        <div class="head">
+                            <a href="" ng-click="toggleComments = !toggleComments" class="add-comments">Add Comments</a>
+                        </div>
+                        <div class="form-group" ng-show="toggleComments">
+                            <textarea required ng-model="viewTaskCtrl.comments.commentDescription" maxlength="400" cols="40" rows="3" class="form-control" ng-trim="false" placeholder="Add your comments here..."></textarea>
+                        </div>
+                        <div class="row" ng-show="toggleComments">
+                            <div class="col-lg-6">
+                                <p>Number of characters left: <span> {{400 - viewTaskCtrl.comments.commentDescription.length}} </span></p>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="right">
+                                    <button ng-click="viewTaskCtrl.saveComment()" class="btn">Save</button>
+                                    <button ng-click="viewTaskCtrl.clear()" class="btn">Clear</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-12  comments-list">
+                        <ul>
+                            <li ng-repeat="comment in viewTaskCtrl.taskDetails.comments">
+                                <div class="info">{{comment.commentedByFN+" "+comment.commentedByLN}} <span class="right">{{comment.commentedOn}}</span></div>
+                                <p>{{comment.commentDescription}}</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3">
+                <div class="user-information">
+                    <div class="arrow"></div>
+                    <h5>{{viewTaskCtrl.taskDetails.taskWorkAllocation.firstName+" "+viewTaskCtrl.taskDetails.taskWorkAllocation.lastName}}</h5>
+                    <img class="photo1" src="images/profile/{{viewTaskCtrl.taskDetails.taskWorkAllocation.photograph}}" style="width:200px; height:200px; display: block; margin-left: 0;"  id="profileImg"/>
+                    <div class="row">
+                        <div class="col-lg-10 col-lg-offset-1 profile-data">
+                            <div> Age/Gender: <strong>{{viewTaskCtrl.taskDetails.taskWorkAllocation.age}} / {{viewTaskCtrl.taskDetails.taskWorkAllocation.gender}}</strong>
+                            </div>
+                            <div>Phone: <strong>{{viewTaskCtrl.taskDetails.taskWorkAllocation.phoneNumber}}</strong> </div>
+                            <div>Email: <strong>{{viewTaskCtrl.taskDetails.taskWorkAllocation.emailId}}
+                            </strong></div>
+                            <div> Location: <strong>{{viewTaskCtrl.taskDetails.location}}</strong></div>
+                            <div> Assembly Constituency: <strong>{{viewTaskCtrl.assigneeObj["Assembly Constitueny"]}}</strong></div>
+                            <div> MP Constituency: <strong>{{viewTaskCtrl.assigneeObj["MP Constituency"]}}</strong></div>
+                            <div>Village: <strong>{{viewTaskCtrl.assigneeObj.Village}}</strong></div>
+                            <div>Mandal: <strong>{{viewTaskCtrl.assigneeObj.Mandal}}</strong></div>
+                            <div>District: <strong>{{viewTaskCtrl.assigneeObj.District}}</strong></div>
+                            <div>State: <strong>{{viewTaskCtrl.assigneeObj.State}}</strong></div>
+                            <div>Country: <strong>{{viewTaskCtrl.assigneeObj.Country}}</strong></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,155 @@
+<div class="container">
+    <div class="row ">
+        <div class="col-md-12 task-links">
+            <a href="#">My Requests</a>
+            <!--<a href="#">My Team Task</a>--><a href="#">All Requests</a> <a href="#">Assigned to Me</a>
+        </div>
+        <div class="col-md-12">
+            <div class="col-md-6">
+                <h4>View Request List</h4>
+            </div>
+            <div class="col-md-6 top_actions">
+                <input type="button" class="new-request" value="" ng-click="requestCtrl.newRequest()" />
+                <input type="button" class="request-actions" value="" ng-click="requestCtrl.toggleActions()" />
+                <input type="button" class="advance-search" value="Advance Search" ng-click="requestCtrl.toggleSearch()">
+            </div>
+        </div>
+        <div class="col-md-2 req_action pull-right" ng-hide="requestCtrl.hideActions">
+            <ul>
+                <li><a href="#">Acknowledge</a></li>
+                <li><a href="#">Assigned</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="row  adv_search_div" ng-hide="requestCtrl.hideSearch">
+        <div class="col-md-12 adv_search_title">
+            <label class="control-label"> <strong>Advance Search </strong> </label>
+        </div>
+        <div class="col-md-12 adv_search_box">
+            <span class="adv_search_arrow"></span>
+            <ul class="list-inline">
+                <li>
+                    <input type="checkbox"> All Status</li>
+                <li>
+                    <input type="checkbox"> Open</li>
+                <li>
+                    <input type="checkbox"> Acknowledged</li>
+                <li>
+                    <input type="checkbox"> In-Progress</li>
+                <li>
+                    <input type="checkbox"> Resolved</li>
+                <li>
+                    <input type="checkbox"> Closed</li>
+            </ul>
+        </div>
+    </div>
+    <div class="row ">
+        <div class="col-md-12 task-links form-group" style="height:53px;">
+            <form action="" name="" id="">
+                <div class="col-md-3">
+                    <input type="text" placeholder="Request Title" class="form-control">
+                </div>
+                <div class="col-md-3">
+                    <input type="text" class="calender form-control" placeholder="From Date">
+                </div>
+                <div class="col-md-3">
+                    <input type="text" class="calender form-control" placeholder="To Date">
+                </div>
+                <div class="col-md-2">
+                    <input type="button" class="btn btn-primary" value="Search">
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="row ">
+        <div class="col-md-12 task-links ticket_details_div">
+            <div class="col-md-6">
+                <div class="checkbox pull-left ticket_title">
+                    <label class="control-label">
+                        <input type="checkbox"> <strong>0123 Request Title </strong> </label>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="right">
+                    <a href="javascript:void(0);">
+                        <img src="images/edit-icon.png" alt="edit" ng-click="requestCtrl.viewRequest()" />
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-12 ticket_details">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sollicitudin neque ac posuere ornare. Proin velit enim, consequat quis lo quis, actor molestie mauris. Nam varius. Proin velit enim, consequat quis lo quis, actor molestie mauris. Nam varius.</p>
+            <div class="task-status-info">
+                <ul class="list-inline">
+                    <li class="">Status: <span>In-Progress</span></li>
+                    <li class="">Priority: <span>Medium</span></li>
+                    <li class="">Assigned to: <span>R R Rao</span></li>
+                    <li class="">Assigned Date: <span>01/10/2014</span></li>
+                    <li class="">Created Date: <span>01/10/2014</span></li>
+                    <li class="">Created By: <span>10/12/2014</span></li>
+                    <li class="">Updated By: <span>R R Rao</span></li>
+                    <li class="">Updated Date: <span>10/12/2014</span></li>
+                </ul>
+            </div>
+            <p> <strong>Last Update:</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sollicitudin neque ac posuere ornare. Proin velit enim, consequat quis lo quis, actor molestie mauris. Nam varius. Proin velit enim, consequat quis lo quis, actor molestie mauris. Nam varius.</p>
+        </div>
+        <div class="col-md-12 task-links ticket_details_div">
+            <div class="col-md-6">
+                <div class="checkbox pull-left ticket_title">
+                    <label class="control-label">
+                        <input type="checkbox"> <strong>0123 Request Title </strong> </label>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="pull-right">
+                    <a href="#"><img src="images/edit-icon.png" alt="edit" /></a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-12 ticket_details">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sollicitudin neque ac posuere ornare. Proin velit enim, consequat quis lo quis, actor molestie mauris. Nam varius. Proin velit enim, consequat quis lo quis, actor molestie mauris. Nam varius.</p>
+            <div class="task-status-info">
+                <ul class="list-inline">
+                    <li class="">Status: <span>In-Progress</span></li>
+                    <li class="">Priority: <span>Medium</span></li>
+                    <li class="">Assigned to: <span>R R Rao</span></li>
+                    <li class="">Assigned Date: <span>01/10/2014</span></li>
+                    <li class="">Created Date: <span>01/10/2014</span></li>
+                    <li class="">Created By: <span>10/12/2014</span></li>
+                    <li class="">Updated By: <span>R R Rao</span></li>
+                    <li class="">Updated Date: <span>10/12/2014</span></li>
+                </ul>
+            </div>
+            <p> <strong>Last Update:</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sollicitudin neque ac posuere ornare. Proin velit enim, consequat quis lo quis, actor molestie mauris. Nam varius. Proin velit enim, consequat quis lo quis, actor molestie mauris. Nam varius.</p>
+        </div>
+        <div class="col-md-12 task-links ticket_details_div">
+            <div class="col-md-6">
+                <div class="checkbox pull-left ticket_title">
+                    <label class="control-label">
+                        <input type="checkbox"> <strong>0123 Request Title </strong> </label>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="pull-right">
+                    <a href="#"><img src="images/edit-icon.png" alt="edit" /></a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-12 ticket_details">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sollicitudin neque ac posuere ornare. Proin velit enim, consequat quis lo quis, actor molestie mauris. Nam varius. Proin velit enim, consequat quis lo quis, actor molestie mauris. Nam varius.</p>
+            <div class="task-status-info">
+                <ul class="list-inline">
+                    <li class="">Status: <span>In-Progress</span></li>
+                    <li class="">Priority: <span>Medium</span></li>
+                    <li class="">Assigned to: <span>R R Rao</span></li>
+                    <li class="">Assigned Date: <span>01/10/2014</span></li>
+                    <li class="">Created Date: <span>01/10/2014</span></li>
+                    <li class="">Created By: <span>10/12/2014</span></li>
+                    <li class="">Updated By: <span>R R Rao</span></li>
+                    <li class="">Updated Date: <span>10/12/2014</span></li>
+                </ul>
+            </div>
+            <p> <strong>Last Update:</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sollicitudin neque ac posuere ornare. Proin velit enim, consequat quis lo quis, actor molestie mauris. Nam varius. Proin velit enim, consequat quis lo quis, actor molestie mauris. Nam varius.</p>
+        </div>
+    </div>
+</div>

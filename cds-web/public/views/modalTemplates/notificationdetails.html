@@ -1,0 +1,31 @@
+<div class="container-fluid cadre-list">
+	<div class="close-overlay" ng-click="cancel()">X</div>
+	<div class="row  list-header">
+		<div class="col-md-12">
+			<h3 class="page-header">{{subject}}</h3>
+		</div>
+	</div>
+
+	<div class="row form-container">
+		<div class="col-lg-10 col-lg-offset-1">
+			<div class="row">
+				<div class="col-lg-12 cadre-status-message" ng-bind ="modalMessage"> </div>
+				<h4>Dear {{userName}} , </h4>
+		</div>
+		<div class="col-lg-14">
+			<div class="row">
+				<div class="col-lg-12 cadre-status-message" ng-bind ="modalMessage"> </div>
+				<p>{{notificationBody}}</p><br>
+			</div>
+		</div>	
+		<div class="col-lg-14">
+			<div class="row">
+				<div class="col-lg-12 cadre-status-message" ng-bind ="modalMessage"> </div>
+				<p>Sincerely, <br>
+				{{footer}}</p>
+				<p>&nbsp;
+			</div>
+		</div>						
+	</div>
+</div>
+</div>

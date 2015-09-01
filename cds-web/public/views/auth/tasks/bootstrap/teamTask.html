@@ -1,0 +1,153 @@
+<section id="appSection">
+    <div class="container">
+        <div class="row content view-tasks">
+            <div class="col-lg-12">
+                <div class="row">
+                    <div class="col-lg-9">
+                        <h4>View Tasks List</h4>
+                    </div>
+                    <div class="col-lg-3">
+                        <input type="button" ng-click="taskCtrl.toggleSearch()" value="Advance Search" class="advance-search-task">
+                        <input type="button" class="form-control new-task" ng-click="taskCtrl.newTask()" value=" " />
+                        <input type="button" class="actions" value=" " />
+                    </div>
+                </div>
+                <div class="row" ng-hide="taskCtrl.hideSearch">
+                    <div class="col-md-12 adv_search_title">
+                        <label class="control-label"> <strong>Search Criteria</strong> </label>
+                    </div>
+                    <div class="col-md-12 adv_search_box filter-options">
+                        <span class="adv_search_arrow_task"></span>
+                        <div class="col-lg-3 col-md-3  options">
+                            <span>Priority</span>
+                            <ul>
+                                <li class="padding-none" style="list-style:none;" ng-repeat="userType in taskPriorities">
+                                    <input type="checkbox" ng-model="taskCtrl.selectedPriorityTypes[userType.priorityId]
+                        " value="{{userType.priorityName}}" /> {{userType.priorityName}}
+                                </li>
+                            </ul>
+                        </div>
+                        <div> </div>
+                        <div class="col-lg-3 col-md-3  options">
+                            <span>Status</span>
+                            <ul>
+                                <li class="padding-none" style="list-style:none;" ng-repeat="userType in taskStatus">
+                                    <input type="checkbox" ng-model="taskCtrl.selectedStatusTypes[userType.statusId]
+                        " value="{{userType.statusDesc}}" /> {{userType.statusDesc}}
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-3 col-md-3  options age">
+                            <ul>
+                                <li><span>Age :</span>
+                                    <input class="age" ng-model="taskCtrl.minAge" type="text" /> To
+                                    <input type="text" class="age" ng-model="taskCtrl.maxAge" />
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="row ">
+                    <div class="col-md-12 task-links form-group" style="height:53px;">
+                        <form action="" name="" id="">
+                            <div class="col-md-3">
+                                <input type="text" placeholder="Search by Task Title" class="form-control" ng-model="taskCtrl.searchQ">
+                            </div>
+                            <div class="col-md-3">
+                                <input type="text" class="calender form-control" placeholder="From Date" ng-model="taskCtrl.user.fromDate" date-picker-directive="taskCtrl.user.fromDate">
+                            </div>
+                            <div class="col-md-3">
+                                <input type="text" class="calender form-control" placeholder="To Date" ng-model="taskCtrl.user.toDate" date-picker-directive="taskCtrl.user.toDate">
+                            </div>
+                            <div class="col-md-3">
+                                <input type="button" class="btn btn-primary" value="Search" ng-click="taskCtrl.filterSearch('teamtasks')">
+                                <input type="button" class="btn btn-default" value="Reset" ng-click="taskCtrl.resetSerach('teamtasks')">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="row ">
+                    <div class="col-lg-12  task-links">
+                        <a href="#">My Tasks</a>
+                        <a ng-click="taskCtrl.viewTeamTasks()" class="selectedTaskTab">My Team Tasks</a>
+                        <!-- for "created tasks" files, you can check with "all task" name. -->
+                        <a ng-click="taskCtrl.viewAllTasks()">Created tasks</a>
+                        <span ng-if="topRole === 'MP'">
+                            <a ng-click="taskCtrl.supervisorviewAllTasks()">All tasks</a>
+                        </span>
+                    </div>
+                </div>
+                <div class="row tasks-list  noTasks" ng-if="teamTasks.length == 0">
+                    No tasks to show
+                </div>
+                <div class="row tasks-list " ng-if="teamTasks.length > 0" ng-repeat="task in teamTasks">
+<!--                     <div class="col-lg-12  task-title">
+                        <input type="checkbox" />{{task.taskName}}<span class="right"><img src="images/edit-icon.png" alt="edit" ng-click="taskCtrl.viewTask(task.taskId)"/></span>
+                    </div> -->
+                    <div class="col-lg-12  task-title" ng-if="task.taskWorkAllocation.endDate == null">
+                        {{task.taskName}}<span class="right">
+
+                        <span style="font-weight: bold; cursor: pointer;" class="glyphicon glyphicon-edit"  alt="Edit" title="Edit" ng-click="taskCtrl.viewTask(task.taskId)"></span>
+
+                        <!-- <img src="images/edit-icon.png" alt="edit" title="Edit" ng-click="taskCtrl.viewTask(task.taskId)"/>
+                        </span> -->
+                    </div>
+                    <div class="col-lg-12  task-title" ng-if="task.taskWorkAllocation.endDate != null">
+                        {{task.taskName}}<span class="right">
+
+                        <span style="font-weight: bold; cursor: pointer;" class="glyphicon glyphicon-file"  alt="View" title="View" ng-click="taskCtrl.viewTask(task.taskId)"></span>
+                        <!-- <img src="images/view-icon.png" alt="View" title="View" ng-click="taskCtrl.viewTask(task.taskId)"/>
+                        </span> -->
+                    </div>
+                    <div class="col-lg-12  task-details">
+                        <p>{{task.taskDescription}}</p>
+                        <div class="task-status-info">
+                            <div class="row">
+                                <div class="col-lg-3">
+                                    Status: <span><label>{{task.taskWorkAllocation.status}}</label></span>
+                                </div>
+                                <div class="col-lg-3">
+                                    Priority: <span><label>{{task.priorityName}}</label></span>
+                                </div>
+                                <div class="col-lg-3">
+                                    Assigned To : <span><label>{{task.taskWorkAllocation.firstName + " " +task.taskWorkAllocation.lastName}}</label></span>
+                                </div>
+                                <div class="col-lg-3">
+                                    Assigned Date: <span><label>{{task.taskWorkAllocation.assignDate}}</label></span>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-3">
+                                    Target Date: <span><label>{{task.taskWorkAllocation.toDate}}</label></span>
+                                </div>
+                                <div class="col-lg-3">
+                                    Work location: <span><label>{{task.location}}</label></span>
+                                </div>
+                                <div class="col-lg-3">
+                                    Created By: <span><label>{{task.createdByFName  + " " + task.createdByLName}}</label></span>
+                                </div>
+                                <div class="col-lg-3">
+                                    Created Date: <span><label>{{task.createdDate}}</label></span>
+                                </div>
+                            </div>
+                            <div class="row" ng-if="task.taskWorkAllocation.endDate != null">
+                                <div class="col-lg-3">
+                                    Completed Date: <span><label>{{task.taskWorkAllocation.endDate}}</label></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="row" ng-if="teamTasks.length > 0">
+            <div class="col-lg-10 col-lg-offset-3">
+                <pagination class="pagination-md" total-items="totalItems" ng-model="taskCtrl.currentPage" ng-change="taskCtrl.pageChanged(taskCtrl.currentPage)" items-per-page="itemsperPage" rotate="false"  boundary-links="true" max-size="maxSize"></pagination>
+            </div>
+        </div>
+
+
+    </div>
+</section>

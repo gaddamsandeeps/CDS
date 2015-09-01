@@ -1,0 +1,103 @@
+<div class="container-fluid cadre-list">
+	
+	<div class="close-overlay" ng-click="cancel()">X</div>
+	<div class="row  list-header">
+		<div class="col-md-10">
+			<h3 class="page-header">Choose Cadre from the list</h3>
+		</div>
+	</div>
+	<div class="row form-container">
+		<div class="col-lg-12">
+			
+
+			<div class="row" ng-show="showApprovedStatus">
+
+				<div class="col-lg-12 approved-status-message"> User approved successfully.</div>
+
+
+			</div>
+
+
+
+
+
+
+			<div class="row">
+				<div class="col-lg-4">
+					<label class="inline">Party Membership#:</label>
+				</div>
+				<div class="col-lg-8">
+					<input type="text" id="membershipId" class="input form-control" name="membershipId"  ng-model="user.partyMembershipId">
+					<div class="error-class"><div class="error-content"></div></div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-lg-4 ">
+					<label for="right-label" class="right inline">Position in the Party:</label>
+				</div>
+				<div class="col-lg-8">
+					<select id="grade" class="input form-control" name="grade" ng-model="user.positionId"  ng-options="position.positionId as position.positionDescription for position in partyPositionsOptions">
+						<option value="">Select Position</option>
+					</select>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-lg-4 ">
+					<label for="right-label" class="right inline">Responsibility in the Party:</label>
+				</div>
+				<div class="col-lg-8">
+					
+					<input type="text" id="partyResponsibility" class="input form-control" name="partyResponsibility" ng-model="user.partyResponsibility">
+					<div class="error-class"><div class="error-content"></div></div>
+					
+				</div>
+			</div>
+			
+			
+			<div class="row">
+				<div class="col-lg-4 ">
+					<label class="right inline">Performance Grade:</label>
+				</div>
+				<div class="col-lg-8">
+					<select id="grade" class="input form-control" name="grade" ng-model="user.performanceGradeId"  ng-options="grade.gradeId as grade.gradeDescription for grade in performanceGradeOptions">
+						<option value="">Select Performance Grade</option>
+					</select>
+					
+				</div>
+			</div>
+			
+			<div class="row">
+				<div class="col-lg-4 ">
+					<label class="right inline">Reports to:</label>
+				</div>
+				<div class="col-lg-8">
+					<select id="grade" class="input form-control" name="grade" ng-model="user.reportsTo"  ng-options="lead.cadre.cadreId as lead.cadre.partyMembershipId for lead in leadCadres">
+						<option value="">Select Reporting Lead</option>
+					</select>
+					
+				</div>
+			</div>
+			
+
+			<div class="row">
+				<div class="col-lg-4 ">
+					<label class="right inline">Comments:</label>
+				</div>
+				<div class="col-lg-8">
+					<textarea class="input form-control" name="comments" ng-model="user.rejectComment"></textarea>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-lg-4 ">
+				</div>
+				<div class="col-lg-8">
+					<button class="btn btn-success" ng-click="approve()">Approve</button>
+					<button class="btn btn-warning" ng-click="reject()" >Reject</button>
+					<button class="btn btn-primary" ng-click="cancel()">Cancel</button>
+					
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

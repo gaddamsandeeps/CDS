@@ -1,0 +1,48 @@
+/*global define*/
+
+
+define(['angular',
+    'uiRouter',
+    "ngStorage",
+    'services/common/serviceLoader',
+    'services/registerService',
+    "services/common/appModalService",
+    "controllers/profileController",
+    "directives/resourceDirective",
+    "directives/datePickerDirective",
+    "directives/navDropdownDirective",
+    "controllers/headerController",
+    "directives/accordionDirective",
+    "controllers/leftNavController",
+    "controllers/personalController",
+    "controllers/workController",
+    "controllers/voterController",
+    "controllers/addressController",
+    "controllers/volunteerController",
+    "controllers/familyController",
+    "controllers/cadreController",
+    "modalControllers/cadreDeleteController",
+    "controllers/memberDashboardController",
+    "controllers/changepasswordController",
+    "directives/voterDirective",
+    "directives/addressDirective",
+    "controllers/listController",
+    "services/listService",
+    "modalControllers/voterSearchController",
+    "modalControllers/addressSearchController",
+    "bootstrap",
+    "angularBootstrap",
+    "directives/imagePreviewDirective",
+    "directives/slideBtnDirective",
+    "modalControllers/registerOverlayController",
+    'services/memberdashboardService',
+    "angularCharts",
+    "directives/memberdashboard/tasksageGraphDirective",
+    "directives/memberdashboard/taskstrendGraphDirective",
+    "directives/memberdashboard/mytasksGraphDirective",
+    "modalControllers/childOverlayController",
+    "modalControllers/saveChangesController"
+], function(angular) {
+    var app = angular.module('CDSUSERPROFILE', ['ui.router', "ngStorage", 'serviceModule', "controllerModule", "directiveModule", "ui.bootstrap", "chart.js"]);
+    return app;
+});

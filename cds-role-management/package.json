@@ -1,0 +1,26 @@
+{
+    "name": "cds-role-management",
+    "version": "1.0.0",
+    "description": "cds role management",
+    "main": "./lib/role",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git://github.com/yc05s3g/cds-role-management.git"
+    },
+    "author": {
+        "name": "Sandeep Gaddam",
+        "email": "sgaddam@nisum.com"
+    },
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/yc05s3g/cds-role-management/issues"
+    },
+    "homepage": "https://github.com/yc05s3g/cds-role-management",
+    "dependencies": {
+        "date-format-lite": "^0.7.1",        
+        "fs": "0.0.2"
+    }
+}

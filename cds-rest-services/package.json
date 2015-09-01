@@ -1,0 +1,25 @@
+{
+    "name": "cds-rest-services",
+    "version": "1.0.0",
+    "description": "cds rest services package",
+    "main": "./lib/service",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git://github.com/yc05s3g/cds-rest-services.git"
+    },
+    "author": {
+        "name": "Sandeep Gaddam",
+        "email": "sgaddam@nisum.com"
+    },
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/yc05s3g/cds-rest-services/issues"
+    },
+    "homepage": "https://github.com/yc05s3g/cds-rest-services",
+    "dependencies": {
+        "node-rest-client": "^1.4.4"
+    }
+}

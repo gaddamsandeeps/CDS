@@ -1,0 +1,103 @@
+<form name="address" id="addressRegistrationForm" class="row" ng-submit="addressCtrl.save()">
+    <div class="col-md-12">
+        <div class="row rightContent">
+            <div class="col-md-12  formContent">
+                <input type="hidden" ng-model="addressCtrl.user.postalAddressId" />
+                <div class="row arrress-wrapper">
+                    <div class="col-md-12">
+                        <div class="row">
+                            <div class="col-md-3 ">
+                                <label for="right-label" class="right inline">Search Address:</label>
+                            </div>
+                            <div class="col-md-9  left">
+                                <!-- autocomplete-address-directive is removed from below div id="autoCompleteContainer -->
+                                <div id="autoCompleteContainer">
+                                    <div class="input-group">
+                                        <input type="text" id="postalAddress" class="form-control input required" name="postalAddress" placeholder="Search by Pincode" ng-model="addressCtrl.user.searchConst" ng-blur="addressCtrl.watchForm()" style="width: 311px;">
+                                        <span class="input-group-addon" ng-click="addressCtrl.searchAddress(addressCtrl.user.searchConst)" style="cursor:pointer;">&#128269;</span>
+                                    </div>
+                                </div>
+                                <div class="error-class">
+                                    <div class="error-content"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-3 ">
+                                <label for="right-label" class="right inline">Address Line1:</label>
+                            </div>
+                            <div class="col-md-9  left">
+                                <input type="text" id="addressLine1" class="form-control input required" name="addressLine1" data-val="addressLine1" ng-model="addressCtrl.addressObj.addressLine1" ng-blur="addressCtrl.watchForm()">
+                                <div class="error-class">
+                                    <div class="error-content"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-3 ">
+                                <label for="right-label" class="right inline">Address Line2:</label>
+                            </div>
+                            <div class="col-md-9  left">
+                                <input type="text" id="addressLine2" class="form-control input" name="addressLine2" ng-model="addressCtrl.addressObj.addressLine2" ng-blur="addressCtrl.watchForm()">
+                                <div class="error-class">
+                                    <div class="error-content"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div ng-hide="addressCtrl.hideAddrFields">
+                    <div class="row form-group">
+                        <div class="col-md-3 ">
+                            <label for="right-label" class="right inline">Country:</label>
+                        </div>
+                        <div class="col-md-9  left">
+                            <span class="address-line" ng-bind="addressCtrl.voterNodeObj.country"></span>
+                        </div>
+                    </div>
+                    <div class="row form-group">
+                        <div class="col-md-3 ">
+                            <label for="right-label" class="right inline">State:</label>
+                        </div>
+                        <div class="col-md-9  left">
+                            <span class="address-line" ng-bind="addressCtrl.voterNodeObj.state"></span>
+                        </div>
+                    </div>
+                    <div class="row form-group">
+                        <div class="col-md-3 ">
+                            <label for="right-label" class="right inline">District:</label>
+                        </div>
+                        <div class="col-md-9  left">
+                            <span class="address-line" ng-bind="addressCtrl.voterNodeObj.district"></span>
+                        </div>
+                    </div>
+                    <div class="row form-group">
+                        <div class="col-md-3 ">
+                            <label for="right-label" class="right inline">Division:</label>
+                        </div>
+                        <div class="col-md-9  left">
+                            <span class="address-line" ng-bind="addressCtrl.voterNodeObj.taluk"></span>
+                        </div>
+                    </div>
+                    <div class="row form-group">
+                        <div class="col-md-3 ">
+                            <label for="right-label" class="right inline">Pincode:</label>
+                        </div>
+                        <div class="col-md-9  left">
+                            <span class="address-line" ng-bind="addressCtrl.voterNodeObj.pincodeNumber"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-3 ">
+                        &nbsp;
+                    </div>
+                    <div class="col-md-9  left">
+                        <button class="btn submit left">Save & Continue</button>
+                        <a class="btn cancel" ui-sref="root.profile.editprofile.voter">Back</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>

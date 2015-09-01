@@ -1,0 +1,58 @@
+.cssSlideUp {
+    transition: .5s linear all;
+    overflow: hidden;
+}
+.cssSlideUp.ng-hide {
+    height:0;
+}
+.active-tab{
+	background-image: url('../images/left-nav-active-tab.png');
+	background-repeat: no-repeat;  
+    background-position: center;
+}
+.formContent{
+    margin-top:30px;
+	min-height:700px;
+}
+
+
+.formContent label{
+	font-weight:normal;
+	margin-right:10px;
+	margin-top : 5px;
+}
+
+
+.formContent .input{
+	width:350px;
+}
+.radioGroup{
+	/* margin-top:10px; */
+}
+.formContent .submit, .submit{
+	background-color:#EFD303;
+	color:black;
+	font-weight:bold;
+  /*padding: 12px 25px;
+	width:150px;
+	height:40px;
+	padding:0;*/
+	margin-right:15px;
+	box-shadow: 0 3px 0 rgba(122, 107, 11, 0.7);
+}
+.formContent .cancel, .cancel{
+	background-color:#B0B0B0;
+	color:black;
+	font-weight:bold;
+	/*padding: 12px 25px;
+  width:150px;
+  height:40px; */
+	box-shadow: 0 3px 0 rgba(176, 176, 176, 0.7);   
+}
+.link{
+	text-decoration:underline;
+}
+/* 
+.datePickerCustom  .ui-widget-header{
+	background:url("images/ui-bg_gloss-wave_35_f6a828_500x100.png") repeat-x scroll 50% 50% rgb(55,78,87);
+} */

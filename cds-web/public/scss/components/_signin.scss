@@ -1,0 +1,141 @@
+.registration-wrapper {
+  padding: 35px 0 10px 0;
+}
+.registration-wrapper h1 {
+  padding: 0 0 40px 0;
+  margin: 0;
+}
+.registration-wrapper h1 span{
+  font-size: 14px;
+  color: #666;
+  font-family: opensans-regular;
+  font-weight: normal;
+  padding: 0 0 0 5px;
+}
+.registration-wrapper input.button{
+  margin: 0;
+  background: #efd303;
+  padding: 8px 35px;
+  color: #000000;
+  font-family: opensans-semibold;
+  font-size: 13px;
+  border: none;
+}
+.registration-wrapper input.cancel{
+  margin: 0;
+  background: #b0b0b0;
+  padding: 8px 35px;
+  color: #000000;
+  font-family: opensans-semibold;
+  font-size: 14px;
+  border: none;
+  cursor: pointer;
+}
+.registration-wrapper .button-wrapper{ 
+  margin: 0px;
+}
+.registration-wrapper .forgot-password{ 
+  font-size: 13px; 
+  padding: 10px 0 0 0;
+  text-decoration: underline;
+}
+.registration-wrapper .or{ 
+  text-align: center; 
+}
+.registration-wrapper .gender label {
+  display: inline-block;
+  padding: 0 22px 0 0;
+}
+.form-group {
+  padding: 0;
+}
+
+
+
+
+
+
+
+
+.content-wrapper {
+  overflow: hidden;
+  min-height: 500px;
+  border: solid 1px #d0d0d0;
+  padding: 10px;
+  margin: 0 0 15px 0;
+}
+
+.members img {
+  border: solid 5px #ffffff;
+  box-shadow: 0px 0px 6px #666;
+  -moz-box-shadow: 0px 0px 6px #666;
+  -webkit-box-shadow: 0px 0px 6px #666;
+  margin: 10px 0 0 0;
+  width: 140px;
+  height: 125px;
+   background: url(../images/image2.png) no-repeat top center;
+}
+.member-info span{
+  padding: 0 8px 0 0;
+  font-weight: bold;
+}
+.member-info label{
+  padding: 0 0 8px 0;
+  display: table;
+}
+.member-info a.view-more, .member-info a.reset-pswd{
+  padding: 0 0 0 15px;
+  text-decoration: underline;
+  font-weight: bold;
+  font-size: 13px;
+}
+.content-wrapper h4 {
+  background: #efeeee;
+  font-size: 14px;
+  margin: 10px 0;
+  padding: 8px 15px;
+  font-weight: bold;
+}
+
+
+.login-wrapper {
+
+  width: 440px;
+  margin-top: 120px;
+  background: #dfe5e9;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  box-shadow: 5px 5px 0px #c5c5c5;
+}
+
+.login-wrapper .login {
+  text-align: left;
+  padding: 10px 25px 25px;
+  font-size: 14px;
+
+}
+.login-wrapper .login h4{ 
+  margin: 0 0 16px 0;
+  padding: 0 0 8px 0;
+  border-bottom: dotted 1px #ccc;
+}
+.login-wrapper .login-btn {
+  background: #0074b7;
+  padding: 5px 8px;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+.login-wrapper .login .error { 
+  color: red;
+  text-align: center;
+  padding: 5px 0 0 0; 
+}
+
+
+@media only screen and (width: 768px) {
+  .registration-wrapper .img-responsive {
+    display: none; 
+  } 
+}

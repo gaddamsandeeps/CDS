@@ -1,0 +1,33 @@
+<div class="container-fluid cadre-list">
+	
+	<div class="close-overlay" ng-click="cancel()">X</div>
+
+	<div class="row  list-header">
+		<div class="col-md-10">
+			<h3 class="page-header"><span ng-bind="addtask_cadre_title"></span></h3>
+		</div>
+	</div>
+	
+	<div class="row cadre-list-row" ng-hide="showNoRecordsMsg">
+	<div ng-repeat="cadre in cadreList" class="col-md-12 cadre-list-item">
+		<span ng-bind="cadre.label" ng-click="ok(cadre.value, cadre.model)"></span>
+	</div>
+	</div>
+
+	<div class="no-records row cadre-list-row" ng-show="showNoRecordsMsg" >
+		<div class="col-md-12 cadre-list-item">
+			<span ng-bind="addtask_cadre_search"></span>
+		</div>
+	</div>
+
+
+	
+
+	<div class="row">
+		<div class="col-md-3 right">
+			<button type="button" class="btn btn-primary" ng-click="cancel()">Cancel</button>
+		</div>
+	</div>
+
+		
+</div>

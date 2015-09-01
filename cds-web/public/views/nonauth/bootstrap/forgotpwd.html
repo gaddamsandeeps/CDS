@@ -1,0 +1,44 @@
+<form name="forgotpwd" id="forgotpwdForm" ng-submit="forgotpwdCtrl.save()">
+    <div class="container">
+        <div class="row" ng-hide="forgotpwdCtrl.hidesuccessMsg">
+            <div class="col-lg-12">
+                <div class="alert alert-success" style="margin-top:20px">
+                    {{forgotpwdCtrl.successMsg}}
+                </div>
+            </div>
+        </div>
+        <div class="row" ng-hide="forgotpwdCtrl.hideerrorMsg">
+            <div class="col-lg-12">
+                <div class="alert alert-danger" style="margin-top:20px">
+                    {{forgotpwdCtrl.errorMsg}}.Click here to <a href="" class="alert-link" ng-click="forgotpwdCtrl.tryAgain()"> try again.</a>
+                </div>
+            </div>
+        </div>
+        <div class="row registration-wrapper" ng-hide="forgotpwdCtrl.hideForm">
+            <!-- Register Section -->
+            <div class="col-lg-9 col-md-offset-3">
+                <h1>FORGOT YOUR PASSWORD?</h1>
+                <!-- User Name -->
+                <div class="row">
+                    <div class="col-md-12">
+                        <p> Please enter your username / email address / phone number below.</p>
+                    </div>
+                    <div class="col-sm-2 col-sm-12">
+                        <label class="inline right-responsive reg-label">User Name:</label>
+                    </div>
+                    <div class="col-sm-5 col-sm-12" resource-directive>
+                        <input type="text" id="forgotPassword" class="form-control input loader-input" data-val="forgotPassword" name="forgotPassword" ng-model="forgotpwdCtrl.userName" data-inputname="forgotPassword">
+                        <div class="error-class">
+                            <div class="error-content"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-6  col-md-offset-2">
+                        <input type="submit" class="btn button" value="Submit" id="formSubmission" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>

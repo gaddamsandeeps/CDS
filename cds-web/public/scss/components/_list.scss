@@ -1,0 +1,263 @@
+.search-filter {
+  background: #e7eaeb;
+  border-bottom: solid 1px #ccc;
+  padding: 5px 0;
+  margin: 0 0 5px 0;
+}
+.search-filter .search {
+  margin: 0;
+  border: solid 1px #b4b4b4;
+  float: left;
+  width: 80%;
+}
+.search-filter .search-btn {
+  float: left;
+  width: 35px;
+  height: 34px;
+  border: none;
+  background: url(../images/cds-sprite.png) no-repeat 0 -217px;
+  cursor: pointer;
+}
+.search-filter .adv-search {
+  float: left;
+  padding: 7px 8px;
+  // margin: 3px 0 0 0;
+  border: none;
+  background: #4b4b4b;
+  cursor: pointer;
+  color: #fff;
+}
+.search-filter .actions {
+  padding: 8px 0 0 0;
+}
+.search-filter .actions .add{
+  margin: 0;
+  background: url(../images/cds-sprite.png) no-repeat 0 -302px;
+  height: 20px;
+  padding: 0 0 0 22px;
+  margin: 0 8px 0 0;
+  font-size: 14px;
+  color: #333333;
+  cursor:pointer;
+}
+.search-filter .actions .edit{
+  margin: 0;
+  background: url(../images/cds-sprite.png) no-repeat 0 -328px;
+  height: 20px;
+  padding: 0 12px 0 20px;
+  margin: 0 0 0 12px;
+  font-size: 14px;
+  color: #333333;
+  cursor:pointer;
+}
+.search-filter .actions .grey { 
+  color: #b6b6b6;
+}
+.search-filter .actions .delete{
+  margin: 0;
+  background: url(../images/cds-sprite.png) no-repeat 0 -352px;
+  height: 20px;
+  padding: 0 10px 0 20px;
+  margin: 0 0 0 10px;
+  font-size: 14px;
+  color: #333333;
+  cursor:pointer;
+}
+.search-filter .filter, .filter {
+  background: url(../images/cds-sprite.png) no-repeat 0 -257px;
+  width: 69px;
+  height: 34px;
+  cursor: pointer;
+  border: none;
+}
+.filter-wrapper {
+  position: relative;
+  color: #999;
+}
+.filter-options {
+  background: #f2f2f2;
+  border: solid 1px #cecece;
+  margin-bottom: 5px;
+  position: relative;
+}
+.filter-options .arrow {
+  background: url(../images/filter-arrow.png) no-repeat;
+  position: absolute;
+  z-index: 10;
+  right: 50px;
+  top: -16px;
+  width: 18px;
+  height: 15px;
+}
+.filter-options .options {
+  margin: 0;
+  float: left;
+}
+.filter-options .options span {
+  float: left;
+  font-size: 13px;
+  margin: 4px 15px 10px 0; 
+  font-weight: bold;
+}
+.filter-options .options ul {
+  list-style: none;
+  float: left;
+  padding : 5px;
+}
+.filter-options .options ul li {
+  font-size: 13px;
+  padding: 0 0 5px 0;
+}
+.filter-options input.age {
+  display: inline-block;
+  width: 60px;
+  margin-top:4px;
+  margin-left: 4px;
+  margin-right: 12px;
+  background: #e3ebef;
+  border: solid 1px #a5cbde;
+}
+.filter-options input.city {
+  width: 175px;
+  margin: 0 20px 15px 0;
+  background: #e3ebef;
+  border: solid 1px #a5cbde;
+}
+.filter-options .filterContainer { 
+
+  margin: 15px 0 0;
+
+}
+.filter-options .selected {
+  background: #dfe5e9;
+  padding: 6px;
+ /*  margin: 0 0 15px 0; */
+  color: #0074b7;
+  font-size: 14px;
+  font-weight: bold;
+}
+.filter-options .selected a{
+  background: #fff;
+  border: solid 1px #ccc;
+  padding: 1px 8px 3px;
+  margin: 0 0 0 10px;
+  color: #000;
+  font-size: 12px;
+  font-weight: normal;
+}
+
+.tiles .photo2 {
+  height: 200px; 
+  margin: 0 0 20px 0;
+  /* padding: 10px; */
+  text-align: center; 
+}
+.tiles .photo2 img{
+  border: solid 5px #fff;
+  height:200px;
+  width:100%;
+  vertical-align:inherit;
+}
+.tile-section {
+  border: 1px #d0d0d0 solid;
+  background: #f6f6f6;
+  margin: 75px 0px 0px 30px;
+  padding-bottom: 10px;
+  display: none;
+}
+.tiles .name{
+  padding: 10px 0px 10px 0px;
+}
+.tiles .details label{
+  padding: 10px 0 0 0;
+}
+.tiles label{
+   
+}
+.tiles-list {
+  background: #e7eaeb;
+  padding: 20px;
+  margin-bottom: 10px;
+  min-height: 500px;
+  /*height: 750px;
+  overflow: scroll;
+  overflow-x: hidden;*/
+}
+/*
+.tiles-list ul {
+  margin: 0;
+  padding: 0; 
+}
+.tiles-list ul li {
+  padding: 0;
+} */
+.tiles-list .tiles { 
+  background: #fff;
+  padding: 0px;
+  margin: 10px;
+  min-height: 36em; 
+}
+.tiles-list .tiles .photo1 {
+  background: url(../images/image.png) no-repeat top center;
+  height: 200px;
+  width: 200px;
+  margin: 0;
+  border: solid 1px #fff;
+}
+.tiles-list .tiles .photo2 {
+  background: url(../images/image2.png) no-repeat top center;
+  width: 100%;
+  height: 200px;
+  display: inline-block;
+  margin: 0;
+  border: solid 1px #fff;
+}
+.tiles-list .tiles .details {
+  margin: 15px 10px; 
+  height:240px;
+}
+.tiles-list  .tiles .details h6{
+  font-size: 13px;
+  font-weight: bold;
+  word-break: break-all;
+  word-wrap: break-word;
+  // height: 40px;
+  overflow: hidden;
+}
+.tiles-list  .tiles .details label{
+  font-size: 13px;
+  word-wrap: break-word;
+  word-break: break-all;
+  height: 30px;
+  overflow: hidden;
+}
+.tiles-list .tiles .status {
+  background: #999999;
+  padding: 6px;
+}
+.tiles-list  .tiles .status input[type="checkbox"] {
+  margin: 0;
+}
+.tiles-list  .tiles .status .volunteer, .volunteer {
+  background: url(../images/cds-sprite.png) no-repeat 0 -152px;
+  width: 30px;
+  height: 26px;
+  display: inline-block;  
+}
+.tiles-list .tiles .status .cadre, .cadre {
+  background: url(../images/cds-sprite.png) no-repeat 0 -186px;
+  width: 25px;
+  height: 26px;
+  display: inline-block;
+}
+
+.status-labels{
+
+}
+.status-tab{
+  height: 35px;
+  input {
+    margin-top: 5px !important;
+    display: inline-block;
+  }
+}

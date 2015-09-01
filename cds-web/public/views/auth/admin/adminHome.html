@@ -1,0 +1,14 @@
+<div class="container">
+    <div class="row">
+        <div class="col-lg-12" style="padding: 0px;">
+            <ul class="nav nav-tabs">
+                <li ng-repeat="item in adminCtrl.items" ng-class="{active: adminCtrl.isActive(item)}">
+                    <a href="#{{item.path}}" >{{item.title}}</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-12" style="border: 1px solid #E2E2E2; border-top: none;" ui-view="subSection"></div>
+    </div>
+</div>

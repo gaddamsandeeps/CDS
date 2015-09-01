@@ -1,0 +1,21 @@
+.accordion-head{
+	border: 1px solid gray;
+	padding: 0px;
+	cursor: pointer;
+	color: #fff;
+	background-color: #16578F;
+	border-radius: 4px;
+	border: 1px solid gray;
+	height: 30px;
+		padding: 5px 0px 0px 12px;
+}
+.accordion-content{
+	/*height: 170px;*/
+}
+.edit-profile{
+	border: 1px solid red;
+}
+.edit-profile ul li{
+	list-style: none;
+	cursor: pointer;
+}

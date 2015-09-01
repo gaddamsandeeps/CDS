@@ -1,0 +1,126 @@
+<form name="work" id="workRegistrationForm" ng-submit="workCtrl.save()">
+    <div class="row rightContent">
+        <div class="col-md-12  formContent">
+            <div class="row">
+                <div class="col-md-3">
+                    <label for="right-label" class="right inline">Occupation:</label>
+                </div>
+                <div class="col-md-9  left">
+                    <select id="occupation" class="form-control input" data-val="occupation" name="occupation" ng-options="occupation.occupationId as occupation.occupationName for occupation in occupationOptions" ng-model="workCtrl.user.occupationId" ng-blur="workCtrl.watchForm()">
+                        <option value="">Select Occupation</option>
+                    </select>
+                    <div class="error-class">
+                        <div class="error-content"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-3 ">
+                    <label for="right-label" class="right inline">Working Organization:</label>
+                </div>
+                <div class="col-md-9  left">
+                    <input type="text" id="organization" class="form-control input" name="organization" data-val="userOrganization" ng-model="workCtrl.user.workingOrganization" ng-blur="workCtrl.watchForm()">
+                    <div class="error-class">
+                        <div class="error-content"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-3 ">
+                    <label for="right-label" class="right inline">Working Location:</label>
+                </div>
+                <div class="col-md-9 left">
+                    <input type="text" id="location" class="form-control input" name="location" data-val="userWorkLocation" ng-model="workCtrl.user.workingLocation" ng-blur="workCtrl.watchForm()">
+                    <div class="error-class">
+                        <div class="error-content"></div>
+                    </div>
+                </div>
+            </div>
+            <div ng-if="workCtrl.gender == 'female' || workCtrl.age <= 30 &&  workCtrl.age > 0">
+                <div class="row">
+                    <div class="col-md-3">
+                        <label for="right-label" class="right inline">Career Aspiration:</label>
+                    </div>
+                    <div class="col-md-5  left">
+                        <select id="aspiration" class="form-control" name="aspiration" ng-options="aspiration.careerAspirationId as aspiration.careerAspirationName for aspiration in careerAspirationOptions" ng-model="workCtrl.user.userAdditionalInfo.careerAspirationId"
+                        ng-change="workCtrl.others(workCtrl.user.userAdditionalInfo.careerAspirationId)" ng-blur="workCtrl.watchForm()">
+                            <option value="">Select Career Aspiration</option>
+                        </select>
+                        <div class="error-class">
+                            <div class="error-content"></div>
+                        </div>
+                    </div>
+                    <div class="col-md-4  left" ng-hide="othershow">
+                        <input type="text" id="aspirationText" class="form-control" name="aspirationText" ng-model="workCtrl.user.userAdditionalInfo.careerAspiration" ng-blur="workCtrl.watchForm()">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-3">
+                        <label for="right-label" class="right inline">Skill gaps:</label>
+                    </div>
+                    <div class="col-md-9 left">
+                        <select id="skillGaps" class="form-control input" name="skillGaps" ng-options="skillGap.skillGapId as skillGap.skillGapName for skillGap in skillGapsOptions" ng-model="workCtrl.user.userAdditionalInfo.skillGapsId" ng-blur="workCtrl.watchForm()">
+                            <option value="">Select Skill Gaps</option>
+                        </select>
+                        <div class="error-class">
+                            <div class="error-content"></div>
+                        </div>
+                    </div>
+                </div>
+                <!--    <div class="row">
+                    <div class="large-4 ">
+                        <label for="right-label" class="right inline">Skill Level:</label>
+                    </div>
+                    <div class="large-12  left">
+                        <select id="skillLevel" class="input" name="skillLevel"  ng-model="workCtrl.user.userAdditionalInfo.skillLevel">
+                            <option value="">Select Level</option>                          
+                            <option value="1">Volunteer</option>
+                            <option value="2">Leader</option>
+                            <option value="3">President</option>
+                            <option value="4">Local Leader</option>
+                        </select>                       
+                        <div class="error-class"><div class="error-content"></div></div>
+                    </div>              
+                </div>
+ -->
+                <!--            <div class="row">
+                    <div class="large-4 ">
+                        <label for="right-label" class="right inline">Area if improvements:</label>
+                    </div>
+                    <div class="large-12  left">
+                        <select id="skillLevel" class="input" name="skillLevel"  ng-model="workCtrl.user.userAdditionalInfo.skillLevel">
+                            <option value="">Select Level</option>                          
+                            <option value="1">Volunteer</option>
+                            <option value="2">Leader</option>
+                            <option value="3">President</option>
+                            <option value="4">Local Leader</option>
+                        </select>                       
+                        <div class="error-class"><div class="error-content"></div></div>
+                    </div>              
+                </div> -->
+<!--                 <div class="row">
+                    <div class="col-md-3">
+                        <label for="right-label" class="right inline">Leadership Potential:</label>
+                    </div>
+                    <div class="col-md-9 left radioGroup">
+                        <input type="radio" name="leaderShipPotentials" value="1" id="leaderShipPotentialsYes" ng-model="workCtrl.user.userAdditionalInfo.leadershipPotential">
+                        <label for="leaderShipPotentialsYes">Yes</label>
+                        <input type="radio" name="leaderShipPotentials" value="0" id="leaderShipPotentialsNo" ng-model="workCtrl.user.userAdditionalInfo.leadershipPotential">
+                        <label for="leaderShipPotentialsNo">No</label>
+                        <div class="error-class">
+                            <div class="error-content"></div>
+                        </div>
+                    </div>
+                </div> -->
+            </div>
+            <div class="row">
+                <div class="col-md-3">&nbsp;
+                </div>
+                <div class="col-md-9  left">
+                    <button class="btn submit left">Save & Continue</button>
+                    <a class="btn cancel left" ui-sref="root.profile.editprofile.personal">Back</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>

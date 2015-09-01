@@ -1,0 +1,203 @@
+<form name="personal" id="personalRegistrationForm" ng-submit="personalCtrl.save()" >
+
+    <div class="row rightContent">
+        <div class="col-sm-12  formContent">
+            <!-- Global error messages -->
+            <!-- <div class="row" ng-if="personalCtrl.isNotValidForm">
+                <div class="col-sm-9 right  error-class">
+                    Please ensure that all the required fields are valid.
+                </div>
+            </div> -->
+            <div class="row">
+                <div class="col-sm-3">
+                    <label for="right-label" class="right inline">Name:</label>
+                </div>
+                <div class="col-sm-3  left">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <input type="text" id="firstName" class="form-control name required" ng-model="personalCtrl.user.firstName" data-val="signupFirstName" placeholder="First Name" ng-blur="personalCtrl.watchForm()">
+                            <div class="error-class">
+                                <div class="error-content"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3  left">
+
+
+                    <div class="row">
+                        <div class="col-sm-12">
+                             <input type="text" id="middleName" class="form-control name" ng-model="personalCtrl.user.middleName" data-val="signupMiddleName" placeholder="Middle Name" ng-blur="personalCtrl.watchForm()">
+                            <div class="error-class">
+                                <div class="error-content"></div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                   
+                </div>
+                <div class="col-sm-3  left">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <input type="text" id="lastName" class="form-control name required" ng-model="personalCtrl.user.lastName" data-val="signupLastName" placeholder="Last Name" ng-blur="personalCtrl.watchForm()">
+                            <div class="error-class">
+                                <div class="error-content"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-3">
+                    <label for="right-label" class="right inline">User/Login Name:</label>
+                </div>
+                <div class="col-sm-9  left" resource-directive>
+                    <input type="text" id="userName" class="form-control input loader-input" data-val="userName" name="userName" ng-model="personalCtrl.user.loginId" data-inputname="userName" ng-blur="personalCtrl.watchForm()"> 
+                    <div class="error-class">
+                        <div class="error-content"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-3">
+                    <label for="right-label" class="right inline">Gender:</label>
+                </div>
+                <div class="col-sm-9  left radioGroup">
+                    <input type="radio" name="gender" value="M" id="male" ng-model="personalCtrl.user.gender" ng-change="personalCtrl.getGender(personalCtrl.user.gender)" ng-blur="personalCtrl.watchForm()">
+                    <label for="male">Male</label>
+                    <input type="radio" name="gender" value="F" id="female" ng-model="personalCtrl.user.gender" ng-change="personalCtrl.getGender(personalCtrl.user.gender)" ng-blur="personalCtrl.watchForm()">
+                    <label for="female">Female</label>
+                    <input type="radio" name="gender" value="O" id="notToDisclose" ng-model="personalCtrl.user.gender" ng-change="personalCtrl.getGender(personalCtrl.user.gender)" ng-blur="personalCtrl.watchForm()">
+                    <label for="notToDisclose">Not to be disclosed</label>
+                    <div class="error-class">
+                        <div class="error-content"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-3">
+                    <label for="right-label" class="right inline">Date of Birth:</label>
+                </div>
+                <div class="col-sm-9  left">
+                    <input type="text" id="dob" class="calender form-control input required" name="dob" data-val="dob" ng-model="personalCtrl.user.dateOfBirth" date-picker-directive="personalCtrl.user.dateOfBirth" ng-change="personalCtrl.getAge(personalCtrl.user.dateOfBirth)" future-date-disabled="true" ng-blur="personalCtrl.watchForm()">
+                    <div class="error-class">
+                        <div class="error-content"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-3">
+                    <label for="right-label" class="right inline">Aadhar ID#:</label>
+                </div>
+                <div class="col-sm-9  left">
+                    <input type="text" id="aadharId" class="form-control input" name="aadharId" ng-model="personalCtrl.user.aadharId" data-val="aadharId" ng-blur="personalCtrl.watchForm()">
+                    <div class="error-class">
+                        <div class="error-content"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-3 ">
+                    <label for="right-label" class="right inline">Mobile Number:</label>
+                </div>
+                <div class="col-sm-9  " resource-directive>
+                    <input type="text" id="mobile" class="form-control input required loader-input" name="mobile" data-val="userMobile" ng-model="personalCtrl.user.mobileNumber" data-inputname="mobileNumber" ng-blur="personalCtrl.watchForm()">
+                    <div class="error-class">
+                        <div class="error-content"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-3 ">
+                    <label for="right-label" class="right inline">Landline Phone:</label>
+                </div>
+                <div class="col-sm-9  ">
+                    <input type="text" id="landLine" class="form-control input" name="landLine" ng-model="personalCtrl.user.phoneNumber" data-val="userPhone" ng-blur="personalCtrl.watchForm()">
+                    <div class="error-class">
+                        <div class="error-content"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-3 ">
+                    <label for="right-label" class="right inline right-responsive ">Email Address:</label>
+                </div>
+                <div class="col-sm-9" resource-directive>
+                    <input type="text" id="email" class="form-control input loader-input" name="email" ng-model="personalCtrl.user.emailId" data-val="userEmail" data-inputname="email" ng-blur="personalCtrl.watchForm()">
+                </div>
+                <div class="col-sm-9 right">
+                    <div class="error-class">
+                        <div class="error-content"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-3 ">
+                    <label for="right-label" class="right inline">Skype ID:</label>
+                </div>
+                <div class="col-sm-9 ">
+                    <input type="text" id="skypeId" class="form-control input" name="skypeId" ng-model="personalCtrl.user.skypeId" ng-blur="personalCtrl.watchForm()">
+                    <div class="error-class">
+                        <div class="error-content"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-3">
+                    <label for="right-label" class="right inline">Marital status:</label>
+                </div>
+                <div class="col-sm-9 radioGroup">
+                    <input type="radio" name="maritalStatus" value="Single" id="single" ng-model="personalCtrl.user.maritalStatus" ng-blur="personalCtrl.watchForm()">
+                    <label for="single">Single</label>
+                    <input type="radio" name="maritalStatus" value="Married" id="married" ng-model="personalCtrl.user.maritalStatus" ng-blur="personalCtrl.watchForm()">
+                    <label for="married">Married</label>
+                    <input type="radio" name="maritalStatus" value="Divorced" id="divorced" ng-model="personalCtrl.user.maritalStatus" ng-blur="personalCtrl.watchForm()">
+                    <label for="divorced">Divorced</label>
+                    <input type="radio" name="maritalStatus" value="Widow" id="widow" ng-model="personalCtrl.user.maritalStatus" ng-blur="personalCtrl.watchForm()">
+                    <label for="widow">Widow</label>
+                    <div class="error-class">
+                        <div class="error-content"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-3 ">
+                    <label for="right-label" class="right inline">Education:</label>
+                </div>
+                <div class="col-sm-9  left">
+                    <!-- data-val="userQualification" * Add this for validations -->
+                    <select id="education" class="form-control input" name="education" ng-model="personalCtrl.user.educationId" ng-options="education.educationId as education.qualification for education in educationOptions" ng-blur="personalCtrl.watchForm()">
+                        <option value="">Select Education</option>
+                    </select>
+                    <div class="error-class">
+                        <div class="error-content"></div>
+                    </div>
+                </div>
+            </div>
+            <!--       <div class="row" ng-show="personalCtrl.showImage">
+                    <div class="large-4 ">
+                        <label for="right-label" class="right inline">Upload Photo:</label>
+                    </div>
+                    <div class="large-12  left">
+                        <input type="file" id="profilePhoto" name="photograph">
+                        <div>
+                            <input class="form-control mock-input" type="text" disabled="" style="background-color:#fff; width:40%">
+                            <span class="group-span-filestyle input-group-btn mock-browse" tabindex="0">
+                                <label class="btn btn-default " for="filestyle-1">Browse</label>
+                            </span>
+                        </div>
+                        <div class="error-class"><div class="error-content"></div></div>
+                    </div>
+                    <label>Maximum file size is 1MB</label>
+                </div> -->
+            <div class="row">
+                <div class="col-sm-3">&nbsp;
+                </div>
+                <div class="col-sm-9  left">
+                    <button id="submitPersonalInfo" class="btn submit left">Save & Continue</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>

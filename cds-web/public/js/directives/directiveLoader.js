@@ -1,0 +1,11 @@
+define([
+"directives/voterDirective",
+"directives/personalDirective",
+"directives/addressDirective",
+"directives/resourceDirective",
+"directives/spouseDateOfBirthDirective",
+"directives/marriageDateDirective",
+"directives/childDateOfBirthDirective",
+"directives/fixedFooterDirective"
+],function(){
+});

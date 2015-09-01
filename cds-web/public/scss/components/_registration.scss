@@ -1,0 +1,58 @@
+.registerOverlayContainer {
+  padding: 15px;
+}
+
+.close-overlay{
+  font-size: 20px;
+  font-weight: bold;
+  position: absolute;
+  right: 25px;
+  width : 20px;
+  cursor : pointer;
+}
+.col-centered{
+  float: none;
+  margin: 0 auto;
+}
+.pageheader{
+  padding-bottom: 9px; 
+  margin: 40px 0 20px; 
+}
+
+
+
+.registration-wrapper label{
+  font-weight: normal;
+}
+
+
+.status-message-wrapper{
+  padding-top: 20px;
+}
+
+
+
+.right-responsive{
+  float: right;
+}
+.reg-label{
+  margin-top:6px;
+}
+.label-weight{
+  font-weight: normal;
+}
+.gender{
+  padding-top:1px;
+}
+@media only screen and (max-width: 767px) {
+.right-responsive{
+  float: none;
+}
+.name-field{
+  margin-bottom: 10px;
+}
+.gender-field{
+  display: block;
+}
+
+}

@@ -1,0 +1,135 @@
+
+/******Do not change. Styles to make footer at bottom on variable section height. ***********/
+/******Difference height : Header height + Footer height************************************/
+html, body{
+    height:100%
+}
+#appSection{
+  min-height:calc(100% - 234px) !important;
+}
+#appFooter{
+  width: 100% !important;
+}
+/*****************************************************************************************/
+
+
+
+footer #footerWrapper{
+  background: #444444;
+  color: #999;
+  padding: 20px 0;
+  text-align: left;
+}
+footer a {
+  font-size: 13px; 
+  padding: 0 15px 0 0;
+  margin: 0 15px 0 0;
+  border-right: solid 1px #999; 
+  color: #999;
+  float: left;
+}
+footer a:last-child{
+  border-right: solid 0px #999; 
+}
+footer .copy-rights {
+  font-size: 13px;
+  text-align: right;
+}
+footer.fixed-footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+.social {
+  padding-top: 6px;
+  font-size: 13px;
+  text-align: right;
+}
+.social img {
+  margin: 0 0 0 8px;
+}
+.line {
+  background: #5e5e5e;
+  margin: 15px;
+  height: 1px; 
+}
+
+.subscribe-btn, .subscribe{
+  width: 50%;
+}
+
+
+@media only screen and (min-width: 320px) and (max-width: 480px) { 
+  footer .copy-rights {
+    text-align: center;
+  }
+  .social {
+    text-align: center;
+    padding-top: 12px; 
+  }
+  .footer-links {
+    text-align: center;
+    margin: 0 0 15px 0;
+  }
+  footer a {
+    float: none;
+    display: inline-block;
+    margin: 0 8px 0 0;
+    padding: 0 8px 0 0;
+  }
+  .container {
+      width: 100%; 
+  }
+
+}
+
+
+
+
+@media only screen { } /* For all view ports */
+
+@media only screen and (min-width: 1200px) { } /* Only for 1921px and above */
+
+@media only screen and (min-width: 992px) and (max-width: 1200px) { } /* From 1441px to 1920 */
+
+@media only screen and (min-width: 992px) {}
+
+@media only screen and (min-width: 768px) and (max-width: 992px) { } /* min-width 641px and max-width 1024px, use when QAing tablet-only issues */
+
+@media only screen and (width: 768px) {
+  header .navigation {
+    text-align: center;
+  }
+  header .navigation ul {
+    padding: 0;
+  }
+}
+@media only screen and (max-width: 768px) {
+
+  
+.email-subs{
+  text-align: center;
+}
+.social {
+  text-align: center;
+  padding:10px 0;
+}
+.subscribe-btn, .subscribe{
+  width: 80%;
+  }
+  .social {
+    text-align: right;
+  } 
+}
+
+@media only screen and (min-width: 641px) and (max-width: 768px) { } /* min-width 641px and max-width 1024px, use when QAing tablet-only issues */
+
+@media only screen and (min-width: 641px) {}
+
+@media only screen and (min-width: 480px) and (max-width: 640px) { } /* min-width 641px and max-width 1024px, use when QAing tablet-only issues */
+
+@media only screen and (min-width: 641px) {}
+
+@media only screen and (min-width: 360px) and (max-width: 640px) { }
+
+@media only screen and (min-width: 320px) and (max-width: 480px) { } /* min-width 641px and max-width 1024px, use when QAing tablet-only issues */

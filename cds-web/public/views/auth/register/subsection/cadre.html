@@ -1,0 +1,128 @@
+<form name="cadre" id="cadreRegistrationForm" ng-submit="cadreCtrl.save()">
+    <div class="row rightContent">
+        <div class="col-md-12 formContent">
+            <!-- <div class="row" ng-if="cadreCtrl.isNotValidForm">
+                <div class="col-md-8 right  error-class">Please ensure that all the required fields are valid.</div>
+            </div> -->
+            <div class="row form-group" ng-hide="cadreCtrl.cadreFields">
+                <div class="col-md-4">
+                    <label for="left-label" class="right text-right">Enroll as Cadre:</label>
+                </div>
+                <div class="col-md-8">
+                    <input type="radio" name="interested" value="1" ng-model="cadreCtrl.user.interestedAsCadre" id="interestedYes" ng-change="cadreCtrl.trackInterest(cadreCtrl.user.interestedAsCadre)" ng-blur="cadreCtrl.watchForm()">
+                    <label for="interestedYes">Yes</label>
+                    <input type="radio" name="interested" value="0" ng-model="cadreCtrl.user.interestedAsCadre" id="interestedNo" ng-change="cadreCtrl.trackInterest(cadreCtrl.user.interestedAsCadre)" ng-blur="cadreCtrl.watchForm()">
+                    <label for="interestedNo">No</label>
+                </div>
+            </div>
+            <div class="row" ng-hide="cadreCtrl.hideFields">
+                <div class="col-md-4 ">
+                    <label for="left-label" class="right text-right">Do you have Membership ID ?:</label>
+                </div>
+                <div class="col-md-8 gender">
+                    <input type="radio" name="cadreType" ng-model="cadreCtrl.user.cadre.haveMembership" value="1" ng-change="cadreCtrl.trackMembership(cadreCtrl.user.cadre.haveMembership)" ng-blur="cadreCtrl.watchForm()">
+                    <label for="Yes">Yes</label>
+                    <input type="radio" name="cadreType" ng-model="cadreCtrl.user.cadre.haveMembership" value="0" ng-change="cadreCtrl.trackMembership(cadreCtrl.user.cadre.haveMembership)" ng-blur="cadreCtrl.watchForm()">
+                    <label for="No">No</label>
+                </div>
+                <div class="col-sm-9 right">
+                    <div class="error-class">
+                        <div class="error-content"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="row" ng-hide="cadreCtrl.hideMembershipID">
+                <div class="col-md-4">
+                    <label for="right-label" class="right inline">Party Membership#:</label>
+                </div>
+                <div class="col-md-8 left">
+                    <input type="text" id="membershipId" class="form-control input" name="membershipId" ng-model="cadreCtrl.user.cadre.partyMembershipId" data-val="partyMembershipId" ng-blur="cadreCtrl.watchForm()">
+                    <div class="tool-tip" popover="Please enter party membership ID if you have, otherwise apply and get it from the party office." popover-trigger="mouseenter"></div>
+                    <div class="error-class">
+                        <div class="error-content"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="row" ng-hide="cadreCtrl.hidePositionField">
+                <div class="col-md-4">
+                    <label for="right-label" class="right inline">Position in the Party:</label>
+                </div>
+                <div class="col-md-8 left">
+                    <select id="position" name="position" class="form-control input" ng-model="cadreCtrl.user.cadre.positionId" ng-options="positionInParty.positionId as positionInParty.positionDescription for positionInParty in partyPositionsOptions" ng-disabled="cadreCtrl.disableFields" ng-blur="cadreCtrl.watchForm()">
+                        <option value="">Select Position</option>
+                    </select>
+                    <div class="error-class">
+                        <div class="error-content"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="row" ng-hide="cadreCtrl.hideResponsibilityField">
+                <div class="col-md-4">
+                    <label for="right-label" class="right inline">Responsibility in the Party:</label>
+                </div>
+                <div class="col-md-8 left">
+                    <input type="text" id="partyResponsibility" class="form-control input" name="partyResponsibility" ng-model="cadreCtrl.user.cadre.partyResponsibility" data-val="partyResponsibility" ng-disabled="cadreCtrl.disableFields" ng-blur="cadreCtrl.watchForm()">
+                    <div class="error-class">
+                        <div class="error-content"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="row form-group">
+                <div class="col-md-4">
+                    <label for="right-label" class="right inline">Health Insured:</label>
+                </div>
+                <div class="col-md-8 left radioGroup">
+                    <input type="radio" name="healthInsured" value="1" id="yes" ng-model="cadreCtrl.user.healthInsurance" ng-blur="cadreCtrl.watchForm()">
+                    <label for="healthInsured">Yes</label>
+                    <input type="radio" name="healthInsured" value="0" id="no" ng-model="cadreCtrl.user.healthInsurance" ng-blur="cadreCtrl.watchForm()">
+                    <label for="healthInsured">No</label>
+                </div>
+            </div>
+            <div class="row form-group">
+                <div class="col-md-4">
+                    <label for="right-label" class="right inline">Life Insured:</label>
+                </div>
+                <div class="col-md-8 left radioGroup">
+                    <input type="radio" name="lifeInsured" value="1" id="yes" ng-model="cadreCtrl.user.lifeInsurance" ng-blur="cadreCtrl.watchForm()">
+                    <label for="lifeInsured">Yes</label>
+                    <input type="radio" name="lifeInsured" value="0" id="no" ng-model="cadreCtrl.user.lifeInsurance" ng-blur="cadreCtrl.watchForm()">
+                    <label for="lifeInsured">No</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <label for="right-label" class="right inline">Blood Group:</label>
+                </div>
+                <div class="col-md-8 left">
+                    <select id="bloodGroup" name="bloodGroup" class="form-control input" ng-model="cadreCtrl.user.bloodGroupId" ng-options="bloodGroup.bloodGroupId as bloodGroup.bloodGroupName for bloodGroup in BloodGroupOptions" data-val="bloodGroupId" ng-blur="cadreCtrl.watchForm()">
+                        <option value="">Select Blood Group</option>
+                    </select>
+                    <div class="error-class">
+                        <div class="error-content"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="row" ng-show="cadreCtrl.showGrade">
+                <div class="col-md-4">
+                    <label class="right inline">Performance Grade:</label>
+                </div>
+                <div class="col-md-8 right">
+                    <select id="grade" class="form-control input" name="grade" ng-model="cadreCtrl.user.cadre.performanceGradeId" ng-options="grade.gradeId as grade.gradeDescription for grade in performanceGradeOptions" ng-blur="cadreCtrl.watchForm()">
+                        <option value="">Select Performance Grade</option>
+                    </select>
+                    <div class="error-class">
+                        <div class="error-content"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                </div>
+                <div class="col-md-8">
+                    <button class="btn submit">Save as Cadre</button>
+                    <button class="btn cancel" href="" ng-click="cadreCtrl.backview($event)">Back</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>

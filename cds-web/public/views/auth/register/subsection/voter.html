@@ -1,0 +1,74 @@
+<form name="voter" id="voterRegistrationForm" ng-submit="voterCtrl.save()">
+    <div class="row rightContent">
+        <div class="col-md-12  formContent">
+            <div class="row">
+                <div class="col-md-3 ">
+                    <label for="right-label" class="right inline">Voter Card ID#:</label>
+                </div>
+                <div class="col-md-9  left">
+                    <input type="text" id="voterId" class="form-control input required" name="voterCardId" data-val="voterId" ng-model="voterCtrl.user.voterCardId" ng-blur="voterCtrl.watchForm()">
+                    <div class="error-class">
+                        <div class="error-content"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-3 ">
+                    <label for="right-label" class="right inline">Address Line1:</label>
+                </div>
+                <div class="col-md-9  left">
+                    <input type="text" id="addressLine" class="form-control input required" name="addressLine" data-val="addressLine1" ng-model="voterCtrl.user.addressLine1" ng-blur="voterCtrl.watchForm()">
+                    <div class="error-class">
+                        <div class="error-content"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-3 ">
+                    <label for="right-label" class="right inline">Address Line2:</label>
+                </div>
+                <div class="col-md-9  left">
+                    <input type="text" id="addressLine" class="form-control input" name="addressLine" data-val="addressLine2" ng-model="voterCtrl.user.addressLine2" ng-blur="voterCtrl.watchForm()">
+                    <div class="error-class">
+                        <div class="error-content"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-3 ">
+                    <label for="right-label" class="right inline">Search Constituency:</label>
+                </div>
+                <div class="col-md-9 left">
+                    <input type="hidden" ng-model="voterCtrl.user.treeDataId" />
+                    <!-- autocomplete-voter-directive -->
+                    <div id="autoCompleteContainer">
+                        <div class="input-group">
+                            <input type="text" id="searchvoter" class="form-control input required" name="searchvoterconst" ui-items="names" placeholder="Search by Location" ng-model="voterCtrl.user.searchconst" ng-blur="voterCtrl.watchForm()" style="width: 311px;">
+                            <span class="input-group-addon" ng-click="voterCtrl.searchVoter(voterCtrl.user.searchconst)" style="cursor:pointer;">&#128269;</span>
+                        </div>
+                        <!-- <img src="images/searchicon.png" class="search-icon" id="searchIcon" ng-click="voterCtrl.searchVoter(voterCtrl.user.searchconst)"> -->
+                    </div>
+                    <div class="error-class">
+                        <div class="error-content"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="row form-group" ng-repeat="obj in voterNodeObj">
+                <div class="col-md-3">
+                    <label for="right-label" class="right inline" ng-bind="obj.key"></label>
+                </div>
+                <div class="col-md-9  left">
+                    <span class="address-line" ng-bind="obj.value"></span>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-3">
+                </div>
+                <div class="col-md-9">
+                    <button class="btn submit">Save & Continue</button>
+                    <a class="btn cancel" ui-sref="root.profile.editprofile.work">Back</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>

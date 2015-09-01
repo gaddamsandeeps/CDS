@@ -1,0 +1,30 @@
+// Small screens
+
+/* Pre-assumed styles : font-size - 16px || 100% */
+
+
+/* Orientation specific : (orientation: landscape) && (orientation: portrait)  */
+
+@media only screen { } /* For all view ports */
+
+@media only screen and (min-width: 1200px) { } /* Only for 1921px and above */
+
+@media only screen and (min-width: 992px) and (max-width: 1200px) { } /* From 1441px to 1920 */
+
+@media only screen and (min-width: 992px) {}
+
+@media only screen and (min-width: 768px) and (max-width: 992px) { } /* min-width 641px and max-width 1024px, use when QAing tablet-only issues */
+
+@media only screen and (min-width: 768px) {}
+
+@media only screen and (min-width: 641px) and (max-width: 768px) { } /* min-width 641px and max-width 1024px, use when QAing tablet-only issues */
+
+@media only screen and (min-width: 641px) {}
+
+@media only screen and (min-width: 480px) and (max-width: 640px) { } /* min-width 641px and max-width 1024px, use when QAing tablet-only issues */
+
+@media only screen and (min-width: 641px) {}
+
+@media only screen and (min-width: 360px) and (max-width: 640px) { }
+
+@media only screen and (min-width: 320px) and (max-width: 480px) { } /* min-width 641px and max-width 1024px, use when QAing tablet-only issues */

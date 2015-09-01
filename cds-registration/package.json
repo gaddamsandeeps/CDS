@@ -1,0 +1,23 @@
+{
+    "name": "cds-registration",
+    "version": "1.0.0",
+    "description": "cds registration management",
+    "main": "./lib/cadre",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git://github.com/yc05s3g/cds-registration.git"
+    },
+    "author": {
+        "name": "Sandeep Gaddam",
+        "email": "sgaddam@nisum.com"
+    },
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/yc05s3g/cds-registration/issues"
+    },
+    "homepage": "https://github.com/yc05s3g/cds-registration",
+    "dependencies": {}
+}

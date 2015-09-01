@@ -1,0 +1,3862 @@
+/* line 1, ../scss/components/_dashboard.scss */
+.dashboard-container {
+  margin-top: 20px;
+}
+
+/* line 4, ../scss/components/_dashboard.scss */
+.dashboard-container .tasks-section {
+  margin: 10px 0 10px 0;
+}
+
+/* line 7, ../scss/components/_dashboard.scss */
+.dashboard-container .tasks-section .task-desc {
+  border: 1px solid #e6e9ed;
+  text-align: center;
+  margin-left: 0;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+}
+
+/* line 15, ../scss/components/_dashboard.scss */
+.dashboard-container .calender-section h3 {
+  font-size: 14px;
+}
+
+/* line 18, ../scss/components/_dashboard.scss */
+.dashboard-container .tasks-section .task-desc li h2 {
+  font-size: 12px;
+}
+
+/* line 21, ../scss/components/_dashboard.scss */
+.dashboard-container .tasks-section .task-desc li {
+  list-style: none;
+  padding: 5px 0;
+  border-bottom: 1px solid #e6e9ed;
+  overflow: hidden;
+}
+
+/* line 27, ../scss/components/_dashboard.scss */
+.dashboard-container .tasks-section .task-desc li:nth-child(even) {
+  background-color: #f0f0f0;
+}
+
+/* line 30, ../scss/components/_dashboard.scss */
+.dashboard-container .tasks-section .task-desc li .page-nation {
+  color: #ccc;
+}
+
+/* line 34, ../scss/components/_dashboard.scss */
+.dashboard-container .tasks-section .task-desc li div {
+  font-size: 12px;
+}
+
+/* line 37, ../scss/components/_dashboard.scss */
+.dashboard-container .calender-section div a {
+  font-size: 10px;
+  text-decoration: underline;
+}
+
+/*End of tables Styles*/
+/* line 43, ../scss/components/_dashboard.scss */
+.tiles .photo2 {
+  height: 113px;
+  margin: 0 0 20px 0;
+  /* padding: 10px; */
+  text-align: center;
+}
+
+/* line 49, ../scss/components/_dashboard.scss */
+.tiles .photo2 img {
+  border: solid 5px #fff;
+  height: 113px;
+  width: 140px;
+  vertical-align: inherit;
+}
+
+/* line 55, ../scss/components/_dashboard.scss */
+.tile-section {
+  border: 1px #d0d0d0 solid;
+  background: #f6f6f6;
+  margin: 75px 0px 0px 30px;
+  padding-bottom: 10px;
+  display: none;
+}
+
+/* line 62, ../scss/components/_dashboard.scss */
+.tiles .name {
+  padding: 10px 0px 10px 0px;
+}
+
+/* line 65, ../scss/components/_dashboard.scss */
+.tiles .details label {
+  padding: 10px 0 0 0;
+}
+
+/* line 71, ../scss/components/_dashboard.scss */
+.dashboard-container .calender-section h3 {
+  font-size: 14px;
+}
+
+/* line 74, ../scss/components/_dashboard.scss */
+.dashboard-container .tasks-section .task-desc li h2 {
+  font-size: 12px;
+}
+
+/* line 77, ../scss/components/_dashboard.scss */
+.dashboard-container .tasks-section .task-desc li {
+  list-style: none;
+  border-bottom: 1px solid #e6e9ed;
+}
+
+/* line 81, ../scss/components/_dashboard.scss */
+.dashboard-container .tasks-section .task-desc li:nth-child(even) {
+  background-color: #f0f0f0;
+}
+
+/* line 84, ../scss/components/_dashboard.scss */
+.dashboard-container .tasks-section .task-desc li .page-nation {
+  color: #ccc;
+}
+
+/* line 88, ../scss/components/_dashboard.scss */
+.dashboard-container .tasks-section .task-desc li div {
+  font-size: 12px;
+}
+
+/* line 91, ../scss/components/_dashboard.scss */
+.dashboard-container .calender-section {
+  margin: 0 0 15px 0;
+}
+
+/* line 94, ../scss/components/_dashboard.scss */
+.dashboard-container .calender-section div a.calender-link {
+  font-size: 13px;
+  text-decoration: underline;
+  margin-top: 15px;
+}
+
+/* line 100, ../scss/components/_dashboard.scss */
+.dashboard-container .calender-section .calender-items-sec .events-sec {
+  border: 1px solid #d6d6d6;
+  margin: 10px 16px;
+  background: #f2f0f0;
+}
+
+/* line 105, ../scss/components/_dashboard.scss */
+.dashboard-container .calender-section .calender-items-sec .events-sec li div.left-link {
+  margin-right: 4px;
+}
+
+/* line 108, ../scss/components/_dashboard.scss */
+.dashboard-container .calender-section .calender-items-sec .events-sec li div p {
+  font-size: 11px;
+  margin-bottom: 0;
+  padding-top: 10px;
+}
+
+/* line 113, ../scss/components/_dashboard.scss */
+.dashboard-container .calender-section .calender-items-sec .events-sec li {
+  border-right: 1px solid #ccc;
+  margin: 10px 0px;
+  padding-bottom: 0;
+}
+
+/* line 118, ../scss/components/_dashboard.scss */
+.dashboard-container .calender-section .calender-items-sec h4 {
+  font-size: 14px;
+  margin-bottom: 0;
+}
+
+/* line 122, ../scss/components/_dashboard.scss */
+.dashboard-container .calender-section .calender-items-sec span {
+  display: inline-block;
+  font-size: 12px;
+  line-height: normal;
+}
+
+/* line 127, ../scss/components/_dashboard.scss */
+.active-event {
+  text-align: center;
+  padding: 5px;
+  height: 60px;
+  background-color: #8c3131;
+}
+
+/* line 133, ../scss/components/_dashboard.scss */
+.active-content {
+  color: #FFF !important;
+}
+
+/* line 136, ../scss/components/_dashboard.scss */
+.active-event-meeting {
+  color: #8c3131;
+}
+
+/* line 139, ../scss/components/_dashboard.scss */
+.margin-padding-none {
+  margin: 0 !important;
+  padding: 0;
+}
+
+/* line 143, ../scss/components/_dashboard.scss */
+.non-active-event {
+  background-color: #bcb9b9;
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+  padding: 5px;
+}
+
+/* line 150, ../scss/components/_dashboard.scss */
+.border-none {
+  border-right: none !important;
+}
+
+/* line 153, ../scss/components/_dashboard.scss */
+.requestor {
+  background: url(../images/searchicon.png) no-repeat right center;
+}
+
+/* line 157, ../scss/components/_dashboard.scss */
+.non-active-event1 {
+  background: #088A68;
+}
+
+/* line 161, ../scss/components/_dashboard.scss */
+.non-active-event2 {
+  background: #0B3861;
+}
+
+/* line 165, ../scss/components/_dashboard.scss */
+.non-active-event3 {
+  background: #5F04B4;
+}
+
+/* Bootstap overrides */
+/* line 172, ../scss/components/_dashboard.scss */
+.widget-container {
+  max-height: 500px;
+  overflow: hidden;
+  font-size: 11px;
+}
+
+/* line 177, ../scss/components/_dashboard.scss */
+.widget {
+  border-radius: 0px;
+  border: solid 1px #4c8ac7;
+}
+
+/* line 181, ../scss/components/_dashboard.scss */
+.panel-default > .panel-heading {
+  background: #4c8ac7;
+  color: #ffffff;
+}
+
+/* line 185, ../scss/components/_dashboard.scss */
+.panel-title {
+  font-size: 14px;
+}
+
+/* line 188, ../scss/components/_dashboard.scss */
+.panel-heading {
+  border-radius: 0px;
+  border-radius: 0px;
+}
+
+/* line 192, ../scss/components/_dashboard.scss */
+.subscribe {
+  padding: 8px !important;
+}
+
+/* line 195, ../scss/components/_dashboard.scss */
+.ui-grid-pager-row-count-picker {
+  font-size: 12px;
+}
+
+/* line 205, ../scss/components/_dashboard.scss */
+.ui-grid-canvas div {
+  font-size: 11px;
+}
+
+/* line 210, ../scss/components/_dashboard.scss */
+.ui-grid-cell-contents {
+  padding-left: 5px;
+}
+
+/* line 213, ../scss/components/_dashboard.scss */
+.row-link {
+  padding-left: 5px;
+  cursor: pointer;
+  display: block;
+  margin-top: 5px;
+}
+
+/* line 220, ../scss/components/_dashboard.scss */
+.events-banner .panel-body {
+  padding: 0;
+}
+
+/* line 224, ../scss/components/_dashboard.scss */
+.events-banner .events-banner-img {
+  width: 100%;
+}
+
+/* line 230, ../scss/components/_dashboard.scss */
+.panel-default > .panel-heading {
+  cursor: move;
+}
+
+/* line 233, ../scss/components/_dashboard.scss */
+.events-banner .events-banner-img {
+  height: 76px;
+}
+
+/* line 236, ../scss/components/_dashboard.scss */
+.widget {
+  border: solid 1px #999;
+}
+
+/* line 239, ../scss/components/_dashboard.scss */
+ul.doughnut-legend {
+  padding: 0;
+}
+
+/* line 242, ../scss/components/_dashboard.scss */
+.widget-container.cadre-verifications-all .widget-header {
+  background: #475d74;
+}
+
+/* line 245, ../scss/components/_dashboard.scss */
+.widget-container.events-banner .widget-header {
+  background: #86ad39;
+}
+
+/* line 248, ../scss/components/_dashboard.scss */
+.widget-container.self-tasks .widget-header {
+  background: #756158;
+}
+
+/* line 251, ../scss/components/_dashboard.scss */
+.widget-container.team-tasks .widget-header {
+  background: #475d74;
+}
+
+/* line 254, ../scss/components/_dashboard.scss */
+.widget-container.tasks-trend .widget-header {
+  background: #c6781c;
+}
+
+/* line 257, ../scss/components/_dashboard.scss */
+.widget-container.notifications .widget-header {
+  background: #f0ad4e;
+}
+
+/* line 261, ../scss/components/_dashboard.scss */
+.close-overlay {
+  z-index: 100;
+}
+
+/* line 265, ../scss/components/_dashboard.scss */
+.d-widget.notifications .widget-content {
+  height: 380px;
+  overflow: auto;
+}
+
+/* line 271, ../scss/components/_dashboard.scss */
+.cadre-verification-msg {
+  margin: 5px 0;
+}
+
+/* Only for 1921px and above */
+/* From 1441px to 1920 */
+/* min-width 641px and max-width 1024px, use when QAing tablet-only issues */
+/* min-width 641px and max-width 1024px, use when QAing tablet-only issues */
+/* min-width 641px and max-width 1024px, use when QAing tablet-only issues */
+/* min-width 641px and max-width 1024px, use when QAing tablet-only issues */
+/******Do not change. Styles to make footer at bottom on variable section height. ***********/
+/******Difference height : Header height + Footer height************************************/
+/* line 4, ../scss/components/_footer.scss */
+html, body {
+  height: 100%;
+}
+
+/* line 7, ../scss/components/_footer.scss */
+#appSection {
+  min-height: calc(100% - 234px) !important;
+}
+
+/* line 10, ../scss/components/_footer.scss */
+#appFooter {
+  width: 100% !important;
+}
+
+/*****************************************************************************************/
+/* line 17, ../scss/components/_footer.scss */
+footer #footerWrapper {
+  background: #444444;
+  color: #999;
+  padding: 20px 0;
+  text-align: left;
+}
+
+/* line 23, ../scss/components/_footer.scss */
+footer a {
+  font-size: 13px;
+  padding: 0 15px 0 0;
+  margin: 0 15px 0 0;
+  border-right: solid 1px #999;
+  color: #999;
+  float: left;
+}
+
+/* line 31, ../scss/components/_footer.scss */
+footer a:last-child {
+  border-right: solid 0px #999;
+}
+
+/* line 34, ../scss/components/_footer.scss */
+footer .copy-rights {
+  font-size: 13px;
+  text-align: right;
+}
+
+/* line 38, ../scss/components/_footer.scss */
+footer.fixed-footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+/* line 43, ../scss/components/_footer.scss */
+.social {
+  padding-top: 6px;
+  font-size: 13px;
+  text-align: right;
+}
+
+/* line 48, ../scss/components/_footer.scss */
+.social img {
+  margin: 0 0 0 8px;
+}
+
+/* line 51, ../scss/components/_footer.scss */
+.line {
+  background: #5e5e5e;
+  margin: 15px;
+  height: 1px;
+}
+
+/* line 57, ../scss/components/_footer.scss */
+.subscribe-btn, .subscribe {
+  width: 50%;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  /* line 63, ../scss/components/_footer.scss */
+  footer .copy-rights {
+    text-align: center;
+  }
+
+  /* line 66, ../scss/components/_footer.scss */
+  .social {
+    text-align: center;
+    padding-top: 12px;
+  }
+
+  /* line 70, ../scss/components/_footer.scss */
+  .footer-links {
+    text-align: center;
+    margin: 0 0 15px 0;
+  }
+
+  /* line 74, ../scss/components/_footer.scss */
+  footer a {
+    float: none;
+    display: inline-block;
+    margin: 0 8px 0 0;
+    padding: 0 8px 0 0;
+  }
+
+  /* line 80, ../scss/components/_footer.scss */
+  .container {
+    width: 100%;
+  }
+}
+/* For all view ports */
+/* Only for 1921px and above */
+/* From 1441px to 1920 */
+/* min-width 641px and max-width 1024px, use when QAing tablet-only issues */
+@media only screen and (width: 768px) {
+  /* line 100, ../scss/components/_footer.scss */
+  header .navigation {
+    text-align: center;
+  }
+
+  /* line 103, ../scss/components/_footer.scss */
+  header .navigation ul {
+    padding: 0;
+  }
+}
+@media only screen and (max-width: 768px) {
+  /* line 110, ../scss/components/_footer.scss */
+  .email-subs {
+    text-align: center;
+  }
+
+  /* line 113, ../scss/components/_footer.scss */
+  .social {
+    text-align: center;
+    padding: 10px 0;
+  }
+
+  /* line 117, ../scss/components/_footer.scss */
+  .subscribe-btn, .subscribe {
+    width: 80%;
+  }
+
+  /* line 120, ../scss/components/_footer.scss */
+  .social {
+    text-align: right;
+  }
+}
+/* min-width 641px and max-width 1024px, use when QAing tablet-only issues */
+/* min-width 641px and max-width 1024px, use when QAing tablet-only issues */
+/* min-width 641px and max-width 1024px, use when QAing tablet-only issues */
+@font-face {
+  font-family: 'OpenSans-Regular';
+  src: url("fonts/OpenSans-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'OpenSans-Semibold';
+  src: url("fonts/OpenSans-Semibold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+/* line 13, ../scss/components/_header.scss */
+body {
+  font-family: "OpenSans-Regular", "Arial", "Sans-serif";
+}
+
+/* FONTS*/
+/*!
+ *  Font Awesome 4.2.0 by @davegandy - http://fontawesome.io - @fontawesome
+ *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
+ */
+/* FONT PATH
+* -------------------------- */
+@font-face {
+  font-family: 'FontAwesome';
+  src: url("fonts/icons/fontawesome-webfont.eot?v=4.2.0");
+  src: url("fonts/icons/fontawesome-webfont.eot?#iefix&v=4.2.0") format("embedded-opentype"), url("fonts/icons/fontawesome-webfont.woff?v=4.2.0") format("woff"), url("fonts/icons/fontawesome-webfont.ttf?v=4.2.0") format("truetype"), url("fonts/icons/fontawesome-webfont.svg?v=4.2.0#fontawesomeregular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+/* line 31, ../scss/components/_header.scss */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'OpenSans-Semibold';
+}
+
+/* line 34, ../scss/components/_header.scss */
+p {
+  font-size: 13px;
+}
+
+/* line 37, ../scss/components/_header.scss */
+header {
+  background: #0174b7 url(../images/header-bg.jpg) repeat-x top left;
+  padding: 0px 0 2px 0;
+  margin: 0;
+  color: #999;
+}
+
+/* line 43, ../scss/components/_header.scss */
+header .phone {
+  background: url(../images/cds-sprite.png) 16px 8px no-repeat;
+  height: 30px;
+  padding: 7px 0 0 32px;
+  font-size: 13px;
+  color: #fff;
+}
+
+/* line 51, ../scss/components/_header.scss */
+header .auth-header .phone {
+  background: url(../images/cds-sprite.png) 16px 5px no-repeat;
+  height: 30px;
+  padding: 2px 0 0 32px;
+  font-size: 13px;
+  color: #fff;
+}
+
+/* line 59, ../scss/components/_header.scss */
+.logo {
+  padding: 10px 0 8px 0;
+  display: inline-block;
+  text-decoration: none !important;
+}
+
+/* line 64, ../scss/components/_header.scss */
+.area-logo {
+  font-size: 30px;
+  margin: 8px 0;
+}
+
+/* line 68, ../scss/components/_header.scss */
+.area-logo span {
+  color: #666;
+  display: block;
+  font-family: opensans-regular;
+  font-size: 18px;
+  text-align: center;
+}
+
+/* line 75, ../scss/components/_header.scss */
+header .top-nav {
+  padding-right: 0;
+  /* text-align: right; */
+}
+
+/* line 80, ../scss/components/_header.scss */
+header .auth-header .top-nav li {
+  font-size: 13px;
+  color: #fff;
+}
+
+/* line 85, ../scss/components/_header.scss */
+header .top-nav ul {
+  margin: 0;
+}
+
+/* line 88, ../scss/components/_header.scss */
+header .top-nav ul li {
+  display: inline-block;
+  list-style: none;
+  font-size: 13px;
+  background: url(../images/menu-separator.png) no-repeat left center;
+  padding: 0 0px 0 20px;
+}
+
+/* line 95, ../scss/components/_header.scss */
+header .top-nav ul li:first-child {
+  background: none;
+  padding-left: 0px;
+  /*padding-right: 20px;*/
+}
+
+/* line 100, ../scss/components/_header.scss */
+header .top-nav ul li a.home {
+  background: url(../images/cds-sprite.png) no-repeat 0 -23px;
+  height: 20px;
+  padding: 0 0 0 25px;
+  color: #999;
+}
+
+/* line 106, ../scss/components/_header.scss */
+header .top-nav ul li a.help {
+  background: url(../images/cds-sprite.png) no-repeat 0 -47px;
+  height: 20px;
+  padding: 0 0 0 25px;
+  margin: 0 18px 0 0;
+  color: #fff;
+}
+
+/* line 113, ../scss/components/_header.scss */
+header .top-nav ul li a.my-account {
+  background: url(../images/cds-sprite.png) no-repeat 0 -72px;
+  height: 20px;
+  padding: 0 8px 0 25px;
+  color: #fff;
+}
+
+/* line 120, ../scss/components/_header.scss */
+header .top-nav ul li a.post {
+  padding: 0 15px 0 0;
+  color: #999;
+}
+
+/* line 124, ../scss/components/_header.scss */
+header .top-nav ul li a.logout {
+  padding: 0 15px 0 20px;
+  color: #999;
+  background: url(../images/logout.png) no-repeat 0 2px;
+}
+
+/* line 131, ../scss/components/_header.scss */
+header .navigation {
+  padding: 28px 0 0 0;
+}
+
+/* line 134, ../scss/components/_header.scss */
+header .navigation h1.logo {
+  background: url(../images/logo.png) no-repeat;
+  width: 155px;
+  height: 40px;
+}
+
+/* line 139, ../scss/components/_header.scss */
+header .main-navigation nav ul {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 143, ../scss/components/_header.scss */
+header .main-navigation nav ul li {
+  list-style: none;
+  float: left;
+}
+
+/* line 148, ../scss/components/_header.scss */
+.navigation .top-bar-section ul li:hover {
+  background: url(../images/home-menu-active.png) no-repeat center bottom !important;
+  color: red !important;
+}
+
+/* line 153, ../scss/components/_header.scss */
+.navigation .top-bar-section ul li:active {
+  background: url(../images/home-menu-active.png) no-repeat center bottom !important;
+  color: red !important;
+}
+
+/* line 159, ../scss/components/_header.scss */
+h1 {
+  color: #16578f;
+  font-size: 26px;
+}
+
+/* line 164, ../scss/components/_header.scss */
+.headerMobile {
+  background: #f0f2f4;
+}
+
+/* line 167, ../scss/components/_header.scss */
+.headerLogo {
+  background: #fff url(../images/headerBg.png) repeat-x;
+}
+
+/* line 171, ../scss/components/_header.scss */
+.auth-header {
+  padding-top: 8px;
+}
+
+/* line 175, ../scss/components/_header.scss */
+.login-user-info {
+  display: none;
+  position: absolute;
+  background: #394F60;
+  padding: 10px;
+  z-index: 10;
+  width: 150px;
+  right: 0;
+  top: 29px;
+}
+
+/* line 185, ../scss/components/_header.scss */
+.nav-down-arrow {
+  background: none;
+  width: 25px;
+  height: 25px;
+  display: inline-block;
+  float: right;
+}
+
+/* line 194, ../scss/components/_header.scss */
+.top-sub-links {
+  float: right;
+}
+
+/* Only for 1921px and above */
+/* From 1441px to 1920 */
+@media only screen and (max-width: 991px) {
+  /* line 206, ../scss/components/_header.scss */
+  .logo {
+    width: 250px;
+  }
+}
+/* min-width 641px and max-width 1024px, use when QAing tablet-only issues */
+@media only screen and (max-width: 767px) {
+  /* line 219, ../scss/components/_header.scss */
+  header .auth-header .phone {
+    background: none;
+    height: 30px;
+    padding: 2px 0 0 32px;
+    font-size: 13px;
+    color: #fff;
+    text-align: center;
+  }
+
+  /* line 229, ../scss/components/_header.scss */
+  header .top-nav {
+    margin-bottom: 10px;
+  }
+
+  /* line 233, ../scss/components/_header.scss */
+  header nav {
+    text-align: center;
+  }
+
+  /* line 236, ../scss/components/_header.scss */
+  .top-sub-links {
+    margin: 0 auto;
+    width: 100%;
+    float: none;
+  }
+}
+/* min-width 641px and max-width 1024px, use when QAing tablet-only issues */
+/* min-width 641px and max-width 1024px, use when QAing tablet-only issues */
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  /* line 256, ../scss/components/_header.scss */
+  header .auth-header .phone {
+    display: none;
+  }
+}
+/* min-width 641px and max-width 1024px, use when QAing tablet-only issues */
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+  /* line 265, ../scss/components/_header.scss */
+  .collapse {
+    display: block !important;
+  }
+
+  /* line 270, ../scss/components/_header.scss */
+  body .navigation .top-bar-section ul li:hover {
+    background: transparent url("../images/home-menu-active.png") no-repeat scroll center bottom !important;
+    color: red !important;
+  }
+}
+/* line 1, ../scss/components/_home.scss */
+header.home {
+  border-bottom: solid 1px #e2e2e2;
+  padding: 0;
+  background: #16578f;
+}
+
+/* line 7, ../scss/components/_home.scss */
+.register-signin {
+  text-align: right;
+}
+
+/* line 10, ../scss/components/_home.scss */
+.register-signin nav {
+  overflow: hidden;
+}
+
+/* line 13, ../scss/components/_home.scss */
+.register-signin ul {
+  margin: 0;
+  float: right;
+}
+
+/* line 17, ../scss/components/_home.scss */
+.register-signin ul li {
+  float: left;
+  list-style: none;
+  background: url(../images/topnav-divider.png) no-repeat right center;
+}
+
+/* line 22, ../scss/components/_home.scss */
+.register-signin ul li a {
+  display: inline-block;
+}
+
+/* line 25, ../scss/components/_home.scss */
+.register-signin ul li a:hover {
+  color: #ccc;
+}
+
+/* line 28, ../scss/components/_home.scss */
+.register-signin ul li:first-child {
+  padding: 4px 15px 6px 0;
+  background: none;
+}
+
+/* line 32, ../scss/components/_home.scss */
+.register-signin ul li:nth-child(1) {
+  background: none;
+}
+
+/*.register-signin ul li a{
+  border-left: solid 1px blue;
+}*/
+/* line 38, ../scss/components/_home.scss */
+.register-signin ul li:last-child {
+  background: none;
+}
+
+/* line 41, ../scss/components/_home.scss */
+.register, .signin, .site-view, .contactus {
+  padding: 6px 15px 6px;
+  line-height: 20px;
+  color: #fff;
+  font-size: 13px;
+}
+
+/* line 47, ../scss/components/_home.scss */
+.register {
+  background: url(../images/registerIcon.png) no-repeat 0px 8px;
+  padding-left: 20px;
+}
+
+/* line 51, ../scss/components/_home.scss */
+.signin {
+  background: url(../images/signinIcon.png) no-repeat 2px 8px;
+  padding-left: 20px;
+}
+
+/* line 55, ../scss/components/_home.scss */
+.contactus {
+  background: url(../images/contactus.png) no-repeat 2px 8px;
+  padding-left: 26px;
+}
+
+/* line 59, ../scss/components/_home.scss */
+.post-issue {
+  background: #efd303;
+  padding: 8px 25px;
+  margin: 10px 0 0 0;
+  color: #000000;
+  font-family: opensans-semibold;
+  display: inline-block;
+}
+
+/* line 67, ../scss/components/_home.scss */
+.home-navigation {
+  background: #006eae;
+}
+
+/* line 70, ../scss/components/_home.scss */
+body .home-navigation .top-bar-section li:not(.has-form) a:not(.button) {
+  background: #006eae;
+}
+
+/* line 73, ../scss/components/_home.scss */
+.img-border {
+  border: solid 8px #ffffff;
+  box-shadow: 0px 0px 6px #666;
+  -moz-box-shadow: 0px 0px 6px #666;
+  -webkit-box-shadow: 0px 0px 6px #666;
+}
+
+/* line 79, ../scss/components/_home.scss */
+.activities {
+  background: url(../images/activityBg.png) repeat-x;
+  padding: 20px 0;
+  margin: 0px 0 25px;
+}
+
+/* line 84, ../scss/components/_home.scss */
+.banner {
+  margin: 0 0 25px 0;
+}
+
+/* line 87, ../scss/components/_home.scss */
+.news {
+  /*padding: 0;*/
+}
+
+/* line 90, ../scss/components/_home.scss */
+.news p {
+  padding: 0 0 15px 0;
+  margin: 0 0 15px 0;
+  border-bottom: dotted 1px #ccc;
+  font-size: 12px;
+}
+
+/* line 96, ../scss/components/_home.scss */
+.news p label {
+  color: #666;
+  font-size: 12px;
+}
+
+/* line 100, ../scss/components/_home.scss */
+.news p a {
+  text-decoration: underline;
+  display: block;
+}
+
+/* line 104, ../scss/components/_home.scss */
+.opinion-poll {
+  font-size: 12px;
+  padding: 20px 0px;
+  /*border: solid 1px #999999;
+  background: #eeeeee;*/
+}
+
+/* line 110, ../scss/components/_home.scss */
+.opinion-poll label.error {
+  color: #a40000;
+  margin: 0 0 15px 0;
+}
+
+/* line 114, ../scss/components/_home.scss */
+.opinion-poll label input {
+  margin-right: 12px;
+}
+
+/* line 117, ../scss/components/_home.scss */
+.opinion-poll .choose {
+  margin: 10px 0 0 25px;
+  background: #efd303;
+  padding: 8px 40px;
+  color: #000000;
+  font-family: opensans-semibold;
+  border: none;
+}
+
+/* line 125, ../scss/components/_home.scss */
+.subscribe {
+  font-size: 14px;
+  padding: 25px 0 0 0;
+  margin: 0 !important;
+}
+
+/* line 130, ../scss/components/_home.scss */
+.subscribe input {
+  margin: 0 !important;
+  color: #16578f;
+}
+
+/* line 134, ../scss/components/_home.scss */
+.subscribe-btn {
+  background: url(../images/subscribe-btn.jpg) no-repeat;
+  width: 45px;
+  height: 37px;
+  border: none;
+}
+
+/* line 140, ../scss/components/_home.scss */
+.innerpage-banner {
+  /*height: 150px;*/
+  overflow: hidden;
+  margin-bottom: 20px;
+  border-bottom: solid 3px #e5ecf2;
+  text-align: center;
+  background: #e5ecf2;
+}
+
+/* line 148, ../scss/components/_home.scss */
+.innerpage-banner img {
+  width: auto;
+}
+
+/* line 151, ../scss/components/_home.scss */
+.headerMobile {
+  display: none;
+}
+
+/* line 154, ../scss/components/_home.scss */
+.phone-no {
+  margin: 8px 0 0 20px;
+  display: inline-block;
+}
+
+/* line 158, ../scss/components/_home.scss */
+.none {
+  display: none !important;
+}
+
+/*.content {
+  padding: 0;
+}*/
+/* line 166, ../scss/components/_home.scss */
+.content h1 {
+  border-bottom: dotted 1px #ccc;
+  padding: 0 0 5px 0;
+  margin: 0 0 15px 0;
+}
+
+/* line 171, ../scss/components/_home.scss */
+.content img {
+  border: solid 5px #ccc;
+  margin: 0 0 20px 0;
+}
+
+/* line 175, ../scss/components/_home.scss */
+.constituency {
+  margin-top: 0px;
+}
+
+/* line 180, ../scss/components/_home.scss */
+#home-carousel .slick-prev {
+  background: url(../images/arrow-left.png);
+  width: 51px;
+  height: 50px;
+}
+
+/* line 185, ../scss/components/_home.scss */
+#home-carousel .slick-next {
+  background: url(../images/arrow-right.png);
+  width: 51px;
+  height: 50px;
+}
+
+/* line 190, ../scss/components/_home.scss */
+#home-carousel img {
+  width: 100%  !important;
+  max-height: 500px !important;
+}
+
+/* line 195, ../scss/components/_home.scss */
+.activities-header {
+  font-size: 16px;
+  color: #333;
+}
+
+/* line 199, ../scss/components/_home.scss */
+.news-poll {
+  background: #e5ecf2;
+  margin: 20px 0 0 0;
+  padding: 15px 0;
+}
+
+/* line 205, ../scss/components/_home.scss */
+.slick-slide h1 {
+  padding-left: 18px;
+}
+
+/* line 208, ../scss/components/_home.scss */
+.slide-wrapper {
+  position: relative;
+}
+
+/* line 211, ../scss/components/_home.scss */
+.slide-overlay {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  background-color: rgba(0, 0, 0, 0.3);
+  padding: 15px;
+}
+
+/* line 218, ../scss/components/_home.scss */
+.slide-body-text {
+  color: #ffffff;
+}
+
+/* line 221, ../scss/components/_home.scss */
+.slide-body-text h3 {
+  color: #c7e249;
+}
+
+/* line 224, ../scss/components/_home.scss */
+.vision-left li {
+  font-size: 13px;
+}
+
+/* ============ Foundation Overrides ================= */
+/* line 230, ../scss/components/_home.scss */
+.padding-none {
+  padding: 0;
+}
+
+/* line 233, ../scss/components/_home.scss */
+.top-bar {
+  background: none;
+}
+
+/* line 236, ../scss/components/_home.scss */
+.top-bar-section ul li {
+  /*border-right: solid 1px #16578f;
+  background: url(../images/menu-divider.png) no-repeat right center;*/
+  background: none;
+}
+
+/*.top-bar-section ul li a.active {
+  border-bottom: solid 5px #ffffff;
+}*/
+/* line 244, ../scss/components/_home.scss */
+.top-bar-section ul li > a {
+  font-family: 'OpenSans-Semibold';
+  padding: 0 16px;
+  color: #16578f;
+  font-size: 12px;
+  background: #e5ecf2 url(../images/menu-active.png) no-repeat;
+}
+
+/* line 251, ../scss/components/_home.scss */
+.top-bar-section ul li > a.active {
+  font-family: 'OpenSans-Semibold';
+  /*padding: 0 16px !important;*/
+  color: #16578f;
+  font-size: 12px;
+  background: url(../images/home-menu-active.png) no-repeat bottom center !important;
+}
+
+/*.top-bar-section ul li > a:last-child {
+  padding-right: 0 !important;
+}*/
+/* line 261, ../scss/components/_home.scss */
+.no-js .top-bar-section ul li:hover > a {
+  color: #1c5776;
+  background: #e5ecf2 url(../images/menu-divider.png) no-repeat right center;
+}
+
+/*Website: Kesineni Srinivas.
+  Development Started : 18th March 2015.
+  Developer: Vanava Raju Adabala. 
+  Stack: Mobile optimization using Foundation Frame work. */
+/* line 269, ../scss/components/_home.scss */
+body .navigation .top-bar-section ul li:hover {
+  background: url(../images/home-menu-active.png) no-repeat center bottom !important;
+  color: red !important;
+}
+
+/* line 273, ../scss/components/_home.scss */
+body .navigation .top-bar-section ul li.active {
+  background: url(../images/home-menu-active.png) no-repeat center bottom !important;
+}
+
+/* line 277, ../scss/components/_home.scss */
+.top-bar-section li:not(.has-form) a:hover:not(.button),
+.top-bar-section li.active:not(.has-form) a:hover:not(.button) {
+  background: none repeat scroll 0 0 #16578f;
+  color: #fff;
+}
+
+/*body .navigation .top-bar-section ul li.active:hover {
+  background: url(../images/menu-active.png) no-repeat center bottom !important;
+}*/
+/* line 288, ../scss/components/_home.scss */
+body .navigation .top-bar-section ul li:last-child a {
+  padding-right: 0;
+}
+
+/* line 291, ../scss/components/_home.scss */
+body .navigation .top-bar-section li:not(.has-form) a:not(.button) {
+  background: none;
+  padding-left: 13px;
+  padding-right: 13px;
+  color: #16578f;
+}
+
+/* line 299, ../scss/components/_home.scss */
+body .navigation .top-bar-section ul li:active a {
+  color: #25577A !important;
+}
+
+/* line 304, ../scss/components/_home.scss */
+.gallery-content {
+  min-height: 175px;
+  text-align: justify;
+}
+
+/* line 309, ../scss/components/_home.scss */
+.view-more-link {
+  font-size: 12px;
+  margin-right: 25px;
+  margin-bottom: 30px;
+}
+
+/* line 316, ../scss/components/_home.scss */
+.top-text-heading {
+  margin-bottom: 30px;
+}
+
+@media only screen and (min-width: 640px) and (max-width: 1024px) {
+  /*body .navigation .top-bar-section li:not(.has-form) a:not(.button) {
+    padding: 0 8px;
+  }*/
+  /* line 325, ../scss/components/_home.scss */
+  .activities {
+    padding: 15px 0px;
+  }
+
+  /* line 328, ../scss/components/_home.scss */
+  .news-poll, .constituency {
+    padding: 0 8px;
+  }
+
+  /*.headerLogo .register-signin {
+    display: none;
+  }
+  .content {
+    padding: 0 8px;
+  }*/
+  /* line 338, ../scss/components/_home.scss */
+  .logo {
+    /*width: 100%; */
+    padding-bottom: 0;
+  }
+
+  /* line 342, ../scss/components/_home.scss */
+  header .navigation {
+    padding: 0;
+  }
+
+  /* line 345, ../scss/components/_home.scss */
+  .slide-overlay {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 5px;
+  }
+
+  /*.slide-body-text{
+    color: #ffffff;
+  }*/
+  /* line 355, ../scss/components/_home.scss */
+  .slide-body-text h3 {
+    color: #c7e249;
+    font-size: 20px;
+  }
+
+  /* line 359, ../scss/components/_home.scss */
+  .slide-body-text p {
+    margin: 0;
+  }
+}
+@media only screen and (min-width: 360px) and (max-width: 640px) {
+  /* line 367, ../scss/components/_home.scss */
+  .top-bar .toggle-topbar.menu-icon {
+    background: #0e4a54 url(../images/menuIcon.png) no-repeat;
+    right: 3%;
+    width: 43px;
+    border-radius: 3px;
+  }
+
+  /* line 373, ../scss/components/_home.scss */
+  .top-bar.expanded .title-area {
+    background: none;
+  }
+
+  /* line 376, ../scss/components/_home.scss */
+  .top-bar-section ul li {
+    background: #e5ecf2;
+    border-bottom: dotted 1px #ccc;
+  }
+
+  /* line 380, ../scss/components/_home.scss */
+  .top-bar-section ul li > a {
+    padding: 12px 0 12px 10px;
+  }
+
+  /* line 383, ../scss/components/_home.scss */
+  .top-bar-section ul li > a.active {
+    background: #16578f !important;
+    color: #fff !important;
+  }
+
+  /* line 388, ../scss/components/_home.scss */
+  img {
+    margin: 0 auto;
+  }
+
+  /* line 391, ../scss/components/_home.scss */
+  header .navigation {
+    padding: 0;
+  }
+}
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  /* line 401, ../scss/components/_home.scss */
+  body .navigation .top-bar-section ul li:hover {
+    background: #a1bbd2 !important;
+    color: #fff !important;
+  }
+
+  /* line 407, ../scss/components/_home.scss */
+  .register-signin ul li:first-child {
+    display: none;
+  }
+
+  /* line 410, ../scss/components/_home.scss */
+  .register, .signin, .site-view, .contactus {
+    font-size: 11px;
+    padding-left: 21px;
+  }
+
+  /*.logo img {
+    max-width: 80%;
+  }*/
+  /* line 417, ../scss/components/_home.scss */
+  #home-carousel {
+    height: 130px;
+  }
+
+  /* line 420, ../scss/components/_home.scss */
+  .activities {
+    padding: 15px 0px;
+  }
+
+  /* line 423, ../scss/components/_home.scss */
+  .news-poll, .constituency {
+    padding: 0 8px;
+  }
+
+  /* line 426, ../scss/components/_home.scss */
+  .top-bar.expanded .title-area {
+    background: none;
+  }
+
+  /* line 429, ../scss/components/_home.scss */
+  .top-bar .toggle-topbar.menu-icon {
+    background: #0e4a54 url(../images/menuIcon.png) no-repeat;
+    right: 3%;
+    width: 43px;
+    border-radius: 3px;
+  }
+
+  /* line 435, ../scss/components/_home.scss */
+  .headerMobile {
+    display: none;
+  }
+
+  /* line 438, ../scss/components/_home.scss */
+  .headerLogo .register-signin {
+    display: none;
+  }
+
+  /* line 441, ../scss/components/_home.scss */
+  header .navigation {
+    padding: 0;
+  }
+
+  /* line 444, ../scss/components/_home.scss */
+  .top-bar-section ul li {
+    background: #e5ecf2;
+    border-bottom: dotted 1px #ccc;
+    display: block !important;
+    text-align: left;
+  }
+
+  /* line 450, ../scss/components/_home.scss */
+  .top-bar-section ul li > a {
+    padding: 12px 0 12px 10px;
+  }
+
+  /* line 453, ../scss/components/_home.scss */
+  .top-bar-section ul li > a.active {
+    background: #16578f !important;
+    color: #fff !important;
+  }
+
+  /* line 457, ../scss/components/_home.scss */
+  body .navigation .top-bar-section ul li:hover {
+    background: #a1bbd2 !important;
+    color: #fff !important;
+  }
+
+  /* line 461, ../scss/components/_home.scss */
+  body .navigation .top-bar-section li:not(.has-form) a:not(.button) {
+    background: none;
+  }
+
+  /*.content {
+    padding: 0 8px;
+  }*/
+  /* line 467, ../scss/components/_home.scss */
+  .slide-overlay {
+    display: none;
+  }
+
+  /* line 471, ../scss/components/_home.scss */
+  div.slideshow-container {
+    height: auto;
+  }
+
+  /* line 475, ../scss/components/_home.scss */
+  header .top-nav ul li {
+    padding-left: 10px;
+  }
+
+  /* line 478, ../scss/components/_home.scss */
+  .top-sub-links {
+    padding: 0;
+  }
+
+  /* line 481, ../scss/components/_home.scss */
+  .form-group {
+    padding: 10px 0;
+  }
+
+  /* line 484, ../scss/components/_home.scss */
+  .navbar-toggle {
+    background: #16578f;
+  }
+
+  /* line 487, ../scss/components/_home.scss */
+  .navbar-toggle .icon-bar {
+    background: #fff;
+  }
+
+  /* line 490, ../scss/components/_home.scss */
+  .top-bar-section ul {
+    padding: 0;
+  }
+
+  /* line 493, ../scss/components/_home.scss */
+  .user-log {
+    display: block;
+    padding: 0 0 10px 0;
+  }
+
+  /* line 497, ../scss/components/_home.scss */
+  .registration-wrapper .img-responsive {
+    display: none;
+  }
+
+  /* line 500, ../scss/components/_home.scss */
+  .social {
+    text-align: center;
+    padding-bottom: 0;
+  }
+}
+/* Search filter styles */
+/* line 506, ../scss/components/_home.scss */
+.filter-options .search {
+  margin: 0 0 12px 65px;
+}
+
+/* View Profile Styles */
+/* line 512, ../scss/components/_home.scss */
+.user-profile {
+  font-size: 13px;
+}
+
+/* line 515, ../scss/components/_home.scss */
+.user-profile .member-info {
+  font-size: 13px;
+}
+
+/* line 518, ../scss/components/_home.scss */
+.user-profile .member-info .details .col-lg-12 {
+  margin: 0 0 12px 0;
+}
+
+/* line 521, ../scss/components/_home.scss */
+.member-info span {
+  font-weight: normal !important;
+  padding: 0 !important;
+}
+
+/* line 525, ../scss/components/_home.scss */
+.table-striped thead tr td {
+  background: #666;
+  border-right: solid 1px #fff;
+  color: #fff;
+}
+
+/* line 530, ../scss/components/_home.scss */
+.table-striped tbody tr td {
+  background: #cccccc;
+  border-right: solid 1px #fff;
+}
+
+/* line 535, ../scss/components/_home.scss */
+.member-info .col-lg-12 {
+  margin: 0 0 12px 0;
+}
+
+/*.member-info .col-lg-12 h1{
+  margin-left: 14px;
+}*/
+/* line 541, ../scss/components/_home.scss */
+.members-graph-info h4 {
+  margin-bottom: 0 !important;
+}
+
+/* line 544, ../scss/components/_home.scss */
+.members-graph-info .bargraph, .members-graph-info .linegraph, .members-graph-info .donut {
+  border: solid 1px #ccc;
+}
+
+/* line 547, ../scss/components/_home.scss */
+.profile-data {
+  margin: 0;
+  width: 100%;
+  font-size: 12px;
+}
+
+/* line 552, ../scss/components/_home.scss */
+.profile-data div {
+  margin-bottom: 10px;
+}
+
+/* line 555, ../scss/components/_home.scss */
+.member-info h1 span.title-tag {
+  margin-left: 14px;
+}
+
+/* line 559, ../scss/components/_home.scss */
+.wordwrap {
+  word-break: break-all;
+}
+
+/* line 1, ../scss/components/_list.scss */
+.search-filter {
+  background: #e7eaeb;
+  border-bottom: solid 1px #ccc;
+  padding: 5px 0;
+  margin: 0 0 5px 0;
+}
+
+/* line 7, ../scss/components/_list.scss */
+.search-filter .search {
+  margin: 0;
+  border: solid 1px #b4b4b4;
+  float: left;
+  width: 80%;
+}
+
+/* line 13, ../scss/components/_list.scss */
+.search-filter .search-btn {
+  float: left;
+  width: 35px;
+  height: 34px;
+  border: none;
+  background: url(../images/cds-sprite.png) no-repeat 0 -217px;
+  cursor: pointer;
+}
+
+/* line 21, ../scss/components/_list.scss */
+.search-filter .adv-search {
+  float: left;
+  padding: 7px 8px;
+  border: none;
+  background: #4b4b4b;
+  cursor: pointer;
+  color: #fff;
+}
+
+/* line 30, ../scss/components/_list.scss */
+.search-filter .actions {
+  padding: 8px 0 0 0;
+}
+
+/* line 33, ../scss/components/_list.scss */
+.search-filter .actions .add {
+  margin: 0;
+  background: url(../images/cds-sprite.png) no-repeat 0 -302px;
+  height: 20px;
+  padding: 0 0 0 22px;
+  margin: 0 8px 0 0;
+  font-size: 14px;
+  color: #333333;
+  cursor: pointer;
+}
+
+/* line 43, ../scss/components/_list.scss */
+.search-filter .actions .edit {
+  margin: 0;
+  background: url(../images/cds-sprite.png) no-repeat 0 -328px;
+  height: 20px;
+  padding: 0 12px 0 20px;
+  margin: 0 0 0 12px;
+  font-size: 14px;
+  color: #333333;
+  cursor: pointer;
+}
+
+/* line 53, ../scss/components/_list.scss */
+.search-filter .actions .grey {
+  color: #b6b6b6;
+}
+
+/* line 56, ../scss/components/_list.scss */
+.search-filter .actions .delete {
+  margin: 0;
+  background: url(../images/cds-sprite.png) no-repeat 0 -352px;
+  height: 20px;
+  padding: 0 10px 0 20px;
+  margin: 0 0 0 10px;
+  font-size: 14px;
+  color: #333333;
+  cursor: pointer;
+}
+
+/* line 66, ../scss/components/_list.scss */
+.search-filter .filter, .filter {
+  background: url(../images/cds-sprite.png) no-repeat 0 -257px;
+  width: 69px;
+  height: 34px;
+  cursor: pointer;
+  border: none;
+}
+
+/* line 73, ../scss/components/_list.scss */
+.filter-wrapper {
+  position: relative;
+  color: #999;
+}
+
+/* line 77, ../scss/components/_list.scss */
+.filter-options {
+  background: #f2f2f2;
+  border: solid 1px #cecece;
+  margin-bottom: 5px;
+  position: relative;
+}
+
+/* line 83, ../scss/components/_list.scss */
+.filter-options .arrow {
+  background: url(../images/filter-arrow.png) no-repeat;
+  position: absolute;
+  z-index: 10;
+  right: 50px;
+  top: -16px;
+  width: 18px;
+  height: 15px;
+}
+
+/* line 92, ../scss/components/_list.scss */
+.filter-options .options {
+  margin: 0;
+  float: left;
+}
+
+/* line 96, ../scss/components/_list.scss */
+.filter-options .options span {
+  float: left;
+  font-size: 13px;
+  margin: 4px 15px 10px 0;
+  font-weight: bold;
+}
+
+/* line 102, ../scss/components/_list.scss */
+.filter-options .options ul {
+  list-style: none;
+  float: left;
+  padding: 5px;
+}
+
+/* line 107, ../scss/components/_list.scss */
+.filter-options .options ul li {
+  font-size: 13px;
+  padding: 0 0 5px 0;
+}
+
+/* line 111, ../scss/components/_list.scss */
+.filter-options input.age {
+  display: inline-block;
+  width: 60px;
+  margin-top: 4px;
+  margin-left: 4px;
+  margin-right: 12px;
+  background: #e3ebef;
+  border: solid 1px #a5cbde;
+}
+
+/* line 120, ../scss/components/_list.scss */
+.filter-options input.city {
+  width: 175px;
+  margin: 0 20px 15px 0;
+  background: #e3ebef;
+  border: solid 1px #a5cbde;
+}
+
+/* line 126, ../scss/components/_list.scss */
+.filter-options .filterContainer {
+  margin: 15px 0 0;
+}
+
+/* line 131, ../scss/components/_list.scss */
+.filter-options .selected {
+  background: #dfe5e9;
+  padding: 6px;
+  /*  margin: 0 0 15px 0; */
+  color: #0074b7;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+/* line 139, ../scss/components/_list.scss */
+.filter-options .selected a {
+  background: #fff;
+  border: solid 1px #ccc;
+  padding: 1px 8px 3px;
+  margin: 0 0 0 10px;
+  color: #000;
+  font-size: 12px;
+  font-weight: normal;
+}
+
+/* line 149, ../scss/components/_list.scss */
+.tiles .photo2 {
+  height: 200px;
+  margin: 0 0 20px 0;
+  /* padding: 10px; */
+  text-align: center;
+}
+
+/* line 155, ../scss/components/_list.scss */
+.tiles .photo2 img {
+  border: solid 5px #fff;
+  height: 200px;
+  width: 100%;
+  vertical-align: inherit;
+}
+
+/* line 161, ../scss/components/_list.scss */
+.tile-section {
+  border: 1px #d0d0d0 solid;
+  background: #f6f6f6;
+  margin: 75px 0px 0px 30px;
+  padding-bottom: 10px;
+  display: none;
+}
+
+/* line 168, ../scss/components/_list.scss */
+.tiles .name {
+  padding: 10px 0px 10px 0px;
+}
+
+/* line 171, ../scss/components/_list.scss */
+.tiles .details label {
+  padding: 10px 0 0 0;
+}
+
+/* line 177, ../scss/components/_list.scss */
+.tiles-list {
+  background: #e7eaeb;
+  padding: 20px;
+  margin-bottom: 10px;
+  min-height: 500px;
+  /*height: 750px;
+  overflow: scroll;
+  overflow-x: hidden;*/
+}
+
+/*
+.tiles-list ul {
+  margin: 0;
+  padding: 0; 
+}
+.tiles-list ul li {
+  padding: 0;
+} */
+/* line 194, ../scss/components/_list.scss */
+.tiles-list .tiles {
+  background: #fff;
+  padding: 0px;
+  margin: 10px;
+  min-height: 36em;
+}
+
+/* line 200, ../scss/components/_list.scss */
+.tiles-list .tiles .photo1 {
+  background: url(../images/image.png) no-repeat top center;
+  height: 200px;
+  width: 200px;
+  margin: 0;
+  border: solid 1px #fff;
+}
+
+/* line 207, ../scss/components/_list.scss */
+.tiles-list .tiles .photo2 {
+  background: url(../images/image2.png) no-repeat top center;
+  width: 100%;
+  height: 200px;
+  display: inline-block;
+  margin: 0;
+  border: solid 1px #fff;
+}
+
+/* line 215, ../scss/components/_list.scss */
+.tiles-list .tiles .details {
+  margin: 15px 10px;
+  height: 240px;
+}
+
+/* line 219, ../scss/components/_list.scss */
+.tiles-list .tiles .details h6 {
+  font-size: 13px;
+  font-weight: bold;
+  word-break: break-all;
+  word-wrap: break-word;
+  overflow: hidden;
+}
+
+/* line 227, ../scss/components/_list.scss */
+.tiles-list .tiles .details label {
+  font-size: 13px;
+  word-wrap: break-word;
+  word-break: break-all;
+  height: 30px;
+  overflow: hidden;
+}
+
+/* line 234, ../scss/components/_list.scss */
+.tiles-list .tiles .status {
+  background: #999999;
+  padding: 6px;
+}
+
+/* line 238, ../scss/components/_list.scss */
+.tiles-list .tiles .status input[type="checkbox"] {
+  margin: 0;
+}
+
+/* line 241, ../scss/components/_list.scss */
+.tiles-list .tiles .status .volunteer, .volunteer {
+  background: url(../images/cds-sprite.png) no-repeat 0 -152px;
+  width: 30px;
+  height: 26px;
+  display: inline-block;
+}
+
+/* line 247, ../scss/components/_list.scss */
+.tiles-list .tiles .status .cadre, .cadre {
+  background: url(../images/cds-sprite.png) no-repeat 0 -186px;
+  width: 25px;
+  height: 26px;
+  display: inline-block;
+}
+
+/* line 257, ../scss/components/_list.scss */
+.status-tab {
+  height: 35px;
+}
+/* line 259, ../scss/components/_list.scss */
+.status-tab input {
+  margin-top: 5px !important;
+  display: inline-block;
+}
+
+/* line 1, ../scss/components/_signin.scss */
+.registration-wrapper {
+  padding: 35px 0 10px 0;
+}
+
+/* line 4, ../scss/components/_signin.scss */
+.registration-wrapper h1 {
+  padding: 0 0 40px 0;
+  margin: 0;
+}
+
+/* line 8, ../scss/components/_signin.scss */
+.registration-wrapper h1 span {
+  font-size: 14px;
+  color: #666;
+  font-family: opensans-regular;
+  font-weight: normal;
+  padding: 0 0 0 5px;
+}
+
+/* line 15, ../scss/components/_signin.scss */
+.registration-wrapper input.button {
+  margin: 0;
+  background: #efd303;
+  padding: 8px 35px;
+  color: #000000;
+  font-family: opensans-semibold;
+  font-size: 13px;
+  border: none;
+}
+
+/* line 24, ../scss/components/_signin.scss */
+.registration-wrapper input.cancel {
+  margin: 0;
+  background: #b0b0b0;
+  padding: 8px 35px;
+  color: #000000;
+  font-family: opensans-semibold;
+  font-size: 14px;
+  border: none;
+  cursor: pointer;
+}
+
+/* line 34, ../scss/components/_signin.scss */
+.registration-wrapper .button-wrapper {
+  margin: 0px;
+}
+
+/* line 37, ../scss/components/_signin.scss */
+.registration-wrapper .forgot-password {
+  font-size: 13px;
+  padding: 10px 0 0 0;
+  text-decoration: underline;
+}
+
+/* line 42, ../scss/components/_signin.scss */
+.registration-wrapper .or {
+  text-align: center;
+}
+
+/* line 45, ../scss/components/_signin.scss */
+.registration-wrapper .gender label {
+  display: inline-block;
+  padding: 0 22px 0 0;
+}
+
+/* line 49, ../scss/components/_signin.scss */
+.form-group {
+  padding: 0;
+}
+
+/* line 60, ../scss/components/_signin.scss */
+.content-wrapper {
+  overflow: hidden;
+  min-height: 500px;
+  border: solid 1px #d0d0d0;
+  padding: 10px;
+  margin: 0 0 15px 0;
+}
+
+/* line 68, ../scss/components/_signin.scss */
+.members img {
+  border: solid 5px #ffffff;
+  box-shadow: 0px 0px 6px #666;
+  -moz-box-shadow: 0px 0px 6px #666;
+  -webkit-box-shadow: 0px 0px 6px #666;
+  margin: 10px 0 0 0;
+  width: 140px;
+  height: 125px;
+  background: url(../images/image2.png) no-repeat top center;
+}
+
+/* line 78, ../scss/components/_signin.scss */
+.member-info span {
+  padding: 0 8px 0 0;
+  font-weight: bold;
+}
+
+/* line 82, ../scss/components/_signin.scss */
+.member-info label {
+  padding: 0 0 8px 0;
+  display: table;
+}
+
+/* line 86, ../scss/components/_signin.scss */
+.member-info a.view-more, .member-info a.reset-pswd {
+  padding: 0 0 0 15px;
+  text-decoration: underline;
+  font-weight: bold;
+  font-size: 13px;
+}
+
+/* line 92, ../scss/components/_signin.scss */
+.content-wrapper h4 {
+  background: #efeeee;
+  font-size: 14px;
+  margin: 10px 0;
+  padding: 8px 15px;
+  font-weight: bold;
+}
+
+/* line 101, ../scss/components/_signin.scss */
+.login-wrapper {
+  width: 440px;
+  margin-top: 120px;
+  background: #dfe5e9;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  box-shadow: 5px 5px 0px #c5c5c5;
+}
+
+/* line 112, ../scss/components/_signin.scss */
+.login-wrapper .login {
+  text-align: left;
+  padding: 10px 25px 25px;
+  font-size: 14px;
+}
+
+/* line 118, ../scss/components/_signin.scss */
+.login-wrapper .login h4 {
+  margin: 0 0 16px 0;
+  padding: 0 0 8px 0;
+  border-bottom: dotted 1px #ccc;
+}
+
+/* line 123, ../scss/components/_signin.scss */
+.login-wrapper .login-btn {
+  background: #0074b7;
+  padding: 5px 8px;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+/* line 130, ../scss/components/_signin.scss */
+.login-wrapper .login .error {
+  color: red;
+  text-align: center;
+  padding: 5px 0 0 0;
+}
+
+@media only screen and (width: 768px) {
+  /* line 138, ../scss/components/_signin.scss */
+  .registration-wrapper .img-responsive {
+    display: none;
+  }
+}
+/* line 1, ../scss/components/_form.scss */
+.cssSlideUp {
+  transition: .5s linear all;
+  overflow: hidden;
+}
+
+/* line 5, ../scss/components/_form.scss */
+.cssSlideUp.ng-hide {
+  height: 0;
+}
+
+/* line 8, ../scss/components/_form.scss */
+.active-tab {
+  background-image: url("../images/left-nav-active-tab.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* line 13, ../scss/components/_form.scss */
+.formContent {
+  margin-top: 30px;
+  min-height: 700px;
+}
+
+/* line 19, ../scss/components/_form.scss */
+.formContent label {
+  font-weight: normal;
+  margin-right: 10px;
+  margin-top: 5px;
+}
+
+/* line 26, ../scss/components/_form.scss */
+.formContent .input {
+  width: 350px;
+}
+
+/* line 29, ../scss/components/_form.scss */
+.radioGroup {
+  /* margin-top:10px; */
+}
+
+/* line 32, ../scss/components/_form.scss */
+.formContent .submit, .submit {
+  background-color: #EFD303;
+  color: black;
+  font-weight: bold;
+  /*padding: 12px 25px;
+	width:150px;
+	height:40px;
+	padding:0;*/
+  margin-right: 15px;
+  box-shadow: 0 3px 0 rgba(122, 107, 11, 0.7);
+}
+
+/* line 43, ../scss/components/_form.scss */
+.formContent .cancel, .cancel {
+  background-color: #B0B0B0;
+  color: black;
+  font-weight: bold;
+  	/*padding: 12px 25px;
+    width:150px;
+    height:40px; */
+  box-shadow: 0 3px 0 rgba(176, 176, 176, 0.7);
+}
+
+/* line 52, ../scss/components/_form.scss */
+.link {
+  text-decoration: underline;
+}
+
+/* 
+.datePickerCustom  .ui-widget-header{
+	background:url("images/ui-bg_gloss-wave_35_f6a828_500x100.png") repeat-x scroll 50% 50% rgb(55,78,87);
+} */
+/* line 1, ../scss/components/_left-nav.scss */
+.side-nav li a {
+  border-radius: 3px 0 0 3px;
+  width: 200px;
+  padding-bottom: 0 !important;
+  padding-top: 0 !important;
+  line-height: 40px;
+  background: #A2C2D5;
+  border: 1px solid #000;
+  outline: none;
+}
+
+/* line 13, ../scss/components/_left-nav.scss */
+.side-nav li a.disable,
+.side-nav li a.disable:hover {
+  background: #E6EAEB !important;
+  border: 1px solid #ccc !important;
+  color: black;
+  /*pointer-events:none;*/
+}
+
+/* line 21, ../scss/components/_left-nav.scss */
+.side-nav li a.active,
+.side-nav li a.active:hover,
+.side-nav li a.active:visited {
+  width: auto;
+  cursor: default;
+  line-height: 42px;
+  border: 0 !important;
+  background: transparent url("../images/left-nav-active-tab.png") no-repeat left top !important;
+  color: white;
+}
+
+/* line 32, ../scss/components/_left-nav.scss */
+.side-nav li a.success,
+.side-nav li a.success:hover,
+.side-nav li a.success {
+  width: auto;
+  cursor: default;
+  line-height: 42px;
+  border: 0 !important;
+  background: url("../images/tick-mark.png") no-repeat right center #8ebdce !important;
+}
+
+/* line 43, ../scss/components/_left-nav.scss */
+#left-nav-mobile {
+  display: none;
+}
+
+/* line 46, ../scss/components/_left-nav.scss */
+.rightContent {
+  border: 1px solid #ccc;
+  margin-left: -77px !important;
+  padding-bottom: 15px;
+  margin-bottom: 55px;
+}
+
+/* line 52, ../scss/components/_left-nav.scss */
+.leftContent {
+  z-index: 1;
+}
+
+/* line 56, ../scss/components/_left-nav.scss */
+.registrationHeading {
+  padding-left: 15px;
+  margin: 20px 0 20px 0;
+}
+
+/* line 61, ../scss/components/_left-nav.scss */
+.required {
+  border-left: 4px solid #FF3A3A !important;
+}
+
+/* file input styles*/
+/* line 65, ../scss/components/_left-nav.scss */
+.input-group-addon, .input-group-btn, .input-group .form-control {
+  display: table-cell;
+}
+
+/* line 69, ../scss/components/_left-nav.scss */
+.mock-input {
+  float: left;
+}
+
+/* line 72, ../scss/components/_left-nav.scss */
+.mock-browse {
+  height: 35px;
+  background-color: #0174B7;
+  box-shadow: 0 2px 0 rgba(176, 176, 176, 0.7);
+  color: #fff !important;
+  font-weight: bold;
+  height: 37px;
+  width: 100px;
+  border-radius: 3px;
+  vertical-align: middle;
+  border-radius: 0 3px 3px 0;
+  padding-left: 25px;
+}
+
+/* line 85, ../scss/components/_left-nav.scss */
+.mock-browse label {
+  color: #fff !important;
+}
+
+/* line 88, ../scss/components/_left-nav.scss */
+#profilePhoto {
+  position: absolute;
+  visibility: hidden;
+}
+
+/* line 1, ../scss/components/_loader.scss */
+.loader-input {
+  float: left;
+}
+
+/* line 7, ../scss/components/_loader.scss */
+.loader-container img {
+  margin-left: 20px;
+  margin-top: 6px;
+}
+
+/* line 12, ../scss/components/_loader.scss */
+.status-message {
+  display: inline-block;
+  padding-left: 20px;
+  padding-top: 6px;
+  font-size: 12px;
+  color: #35B443;
+}
+
+/* line 20, ../scss/components/_loader.scss */
+.status-message.error-state {
+  color: red;
+  background-color: #fff;
+}
+
+/* line 1, ../scss/components/_validation.scss */
+.error-class {
+  clear: both;
+  color: red;
+  font-size: 11px;
+  margin-bottom: 15px;
+}
+
+/* line 7, ../scss/components/_validation.scss */
+.error-class .error-content:empty {
+  display: none;
+  border: solid 2px red;
+}
+
+/* line 12, ../scss/components/_validation.scss */
+.row.error-field input, .row.error-field select {
+  border: 1px solid #ff3a3a;
+}
+
+/* line 17, ../scss/components/_validation.scss */
+input.error-field, select.error-field {
+  border: 1px solid #ff3a3a;
+  margin-bottom: 10px;
+}
+
+/* line 2, ../scss/components/_view-member.scss */
+.mobile-node {
+  height: 30px;
+  overflow: hidden;
+}
+
+/* line 7, ../scss/components/_view-member.scss */
+.view-memeber-work-sheet {
+  border: none;
+}
+
+/* line 11, ../scss/components/_view-member.scss */
+.view-memeber-work-sheet thead {
+  background-color: #bbb;
+}
+
+/* line 14, ../scss/components/_view-member.scss */
+.view-memeber-work-sheet thead tr th {
+  color: #FFF;
+  text-align: center;
+  font-size: 12px;
+}
+
+/* line 19, ../scss/components/_view-member.scss */
+.view-memeber-work-sheet thead th {
+  border: 1px solid #000;
+  border-left: 0;
+  border-bottom: 0;
+}
+
+/* line 24, ../scss/components/_view-member.scss */
+.view-memeber-work-sheet tbody tr td {
+  text-align: center;
+  border: 1px solid #000;
+  border-left: 0;
+}
+
+/* line 1, ../scss/components/_voter.scss */
+#pincode {
+  float: left;
+}
+
+/* line 6, ../scss/components/_voter.scss */
+.search-icon {
+  left: 325px;
+  position: absolute;
+  top: 10px;
+  cursor: pointer;
+}
+
+/* line 12, ../scss/components/_voter.scss */
+.address-line {
+  display: inline-block;
+  padding-top: 7px;
+}
+
+/* line 17, ../scss/components/_voter.scss */
+.ui-tooltip {
+  background: #FAEEEE;
+  color: #C54A4C;
+  border: 1px solid #AC5253;
+  padding: 0;
+  opacity: 1;
+  font-size: 1em;
+  max-height: 50px;
+  max-width: 350px;
+}
+
+/* line 28, ../scss/components/_voter.scss */
+.ui-tooltip-content {
+  position: relative;
+  padding: 1em;
+}
+
+/* line 32, ../scss/components/_voter.scss */
+.ui-tooltip-content::after {
+  content: '';
+  position: absolute;
+  border-style: solid;
+  display: block;
+  width: 0;
+}
+
+/* line 39, ../scss/components/_voter.scss */
+.errorToolTip .ui-tooltip-content::after {
+  top: 5px;
+  left: -10px;
+  border-color: transparent #AC5253;
+  border-width: 10px 10px 10px 0;
+}
+
+/* line 45, ../scss/components/_voter.scss */
+.bottom-space {
+  padding-bottom: 20px !important;
+}
+
+/* line 48, ../scss/components/_voter.scss */
+.social-icons {
+  margin: 0 8px 0 0;
+}
+
+/* line 51, ../scss/components/_voter.scss */
+#autoCompleteContainer ul {
+  width: 350px !important;
+  background-image: none !important;
+  background-color: #eaeaea;
+}
+
+/* line 57, ../scss/components/_voter.scss */
+#autoCompleteContainer ul li {
+  background-color: #eaeaea !important;
+  font-weight: normal;
+  font-size: 13px;
+  margin-bottom: 5px;
+  padding: 5px;
+}
+
+/* line 65, ../scss/components/_voter.scss */
+#autoCompleteContainer ul li.ui-state-focus {
+  border: 1px solid #ddd !important;
+  background-color: #eaeaea !important;
+  font-size: 13px;
+  font-weight: normal;
+}
+
+/* line 72, ../scss/components/_voter.scss */
+.orbit-caption {
+  display: none !important;
+}
+
+/* line 77, ../scss/components/_voter.scss */
+#autoCompleteContainer {
+  height: 37px;
+  width: 350px;
+}
+
+/* line 83, ../scss/components/_voter.scss */
+#autoCompleteContainer ul {
+  width: 350px !important;
+  background-image: none !important;
+  background-color: #eaeaea;
+  z-index: 200;
+}
+
+/* line 90, ../scss/components/_voter.scss */
+#autoCompleteContainer ul li {
+  background-color: #eaeaea !important;
+  font-weight: normal;
+  font-size: 13px;
+  margin-bottom: 5px;
+  padding: 5px;
+  word-wrap: break-word;
+  list-style: none;
+}
+
+/* line 101, ../scss/components/_voter.scss */
+#autoCompleteContainer ul li.ui-state-focus {
+  border: 1px solid #ddd !important;
+  background-image: none !important;
+  background-color: #ddd !important;
+  font-size: 13px;
+  font-weight: normal;
+  word-wrap: break-word;
+}
+
+/* line 110, ../scss/components/_voter.scss */
+.tool-tip {
+  background: url(/images/cds-sprite.png) no-repeat 0 -49px;
+  height: 14px;
+  padding: 0 0 0px 14px;
+  width: 1px;
+  background-color: #2c6eb8;
+  border-radius: 16px;
+  position: absolute;
+  left: 378px;
+  top: 9px;
+}
+
+/* line 121, ../scss/components/_voter.scss */
+.voter-search-tile {
+  background-color: #eaeaea;
+  margin-bottom: 5px;
+  height: auto;
+  padding: 12px;
+  width: 90%;
+  word-wrap: break-word;
+  cursor: pointer;
+}
+
+/* line 1, ../scss/components/_mission-vision.scss */
+.mission-vissionSubHeadings {
+  color: #333;
+}
+
+/* line 4, ../scss/components/_mission-vision.scss */
+.vision-mission {
+  margin: 0 0 20px 0;
+}
+
+/* line 7, ../scss/components/_mission-vision.scss */
+.vision-mission img, .vision img {
+  border: none;
+  margin: 8px 0;
+}
+
+/* line 11, ../scss/components/_mission-vision.scss */
+.vision-mission h6 {
+  margin: 23px 0 0 0;
+  font-size: 14px;
+}
+
+/* line 15, ../scss/components/_mission-vision.scss */
+.vision-mission .mission {
+  background: #e5ecf2;
+  box-shadow: 1px 1px 1px #999;
+  border-radius: 6px;
+  -moz-border-radius: 6px;
+  -webkit-border-radius: 6px;
+}
+
+/* line 23, ../scss/components/_mission-vision.scss */
+.vision span {
+  color: #1bb2ea;
+}
+
+/* line 26, ../scss/components/_mission-vision.scss */
+.vision span.justice {
+  color: #f15a3f;
+}
+
+/* line 29, ../scss/components/_mission-vision.scss */
+.vision span.economic {
+  color: #048894;
+}
+
+/* line 32, ../scss/components/_mission-vision.scss */
+.vision span.green {
+  color: #75b224;
+}
+
+/* line 35, ../scss/components/_mission-vision.scss */
+.vision span.improve {
+  color: #0032a5;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  /* line 40, ../scss/components/_mission-vision.scss */
+  .vision-mission h6 {
+    font-size: 14px;
+  }
+
+  /* line 43, ../scss/components/_mission-vision.scss */
+  .vision-mission h6 {
+    margin: 18px 0 0 0;
+  }
+}
+/* line 3, ../scss/components/_knowourmp.scss */
+.content .MpName {
+  font-weight: bold;
+}
+
+/* line 2, ../scss/components/_aboutConstituency.scss */
+.constituency-map img {
+  width: 100%;
+  height: 500px !important;
+}
+
+/* line 1, ../scss/components/_vertical-scroll.scss */
+.vert {
+  width: 100%;
+  height: 200px;
+  margin-bottom: 1.5em;
+}
+
+/* line 7, ../scss/components/_vertical-scroll.scss */
+.vert .simply-scroll-clip {
+  width: 100%;
+  height: 200px;
+}
+
+/* line 12, ../scss/components/_vertical-scroll.scss */
+.simply-scroll-container {
+  /*Container DIV - automatically generated */
+  position: relative;
+}
+
+/* line 16, ../scss/components/_vertical-scroll.scss */
+.simply-scroll-clip {
+  /*Clip DIV - automatically generated */
+  position: relative;
+  overflow: hidden;
+}
+
+/* galleryDirective */
+/* line 5, ../scss/components/_gallery.scss */
+div#container {
+  overflow: hidden;
+}
+
+/* line 9, ../scss/components/_gallery.scss */
+div.content a, div.navigation a {
+  text-decoration: none;
+}
+
+/* line 12, ../scss/components/_gallery.scss */
+div.content a:hover, div.content a:active {
+  text-decoration: underline;
+}
+
+/* line 16, ../scss/components/_gallery.scss */
+div.navigation a.pageLink {
+  height: 77px;
+  line-height: 77px;
+}
+
+/* line 21, ../scss/components/_gallery.scss */
+div.controls {
+  margin-top: 5px;
+  height: 23px;
+}
+
+/* line 25, ../scss/components/_gallery.scss */
+div.controls a {
+  padding: 5px;
+}
+
+/* line 28, ../scss/components/_gallery.scss */
+div.ss-controls {
+  float: left;
+}
+
+/* line 31, ../scss/components/_gallery.scss */
+div.nav-controls {
+  float: right;
+}
+
+/* line 35, ../scss/components/_gallery.scss */
+div.slideshow-container {
+  position: relative;
+  clear: both;
+  float: left;
+  height: 532px;
+}
+
+/* line 42, ../scss/components/_gallery.scss */
+div.loader {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: url("images/loader.gif");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* line 50, ../scss/components/_gallery.scss */
+div.slideshow span.image-wrapper {
+  display: block;
+  /*  position: absolute;
+    top: -34px;
+    right: 100px;*/
+}
+
+/* line 56, ../scss/components/_gallery.scss */
+div.slideshow a.advance-link {
+  display: block;
+  text-align: center;
+}
+
+/* line 61, ../scss/components/_gallery.scss */
+div.slideshow a.advance-link:hover,
+div.slideshow a.advance-link:active,
+div.slideshow a.advance-link:visited {
+  text-decoration: none;
+}
+
+/* line 66, ../scss/components/_gallery.scss */
+div.slideshow a.advance-link:focus {
+  outline: none;
+}
+
+/* line 70, ../scss/components/_gallery.scss */
+div.slideshow img {
+  width: 1000px;
+  height: 800px;
+  border-style: solid;
+}
+
+/* line 76, ../scss/components/_gallery.scss */
+div.caption-container {
+  float: right;
+  position: relative;
+  margin-top: 30px;
+}
+
+/* line 81, ../scss/components/_gallery.scss */
+span.image-caption {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/* line 88, ../scss/components/_gallery.scss */
+div.caption-container, span.image-caption {
+  width: 334px;
+}
+
+/* line 92, ../scss/components/_gallery.scss */
+div.caption {
+  padding: 0 12px;
+}
+
+/* line 96, ../scss/components/_gallery.scss */
+div.image-title {
+  font-weight: bold;
+  font-size: 1.4em;
+}
+
+/* line 100, ../scss/components/_gallery.scss */
+div.image-desc {
+  line-height: 1.3em;
+  padding-top: 12px;
+}
+
+/* line 104, ../scss/components/_gallery.scss */
+div.download {
+  margin-top: 8px;
+}
+
+/* line 107, ../scss/components/_gallery.scss */
+div.photo-index {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 0 12px;
+}
+
+/*div.navigation {
+  left: -50%;
+}*/
+/* line 117, ../scss/components/_gallery.scss */
+div.navigation a.pageLink {
+  display: block;
+  position: relative;
+  float: left;
+  margin: 2px;
+  width: 16px;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+/* line 126, ../scss/components/_gallery.scss */
+div.navigation a.pageLink:focus {
+  outline: none;
+}
+
+/* line 130, ../scss/components/_gallery.scss */
+ul.thumbs {
+  position: relative;
+  float: left;
+  margin: 0;
+  padding: 0;
+}
+
+/* line 136, ../scss/components/_gallery.scss */
+ul.thumbs li {
+  float: left;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+/* line 142, ../scss/components/_gallery.scss */
+a.thumb {
+  padding: 1px;
+  display: block;
+}
+
+/* line 146, ../scss/components/_gallery.scss */
+a.thumb:focus {
+  outline: none;
+}
+
+/* line 149, ../scss/components/_gallery.scss */
+ul.thumbs img {
+  border: none;
+  display: block;
+}
+
+/* line 153, ../scss/components/_gallery.scss */
+div.pagination {
+  clear: both;
+  position: relative;
+  left: -50%;
+}
+
+/* line 158, ../scss/components/_gallery.scss */
+div.pagination a, div.pagination span.current, div.pagination span.ellipsis {
+  position: relative;
+  display: block;
+  float: left;
+  margin-right: 2px;
+  padding: 4px 7px 2px 7px;
+  border: 1px solid #ccc;
+}
+
+/* line 166, ../scss/components/_gallery.scss */
+div.pagination a:hover {
+  text-decoration: none;
+}
+
+/* line 169, ../scss/components/_gallery.scss */
+div.pagination span.current {
+  font-weight: bold;
+}
+
+/* line 172, ../scss/components/_gallery.scss */
+div.pagination span.ellipsis {
+  border: none;
+  padding: 5px 0 3px 2px;
+}
+
+/* line 177, ../scss/components/_gallery.scss */
+div.gallery-gutter {
+  clear: both;
+  padding-bottom: 20px;
+}
+
+/* line 182, ../scss/components/_gallery.scss */
+div.navigation a.prev {
+  background-image: url(../images/prevPageArrow.gif);
+  width: 42px;
+}
+
+/* line 186, ../scss/components/_gallery.scss */
+div.navigation a.next {
+  background-image: url(../images/nextPageArrow.gif);
+  /*position: relative;
+    left: 114px;
+    bottom: 110px;*/
+  width: 42px;
+}
+
+/* line 194, ../scss/components/_gallery.scss */
+.navigation-container {
+  padding: 20px 0 0px 50px;
+}
+
+/*gallery styles ending*/
+/* line 1, ../scss/components/_registration.scss */
+.registerOverlayContainer {
+  padding: 15px;
+}
+
+/* line 5, ../scss/components/_registration.scss */
+.close-overlay {
+  font-size: 20px;
+  font-weight: bold;
+  position: absolute;
+  right: 25px;
+  width: 20px;
+  cursor: pointer;
+}
+
+/* line 13, ../scss/components/_registration.scss */
+.col-centered {
+  float: none;
+  margin: 0 auto;
+}
+
+/* line 17, ../scss/components/_registration.scss */
+.pageheader {
+  padding-bottom: 9px;
+  margin: 40px 0 20px;
+}
+
+/* line 24, ../scss/components/_registration.scss */
+.registration-wrapper label {
+  font-weight: normal;
+}
+
+/* line 29, ../scss/components/_registration.scss */
+.status-message-wrapper {
+  padding-top: 20px;
+}
+
+/* line 35, ../scss/components/_registration.scss */
+.right-responsive {
+  float: right;
+}
+
+/* line 38, ../scss/components/_registration.scss */
+.reg-label {
+  margin-top: 6px;
+}
+
+/* line 41, ../scss/components/_registration.scss */
+.label-weight {
+  font-weight: normal;
+}
+
+/* line 44, ../scss/components/_registration.scss */
+.gender {
+  padding-top: 1px;
+}
+
+@media only screen and (max-width: 767px) {
+  /* line 48, ../scss/components/_registration.scss */
+  .right-responsive {
+    float: none;
+  }
+
+  /* line 51, ../scss/components/_registration.scss */
+  .name-field {
+    margin-bottom: 10px;
+  }
+
+  /* line 54, ../scss/components/_registration.scss */
+  .gender-field {
+    display: block;
+  }
+}
+/* All Requests Styles */
+/* line 3, ../scss/components/_requests.scss */
+.new-request {
+  background: url(../images/add_request.jpg) no-repeat;
+  width: 135px;
+  height: 26px;
+  border: none;
+}
+
+/* line 10, ../scss/components/_requests.scss */
+.advance-search {
+  background: #DBE8EE;
+  border: medium none;
+  color: #000;
+  font-size: 10px;
+  cursor: pointer;
+  float: left;
+  margin: 0px 8px 4px 10px;
+  padding: 5px;
+  border: 1px solid #8FABB9;
+  border-radius: 3px;
+}
+
+/* line 23, ../scss/components/_requests.scss */
+.request-actions {
+  background: url(../images/actionsBtn.jpg) no-repeat;
+  width: 72px;
+  height: 26px;
+  border: none;
+}
+
+/* line 30, ../scss/components/_requests.scss */
+.top_actions {
+  margin-top: 4px;
+}
+
+/* line 34, ../scss/components/_requests.scss */
+.middle_level {
+  padding-top: 7px;
+}
+
+/* line 38, ../scss/components/_requests.scss */
+.list-inline > li:first-child {
+  padding-left: 6px;
+}
+
+/* line 42, ../scss/components/_requests.scss */
+.task-status-info ul li {
+  width: 231px;
+  margin-top: 10px;
+}
+
+/* line 47, ../scss/components/_requests.scss */
+.task-status-info ul li:nth-child(4) {
+  border: none;
+}
+
+/* line 51, ../scss/components/_requests.scss */
+.adv_search_arrow {
+  background-image: url("../images/filter-arrow-blue.png");
+  background-repeat: no-repeat;
+  display: block;
+  float: left;
+  height: 20px;
+  left: 595px;
+  position: relative;
+  top: -61px;
+  width: 20px;
+}
+
+/* line 63, ../scss/components/_requests.scss */
+.req_action {
+  margin-right: 125px;
+  top: -9px;
+}
+
+/* line 69, ../scss/components/_requests.scss */
+.req_action ul {
+  list-style: none;
+  display: inline;
+  margin: 0px;
+  padding: 0px;
+  position: absolute;
+  z-index: 99999999999;
+}
+
+/* line 78, ../scss/components/_requests.scss */
+.req_action ul li {
+  background-color: #e6eaeb;
+  width: 115px;
+  border-bottom: 1px solid #fff;
+}
+
+/* line 84, ../scss/components/_requests.scss */
+.req_action ul li:hover {
+  background-color: #cddae6;
+}
+
+/* line 88, ../scss/components/_requests.scss */
+.req_action ul li a {
+  padding: 8px;
+  font-size: 11px;
+  color: #000;
+  text-decoration: none;
+}
+
+/* line 95, ../scss/components/_requests.scss */
+.req_action ul li a:hover {
+  color: #16578D;
+}
+
+/* line 99, ../scss/components/_requests.scss */
+.adv_search_div {
+  border: 1px solid #cddae6;
+}
+
+/* line 104, ../scss/components/_requests.scss */
+.adv_search_title {
+  padding: 10px 10px 0 29px;
+  background: #cddae6;
+}
+
+/* line 109, ../scss/components/_requests.scss */
+.adv_search_box {
+  padding: 15px;
+}
+
+/* line 113, ../scss/components/_requests.scss */
+.ticket_details_div {
+  margin-bottom: 0px;
+  background: #cddae6;
+}
+
+/* line 118, ../scss/components/_requests.scss */
+.ticket_title {
+  margin: 0px;
+  padding: 0px;
+}
+
+/* line 123, ../scss/components/_requests.scss */
+.ticket_details {
+  background: #eef2f6;
+  border: 1px solid #cddae6;
+  margin-bottom: 10px;
+}
+
+/* line 129, ../scss/components/_requests.scss */
+.ticket_details p:first-child {
+  margin-top: 13px;
+}
+
+/*Add new Request Styles*/
+/* line 134, ../scss/components/_requests.scss */
+.middle_level {
+  padding-top: 7px;
+}
+
+/*View Request Styles*/
+/* line 139, ../scss/components/_requests.scss */
+.req_title {
+  background: #cddae6;
+}
+
+/* line 143, ../scss/components/_requests.scss */
+.req_update {
+  background: #f1f1f1;
+  border: 1px solid #cddae6;
+  padding: 6px;
+  margin-bottom: 15px;
+}
+
+/* line 150, ../scss/components/_requests.scss */
+.requestor_details {
+  margin-left: -10px;
+}
+
+/* line 154, ../scss/components/_requests.scss */
+.requestor_details li {
+  font-size: 12px;
+  line-height: 22px;
+}
+
+/* line 159, ../scss/components/_requests.scss */
+.user-information img {
+  margin-bottom: 15px;
+  margin-left: -2px;
+}
+
+/* line 164, ../scss/components/_requests.scss */
+.user_information h4 {
+  margin-top: -10px;
+}
+
+/* line 168, ../scss/components/_requests.scss */
+.comments-list ul {
+  margin-bottom: 15px;
+}
+
+/* line 1, ../scss/components/_family.scss */
+.add-child {
+  color: #5592CD;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+/* line 6, ../scss/components/_family.scss */
+.edit-child {
+  cursor: pointer;
+}
+
+/* line 11, ../scss/components/_family.scss */
+.no-error-class {
+  border: 1px solid #ddd !important;
+}
+
+/* line 1, ../scss/components/_task.scss */
+#accordion a span.title {
+  float: left;
+  display: block;
+  margin-right: 10px;
+  margin-top: 5px;
+}
+
+/* line 8, ../scss/components/_task.scss */
+#accordion a span.ui-icon {
+  position: static;
+  height: 20px;
+  margin-top: 0px;
+  margin-top: 3px;
+}
+
+/* line 14, ../scss/components/_task.scss */
+#accordion h3 a .ui-icon {
+  float: right;
+}
+
+/* line 16, ../scss/components/_task.scss */
+#accordion a span.title {
+  float: left;
+  display: block;
+  margin-right: 10px;
+  margin-top: 5px;
+}
+
+/* line 23, ../scss/components/_task.scss */
+#accordion a span.ui-icon {
+  position: static;
+  height: 20px;
+  margin-top: 0px;
+  margin-top: 3px;
+}
+
+/* line 29, ../scss/components/_task.scss */
+#accordion h3 a .ui-icon {
+  float: right;
+}
+
+/* line 32, ../scss/components/_task.scss */
+.navigation {
+  text-align: right;
+}
+
+/* line 35, ../scss/components/_task.scss */
+.top-bar-section ul li {
+  background: none;
+  display: inline-block;
+  float: none;
+}
+
+/* line 40, ../scss/components/_task.scss */
+.view-tasks img {
+  border: none;
+  margin: 0;
+}
+
+/* line 44, ../scss/components/_task.scss */
+.view-tasks {
+  padding: 25px 0 0 0;
+}
+
+/* line 47, ../scss/components/_task.scss */
+.view-tasks h6 {
+  margin: 0 0 5px 0;
+}
+
+/* line 50, ../scss/components/_task.scss */
+.new-task {
+  background: url(../images/newtaskBtn.jpg) no-repeat;
+  width: 100px;
+  height: 26px;
+  border: none;
+  margin-top: 10px;
+}
+
+/* line 57, ../scss/components/_task.scss */
+.actions {
+  background: url(../images/actionsBtn.jpg) no-repeat;
+  width: 72px;
+  height: 26px;
+  border: none;
+  display: none;
+}
+
+/* line 64, ../scss/components/_task.scss */
+.task-links {
+  background: #e6eaeb;
+  padding: 8px 15px !important;
+  margin: 10px 0 10px 0;
+}
+
+/* line 69, ../scss/components/_task.scss */
+.task-links a {
+  font-size: 13px;
+  margin: 0 10px 0 0;
+  padding: 0 10px 0 0;
+  color: #16578f;
+  border-right: solid 1px #16578f;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+/* line 78, ../scss/components/_task.scss */
+.task-links a:last-child {
+  border: none;
+}
+
+/* line 81, ../scss/components/_task.scss */
+.tasks-list {
+  margin-bottom: 15px !important;
+}
+
+/* line 84, ../scss/components/_task.scss */
+.tasks-list input {
+  margin: 0 10px 0 0;
+}
+
+/* line 87, ../scss/components/_task.scss */
+.tasks-list .task-title {
+  font-size: 15px;
+  font-weight: bold;
+  background: #cddae6;
+  padding: 10px !important;
+  border-radius: 3px 3px 0 0;
+}
+
+/* line 94, ../scss/components/_task.scss */
+.task-details {
+  background: #eef2f6;
+  border: solid 1px #cfddeb;
+  padding: 10px !important;
+}
+
+/* line 99, ../scss/components/_task.scss */
+.task-status-info {
+  background: #ffffff;
+  border: solid 1px #cddae6;
+  padding: 8px;
+  font-size: 12px;
+  margin: 0 0 10px 0;
+}
+
+/* line 106, ../scss/components/_task.scss */
+.task-status-info ul li {
+  font-size: 12px;
+  margin-bottom: 10px;
+  padding-bottom: 3px;
+  border-right: solid 1px #cccccc;
+}
+
+/* line 112, ../scss/components/_task.scss */
+.task-status-info ul li:last-child {
+  border: none;
+}
+
+/* line 115, ../scss/components/_task.scss */
+.task-status-info ul li span {
+  font-weight: bold;
+  padding: 0 0 0 5px;
+}
+
+/* line 120, ../scss/components/_task.scss */
+.noTasks {
+  text-align: center;
+  font-size: 40px;
+}
+
+/* line 125, ../scss/components/_task.scss */
+.task-comments {
+  min-height: 60px;
+}
+
+/* line 130, ../scss/components/_task.scss */
+.comments-list {
+  max-height: 500px;
+  overflow: scroll;
+}
+
+/* line 136, ../scss/components/_task.scss */
+.adv_search_arrow_task {
+  background-image: url("../images/filter-arrow-blue.png");
+  background-repeat: no-repeat;
+  display: block;
+  float: left;
+  height: 20px;
+  left: 868px;
+  position: relative;
+  top: -65px;
+  width: 20px;
+}
+
+/* line 147, ../scss/components/_task.scss */
+.advance-search-task {
+  background: #DBE8EE;
+  border: medium none;
+  color: #000;
+  font-size: 10px;
+  cursor: pointer;
+  float: left;
+  margin: 10px 8px 14px 10px;
+  padding: 5px;
+  border: 1px solid #8FABB9;
+  border-radius: 3px;
+}
+
+/* line 159, ../scss/components/_task.scss */
+.task-radio {
+  padding-top: 7px;
+}
+
+/* Bootstrap overrides */
+/* line 168, ../scss/components/_task.scss */
+.cadre-list {
+  padding: 15px;
+}
+/* line 170, ../scss/components/_task.scss */
+.cadre-list .cadre-list-item {
+  background-color: #eaeaea;
+  height: 30px;
+  margin-bottom: 5px;
+  height: 40px;
+  padding-top: 11px;
+  width: 90%;
+}
+/* line 177, ../scss/components/_task.scss */
+.cadre-list .cadre-list-item:hover {
+  background-color: #dddddd;
+}
+
+/* line 183, ../scss/components/_task.scss */
+.cadre-list .cadre-list-row {
+  margin-bottom: 25px;
+  margin-left: 30px;
+  max-height: 375px;
+  overflow: auto;
+  padding-bottom: 30px;
+  width: 90%;
+}
+
+/* line 192, ../scss/components/_task.scss */
+.cadre-list .page-header {
+  margin-top: 0;
+}
+
+/* line 196, ../scss/components/_task.scss */
+.close-overlay {
+  font-size: 20px;
+  font-weight: bold;
+  position: absolute;
+  right: 25px;
+  width: 20px;
+  cursor: pointer;
+}
+
+/* line 210, ../scss/components/_task.scss */
+.col-centered {
+  float: none;
+  margin: 0 auto;
+}
+
+/* line 216, ../scss/components/_task.scss */
+.ui-datepicker-calendar {
+  width: 100%;
+  background-color: #fff;
+}
+
+/* line 221, ../scss/components/_task.scss */
+.user-actions-div {
+  margin-top: 5px;
+}
+/* line 223, ../scss/components/_task.scss */
+.user-actions-div .edit, .user-actions-div .delete {
+  color: #2368A0;
+}
+/* line 225, ../scss/components/_task.scss */
+.user-actions-div .edit:hover, .user-actions-div .delete:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+/* line 230, ../scss/components/_task.scss */
+.user-actions-div .edit.grey {
+  color: #999999;
+  cursor: default;
+}
+/* line 233, ../scss/components/_task.scss */
+.user-actions-div .edit.grey:hover {
+  text-decoration: none;
+}
+
+/* To disable textarea resize*/
+/* line 241, ../scss/components/_task.scss */
+textarea {
+  resize: vertical;
+}
+
+/* line 4, ../scss/components/_view-tasks.scss */
+.task-details ul li {
+  font-size: 13px;
+}
+
+/* line 7, ../scss/components/_view-tasks.scss */
+.task-details select {
+  padding: 4px 3px !important;
+  height: auto;
+}
+
+/* line 11, ../scss/components/_view-tasks.scss */
+.task-details .calender {
+  background-image: url(../images/calender-icon.png) no-repeat right center;
+}
+
+/* line 14, ../scss/components/_view-tasks.scss */
+.task-description h6, .attachements h6 {
+  margin: 15px 0 10px 0;
+  font-size: 14px;
+  color: #0888b5;
+}
+
+/* line 19, ../scss/components/_view-tasks.scss */
+.attachements {
+  display: none;
+}
+
+/* line 22, ../scss/components/_view-tasks.scss */
+.attachements ul li {
+  font-size: 13px;
+}
+
+/* line 28, ../scss/components/_view-tasks.scss */
+.comments .head {
+  background: #f5f5f5;
+  border: solid 1px #ccc;
+  padding: 5px 10px;
+  margin: 0 0 15px 0;
+}
+
+/* line 34, ../scss/components/_view-tasks.scss */
+.comments .head a.add-comments {
+  background: url(../images/commentsIcon.png) no-repeat 0 3px;
+  color: #333;
+  padding: 0 0 0 20px;
+  margin: 0 15px 0 0;
+  font-size: 12px;
+}
+
+/* line 41, ../scss/components/_view-tasks.scss */
+.comments .head a.attachments {
+  background: url(../images/attachmentsIcon.png) no-repeat 0 4px;
+  color: #333;
+  padding: 0 0 0 20px;
+  margin: 0 15px 0 0;
+  font-size: 12px;
+}
+
+/* line 48, ../scss/components/_view-tasks.scss */
+.comments-list ul {
+  margin: 0;
+  font-size: 13px;
+  padding: 0;
+}
+
+/* line 53, ../scss/components/_view-tasks.scss */
+.comments-list ul li {
+  list-style: none;
+}
+
+/* line 56, ../scss/components/_view-tasks.scss */
+.comments-list ul li .info {
+  border-bottom: solid 1px #ccc;
+  padding: 0 0 10px 0;
+  margin: 0 0 10px 0;
+}
+
+/* line 62, ../scss/components/_view-tasks.scss */
+.user-information {
+  border: solid 1px #ccc;
+  background: #f1f1f1;
+  padding: 20px;
+  position: relative;
+  height: 90%;
+}
+
+/* line 69, ../scss/components/_view-tasks.scss */
+.user-information .arrow {
+  background: url(../images/user-info-arrow.png) no-repeat 0 0;
+  position: absolute;
+  left: -13px;
+  top: 30px;
+  width: 13px;
+  height: 27px;
+}
+
+/* line 77, ../scss/components/_view-tasks.scss */
+.user-information h5 {
+  margin: 0 0 15px 0;
+}
+
+/* line 80, ../scss/components/_view-tasks.scss */
+.user-information img {
+  border: solid 5px #ffffff;
+  margin: 0 0 15px 10px;
+}
+
+/* line 84, ../scss/components/_view-tasks.scss */
+.user-information .details ul {
+  font-size: 13px;
+  margin: 0;
+  color: #333;
+}
+
+/* line 89, ../scss/components/_view-tasks.scss */
+.user-information .details ul li {
+  list-style: none;
+}
+
+/* line 92, ../scss/components/_view-tasks.scss */
+.user-information .details ul li span {
+  padding: 0 0 0 10px;
+  font-weight: bold;
+}
+
+/* line 97, ../scss/components/_view-tasks.scss */
+.selectedTaskTab {
+  font-weight: bold;
+}
+
+/* Bootstrap overrides */
+/* line 105, ../scss/components/_view-tasks.scss */
+.task-view-header {
+  width: 100%;
+  margin-left: 0;
+  margin-bottom: 0 !important;
+}
+
+/* line 112, ../scss/components/_view-tasks.scss */
+.comments-list {
+  margin-top: 25px;
+}
+
+/* line 116, ../scss/components/_view-tasks.scss */
+.comments .head {
+  margin-bottom: 30px;
+}
+
+/* line 121, ../scss/components/_view-tasks.scss */
+.cadre-search-icon-view {
+  right: 25px;
+  position: absolute;
+  top: 35px;
+  cursor: pointer;
+}
+
+/* line 129, ../scss/components/_view-tasks.scss */
+.select-all-btn {
+  margin: 0;
+}
+
+/* line 133, ../scss/components/_view-tasks.scss */
+.comments .attachment-menu-header {
+  margin-bottom: 0;
+}
+
+/* line 136, ../scss/components/_view-tasks.scss */
+.attachment-status {
+  display: none;
+  color: red;
+  margin-left: 10px;
+  font-size: 11px;
+}
+
+/* line 143, ../scss/components/_view-tasks.scss */
+.attachment-progress {
+  display: none;
+  margin-bottom: 0;
+}
+
+/* line 147, ../scss/components/_view-tasks.scss */
+.comments .non-linked {
+  color: #aaa;
+  cursor: default;
+}
+
+/* line 154, ../scss/components/_view-tasks.scss */
+.cds-error, .att-status.cds-error {
+  color: red;
+  font-size: 12px;
+}
+
+/* line 159, ../scss/components/_view-tasks.scss */
+.cds-info, .att-status.cds-info {
+  color: #47A447;
+  font-size: 12px;
+}
+
+/* line 1, ../scss/components/_add-task.scss */
+.fields-form {
+  background: #cddae6;
+  border: solid 1px #eef2f6;
+  padding: 25px;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+/* line 8, ../scss/components/_add-task.scss */
+.fields-form h6 {
+  padding: 0 0 10px 0;
+  margin: 0 0 20px 0;
+  border-bottom: dotted 1px #16578f;
+}
+
+/* line 13, ../scss/components/_add-task.scss */
+.calender {
+  background: #fff url(../images/calender-icon.png) no-repeat right center;
+}
+
+/* line 16, ../scss/components/_add-task.scss */
+.cadre-search-icon {
+  right: 25px;
+  position: absolute;
+  top: 10px;
+  cursor: pointer;
+}
+
+/* line 1, ../scss/components/_accordion.scss */
+.accordion-head {
+  border: 1px solid gray;
+  padding: 0px;
+  cursor: pointer;
+  color: #fff;
+  background-color: #16578F;
+  border-radius: 4px;
+  border: 1px solid gray;
+  height: 30px;
+  padding: 5px 0px 0px 12px;
+}
+
+/* line 12, ../scss/components/_accordion.scss */
+.accordion-content {
+  /*height: 170px;*/
+}
+
+/* line 15, ../scss/components/_accordion.scss */
+.edit-profile {
+  border: 1px solid red;
+}
+
+/* line 18, ../scss/components/_accordion.scss */
+.edit-profile ul li {
+  list-style: none;
+  cursor: pointer;
+}
+
+/* UI components */
+/* line 1, ../scss/components/jqueryUI/_datePicker.scss */
+.ui-datepicker {
+  width: 350px;
+  height: auto;
+  margin: 5px auto 0;
+  font: 9pt Arial, sans-serif;
+  -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+  padding-bottom: 10px;
+  background-color: #fff;
+}
+
+/* line 14, ../scss/components/jqueryUI/_datePicker.scss */
+.ui-datepicker-header {
+  background-color: #16578F;
+  color: #e0e0e0;
+  font-weight: bold;
+  -webkit-box-shadow: inset 0px 1px 1px 0px #fafafa;
+  -moz-box-shadow: inset 0px 1px 1px 0px rgba(250, 250, 250, 0.2);
+  box-shadow: inset 0px 1px 1px 0px rgba(250, 250, 250, 0.2);
+  text-shadow: 1px -1px 0px #000;
+  filter: dropshadow(color=#000, offx=1, offy=-1);
+  line-height: 30px;
+  border-width: 1px 0 0 0;
+  border-style: solid;
+  border-color: #111;
+  padding-top: 5px;
+}
+
+/* line 31, ../scss/components/jqueryUI/_datePicker.scss */
+.ui-datepicker-prev, .ui-datepicker-next {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  cursor: pointer;
+  background-image: url("../images/arrow.png");
+  background-repeat: no-repeat;
+  line-height: 600%;
+  overflow: hidden;
+}
+
+/* line 44, ../scss/components/jqueryUI/_datePicker.scss */
+.ui-datepicker-prev {
+  float: left;
+  background-position: center -30px;
+}
+
+/* line 48, ../scss/components/jqueryUI/_datePicker.scss */
+.ui-datepicker-next {
+  float: right;
+  background-position: center 0px;
+}
+
+/* line 53, ../scss/components/jqueryUI/_datePicker.scss */
+.ui-datepicker thead {
+  background-color: #f7f7f7;
+  background-image: -moz-linear-gradient(top, #f7f7f7 0%, #f1f1f1 100%);
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #f7f7f7), color-stop(100%, #f1f1f1));
+  background-image: -webkit-linear-gradient(top, #f7f7f7 0%, #f1f1f1 100%);
+  background-image: -o-linear-gradient(top, #f7f7f7 0%, #f1f1f1 100%);
+  background-image: -ms-linear-gradient(top, #f7f7f7 0%, #f1f1f1 100%);
+  background-image: linear-gradient(top, #f7f7f7 0%, #f1f1f1 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f7f7f7', endColorstr='#f1f1f1',GradientType=0 );
+  border-bottom: 1px solid #bbb;
+}
+
+/* line 67, ../scss/components/jqueryUI/_datePicker.scss */
+.ui-datepicker-title select {
+  width: 30%;
+  margin-bottom: 5px;
+  margin-left: 25px;
+}
+
+/* line 74, ../scss/components/jqueryUI/_datePicker.scss */
+.ui-datepicker-calendar {
+  margin-bottom: 0;
+  height: 170px;
+}
+
+/* line 79, ../scss/components/jqueryUI/_datePicker.scss */
+.ui-datepicker-calendar th, .ui-datepicker-calendar td {
+  padding-left: 20px;
+}
+
+/* 
+.ui-datepicker td span, .ui-datepicker td a {
+    display: inline-block;
+    font-weight: bold;
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    color: #666666;
+    text-shadow: 1px 1px 0px #fff;
+    filter: dropshadow(color=#fff, offx=1, offy=1);
+}
+.ui-datepicker-calendar .ui-state-default {
+    background: #ededed;
+    background: -moz-linear-gradient(top,  #ededed 0%, #dedede 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ededed), color-stop(100%,#dedede));
+    background: -webkit-linear-gradient(top,  #ededed 0%,#dedede 100%);
+    background: -o-linear-gradient(top,  #ededed 0%,#dedede 100%);
+    background: -ms-linear-gradient(top,  #ededed 0%,#dedede 100%);
+    background: linear-gradient(top,  #ededed 0%,#dedede 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ededed', endColorstr='#dedede',GradientType=0 );
+    -webkit-box-shadow: inset 1px 1px 0px 0px rgba(250, 250, 250, .5);
+    -moz-box-shadow: inset 1px 1px 0px 0px rgba(250, 250, 250, .5);
+    box-shadow: inset 1px 1px 0px 0px rgba(250, 250, 250, .5);
+}
+.ui-datepicker-unselectable .ui-state-default {
+    background: #f4f4f4;
+    color: #b4b3b3;
+} */
+/* line 114, ../scss/components/jqueryUI/_datePicker.scss */
+.ui-datepicker td a {
+  color: #16578F;
+}
+
+/* line 118, ../scss/components/jqueryUI/_datePicker.scss */
+.ui-datepicker td a:hover {
+  color: #16578F;
+  text-decoration: underline;
+}
+
+/* .ui-datepicker tbody td:last-child,.ui-datepicker tbody td:first-child {
+    border-right: 0px;
+    background-color:#eaeaea;    
+} */
+/* .ui-datepicker tr:nth-of-type(2n) td:last-child{
+	background-color:#333;
+}  */
+/* line 1, ../scss/components/_status-message.scss */
+.status-wrapper {
+  display: none;
+  border-radius: 5px;
+  color: #fff;
+  font-weight: bold;
+  font-size: 12px;
+  padding: 10px 10px;
+  text-shadow: 0 0 35px #000;
+}
+/* line 11, ../scss/components/_status-message.scss */
+.status-wrapper.error-status-node {
+  background-color: #DE3B12;
+}
+/* line 14, ../scss/components/_status-message.scss */
+.status-wrapper.info-status-node {
+  background-color: #8EB14D;
+}

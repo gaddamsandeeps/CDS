@@ -1,0 +1,61 @@
+<div class="container">
+    <div class="row registration-wrapper">
+        <!-- Signin Section -->
+        <div class="col-md-6  col-sm-12"><img src="images/signin-banner.jpg" class="img-responsive"></div>
+        <div class="col-md-6  col-sm-12">
+            <form ng-submit="signinCtrl.signin()" id="loginForm" name="login">
+                <div class="row">
+                    <div class="col-md-11">
+                        <h1>Sign In
+                              <span>If you are already a member.</span>
+                        </h1>
+                        <!-- Global error messages -->
+                <div class="row" ng-show="signinCtrl.isNotValid">
+                    <div class="col-md-8 col-md-offset-4  error-class" id="globalErrorContainer">Please ensure that all the required fields are valid.</div>
+                </div>
+                <!-- UserName -->
+                <div class="row">
+                    <div class="col-md-3 col-sm-12">
+                        <label class="inline reg-label">User Name:</label>
+                    </div>
+                    <div class="col-md-8 col-sm-12">
+                        <input type="text" class="form-control required" name="username" placeholder="User Name" ng-model="signinCtrl.user.username" data-val="signInUsername" />
+
+                        <div class="col-md-12">
+	                        <div class="error-class">
+	                            <div class="error-content"></div>
+	                        </div>
+                    	</div>
+
+                    </div>
+                    
+                </div>
+                <!-- Password -->
+                <div class="row">
+                    <div class="col-md-3 col-sm-12">
+                        <label class="inline reg-label" name="password">Password:</label>
+                    </div>
+                    <div class="col-md-8 col-sm-12 ">
+                        <input type="password" class="form-control required" name="password" placeholder="Password" value="" ng-model="signinCtrl.user.password" id="inputPassword" data-val="signPassword" />
+                        <div class="col-md-12">
+                            <div class="error-class">
+                                <div class="error-content"></div>
+                            </div>
+                        </div>
+                        <!-- <div class="col-md-12 col-sm-12 form-group">
+                            <br /><input type="checkbox" /> Remember me</div> -->
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-3"></div>
+                    <div class="col-md-7 col-sm-12">
+                        <input type="submit" class="btn button" value="Sign In" />
+                           <a href="/forgotpwd" class="right forgot-password">Forgot Password?</a>
+                    </div>
+                </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

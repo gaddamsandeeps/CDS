@@ -1,0 +1,26 @@
+{
+    "name": "cds-util",
+    "version": "1.0.0",
+    "description": "cds utilities management",
+    "main": "./lib/util",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git://github.com/yc05s3g/cds-util.git"
+    },
+    "author": {
+        "name": "Sandeep Gaddam",
+        "email": "sgaddam@nisum.com"
+    },
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/yc05s3g/cds-util/issues"
+    },
+    "homepage": "https://github.com/yc05s3g/cds-util",
+    "dependencies": {
+        "date-format-lite": "^0.7.1",        
+        "fs": "0.0.2"
+    }
+}
